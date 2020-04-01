@@ -1,4 +1,4 @@
- 
+function galleryfunction(){
 (function($) {
   'use strict' ;
 //slider-2
@@ -88,3 +88,4 @@
     });
 
     })(jQuery);
+  }
