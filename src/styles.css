@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/css/plugin.css";
+@import "./assets/vendor/revolution-slider/revolution/css/settings.css";
+@import "./assets/vendor/revolution-slider/revolution/css/layers.css";
+@import "./assets/vendor/revolution-slider/revolution/css/navigation.css";
+@import "./assets/css/typographies.css";
+@import "./assets/css/template-element.css";
+@import "./assets/css/style.css";
+@import "./assets/css/responsive.css";
+@import "./assets/css/custom.css";

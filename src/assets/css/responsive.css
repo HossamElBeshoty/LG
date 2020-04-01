@@ -1,17 +1,17 @@
 /*
 
 Template: Shopping - Responsive Multi-purpose HTML5 Template
-Author: 
-Design and Developed by: 
+Author:
+Design and Developed by:
 
 NOTE: This is typography stylesheet of template, This file contains typography of the Template.
 
 */
 
 @media only screen and (max-width:1199px) {
-	/*-------------- Margin top ------------*/ 
+	/*-------------- Margin top ------------*/
 	.lg-mt-0 { margin-top: 0 !important; }
-	.lg-mt-5 { margin-top: 5 !important; } 
+	.lg-mt-5 { margin-top: 5 !important; }
 	.lg-mt-10 { margin-top: 10px !important; }
 	.lg-mt-15 { margin-top: 15px !important; }
 	.lg-mt-20 { margin-top: 20px !important; }
@@ -30,7 +30,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     .lg-mt-120 { margin-top: 120px !important; }
 	.lg-mt-150 { margin-top: 150px !important; }
 
-	/*-------------- Margin right ------------*/ 
+	/*-------------- Margin right ------------*/
 	.lg-mr-0 { margin-right: 0 !important; }
 	.lg-mr-5 { margin-right: 5 !important; }
 	.lg-mr-10 { margin-right: 10px !important; }
@@ -54,7 +54,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.lg-mb-35 { margin-bottom: 35px !important; }
 	.lg-mb-40 { margin-bottom: 40px !important; }
 	.lg-mb-45 { margin-bottom: 45px !important; }
-	.lg-mb-50 { margin-bottom: 50px !important; } 
+	.lg-mb-50 { margin-bottom: 50px !important; }
 
 	/*-------------- Margin left-----------*/
 	.lg-ml-0 { margin-left: 0 !important; }
@@ -106,7 +106,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.lg-pb-35 { padding-bottom: 35px !important; }
 	.lg-pb-40 { padding-bottom: 40px !important; }
 	.lg-pb-45 { padding-bottom: 45px !important; }
-	.lg-pb-50 { padding-bottom: 50px !important; }	
+	.lg-pb-50 { padding-bottom: 50px !important; }
 
 	/*-------------- padding left -----------*/
 	.lg-pl-0 { padding-left: 0 !important; }
@@ -123,7 +123,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 }
 
 @media only screen and (max-width:991px) {
-	/*-------------- Margin top ------------*/ 
+	/*-------------- Margin top ------------*/
 	.sm-mt-minus-2{margin-top: -2px;}
 	.sm-mt-minus-2{margin-top: -2px;}
 	.sm-mt-minus-3{margin-top: -3px;}
@@ -143,7 +143,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     .sm-mt-2 { margin-top: 2px !important; }
     .sm-mt-3 { margin-top: 3px !important; }
     .sm-mt-4 { margin-top: 4px !important; }
-	.sm-mt-5 { margin-top: 5px !important; } 
+	.sm-mt-5 { margin-top: 5px !important; }
 	.sm-mt-10 { margin-top: 10px !important; }
 	.sm-mt-15 { margin-top: 15px !important; }
 	.sm-mt-20 { margin-top: 20px !important; }
@@ -162,7 +162,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     .sm-mt-120 { margin-top: 120px !important; }
 	.sm-mt-150 { margin-top: 150px !important; }
 
-	/*-------------- Margin right ------------*/ 
+	/*-------------- Margin right ------------*/
 	.sm-mr-0 { margin-right: 0 !important; }
 	.sm-mr-5 { margin-right: 5 !important; }
 	.sm-mr-10 { margin-right: 10px !important; }
@@ -186,7 +186,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.sm-mb-35 { margin-bottom: 35px !important; }
 	.sm-mb-40 { margin-bottom: 40px !important; }
 	.sm-mb-45 { margin-bottom: 45px !important; }
-	.sm-mb-50 { margin-bottom: 50px !important; } 
+	.sm-mb-50 { margin-bottom: 50px !important; }
 
 	/*-------------- Margin left-----------*/
 	.sm-ml-0 { margin-left: 0 !important; }
@@ -238,7 +238,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.sm-pb-35 { padding-bottom: 35px !important; }
 	.sm-pb-40 { padding-bottom: 40px !important; }
 	.sm-pb-45 { padding-bottom: 45px !important; }
-	.sm-pb-50 { padding-bottom: 50px !important; }	
+	.sm-pb-50 { padding-bottom: 50px !important; }
 
 	/*-------------- padding left -----------*/
 	.sm-pl-0 { padding-left: 0 !important; }
@@ -254,7 +254,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.sm-pl-50 { padding-left: 50px !important; }
 }
 @media only screen and (max-width:480px) {
-	/*-------------- Margin top ------------*/ 
+	/*-------------- Margin top ------------*/
 	.xs-mt-0 { margin-top: 0 !important; }
 	.xs-mt-5 { margin-top: 5 !important; }
 	.xs-mt-10 { margin-top: 10px !important; }
@@ -286,7 +286,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.xs-mt-180 { margin-top: 180px !important; }
 	.xs-mt-190 { margin-top: 190px !important; }
 
-	/*-------------- Margin right ------------*/ 
+	/*-------------- Margin right ------------*/
 	.xs-mr-0 { margin-right: 0 !important; }
 	.xs-mr-5 { margin-right: 5 !important; }
 	.xs-mr-10 { margin-right: 10px !important; }
@@ -310,8 +310,8 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.xs-mb-35 { margin-bottom: 35px !important; }
 	.xs-mb-40 { margin-bottom: 40px !important; }
 	.xs-mb-45 { margin-bottom: 45px !important; }
-	.xs-mb-50 { margin-bottom: 50px !important; } 
-    .xs-mb-100 { margin-bottom: 100px !important; } 
+	.xs-mb-50 { margin-bottom: 50px !important; }
+    .xs-mb-100 { margin-bottom: 100px !important; }
 
 	/*-------------- Margin left-----------*/
 	.xs-ml-0 { margin-left: 0 !important; }
@@ -363,7 +363,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.xs-pb-35 { padding-bottom: 35px !important; }
 	.xs-pb-40 { padding-bottom: 40px !important; }
 	.xs-pb-45 { padding-bottom: 45px !important; }
-	.xs-pb-50 { padding-bottom: 50px !important; }	
+	.xs-pb-50 { padding-bottom: 50px !important; }
 
 	/*-------------- padding left -----------*/
 	.xs-pl-0 { padding-left: 0 !important; }
@@ -403,7 +403,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 .sm-fs-60{ font-size: 4.285rem !important;}
 .sm-fs-70{ font-size: 5rem !important;}
 .sm-fs-80{ font-size: 5.714rem !important;}
-    
+
 .sm-l-h24 { line-height: 24px; }
 .sm-l-h26 { line-height: 26px; }
 .sm-l-h28 { line-height: 28px; }
@@ -437,7 +437,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 .xs-fs-60{ font-size: 4.285rem !important;}
 .xs-fs-70{ font-size: 5rem !important;}
 .xs-fs-80{ font-size: 5.714rem !important;}
-    
+
 .xs-l-h24 { line-height: 24px; }
 .xs-l-h26 { line-height: 26px; }
 .xs-l-h28 { line-height: 28px; }
@@ -531,7 +531,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	.actionbox .actionbox-text, .actionbox2 .actionbox-text, .actionbox-3 .actionbox-text, .actionbox4 .actionbox-text, .actionbox6 .actionbox-text{
     	padding-right: 0 !important;
 	}
-	
+
 	.actionbox-sm {
 		margin: 7px;
 	}
@@ -688,8 +688,8 @@ NOTE: This is typography stylesheet of template, This file contains typography o
         position: absolute;
         top: 27px;
         right: -14px;
-        display: none; 
-        border-top: none; 
+        display: none;
+        border-top: none;
         border-left: 14px solid #fff;
         border-right: none;
         border-bottom: none;
@@ -909,7 +909,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	}
 
 	/*-- gray-border countdown --*/
-	
+
 	/*-- round countdown --*/
 	.countdown.round {
 		padding: 20px;
@@ -933,7 +933,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	}
 }
 /*--------------counter end---------------*/
-    
+
 /*--------------------------contactform start-----------------------*/
 @media only screen and (max-width: 480px) {
 	.contact-form .form-field {
@@ -988,7 +988,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     }
     .footer.bg-black .address i{
         display: none;
-        
+
     }
     .social-icons ul {
         text-align: center;
@@ -1076,7 +1076,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     }
     .signup-area-7 {
     	margin-top: -240px;
-	}	
+	}
     .login-bg{
         display:none;
     }
@@ -1092,7 +1092,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.85);
     }
-}    
+}
 @media only screen and (max-width:325px){
     .login-decore .nav li {
         margin: 0px 15px 60px 0px;
@@ -1109,13 +1109,14 @@ NOTE: This is typography stylesheet of template, This file contains typography o
     .login-area-7 {
        margin-top: 80px;
     }
+  }
 @media only screen and (max-width: 325px){
     .login-area-7 {
        margin-top: 80px;
     }
     .signup-area-7 {
     	margin-top: 250px !important;
-	}	
+	}
      .login-area-8 {
         margin-top: 60px;
     }
@@ -1193,7 +1194,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	    width: 100%;
 	}
     .portfolio-item .portfolio-overlay{
-        
+
     }
 }
 /*------------------------ Portfolio end -------------------------*/
@@ -1254,8 +1255,8 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 @media only screen and (max-width: 1366px) {}
 
 @media only screen and (min-width: 1300px) {
-	
-}	
+
+}
 
 @media only screen and (max-width: 1280px) {}
 
@@ -1265,7 +1266,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 
 }
 @media only screen and (max-width: 1024px) {
-	
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -1279,7 +1280,7 @@ NOTE: This is typography stylesheet of template, This file contains typography o
 	html{
 		font-size:12px;
 	}
-	
+
 }
 
 /*--------------iPhone 6 landscape----------------*/

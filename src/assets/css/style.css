@@ -1,9 +1,9 @@
 /*
 
 Template: Shopping - Responsive Multi-purpose HTML5 Template
-Author: 
+Author:
 Version: 1
-Design and Developed by: 
+Design and Developed by:
 
 NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
 
@@ -39,21 +39,21 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 :- team
 :- video-audio
 
-      
+
 
 
 ---- End table content ----*/
 
 /*---- parallax backgroud Start ----*/
-.parallax {   
-	background-size: cover !important; 
-	-webkit-background-size: cover !important; 
-	-moz-background-size: cover !important; 
-	-ms-background-size: cover !important;  
-	position: relative; z-index: 0; 
-	background-origin: initial; 
-	background-position: center center !important; 
-	background-repeat: no-repeat;  
+.parallax {
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-ms-background-size: cover !important;
+	position: relative; z-index: 0;
+	background-origin: initial;
+	background-position: center center !important;
+	background-repeat: no-repeat;
 }
 /*---- parallax backgroud end ----*/
 
@@ -906,81 +906,81 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 
 /*-----------------------blockquote start--------------------*/
 
-.blockquote { 
-    padding: 10px 20px; 
-    margin: 0 0 20px; 
-    font-size: 1.21rem; 
-    border-left: 5px 
-    solid #eee; 
-    position: relative; 
+.blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 1.21rem;
+    border-left: 5px
+    solid #eee;
+    position: relative;
 }
-.blockquote name { 
-    display: block; 
-    font-weight: 600; 
+.blockquote name {
+    display: block;
+    font-weight: 600;
     margin-top: 10px;
-    font-style: italic; 
+    font-style: italic;
 }
 /*blockquote-right*/
-.blockquote.right { 
-    text-align: right; 
-    border-right: 5px solid #eee; 
-    border-left: 0; 
-    padding: 10px 20px 10px; 
+.blockquote.right {
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0;
+    padding: 10px 20px 10px;
 }
 /*blockquote-3*/
 .blockquote.bg-gray {
     border-left: 5px solid #fec400;
 }
-.blockquote.right.bg-gray { 
-    text-align: right; 
+.blockquote.right.bg-gray {
+    text-align: right;
     border-right: 5px solid #fec400;
-    border-left: 0; 
-    padding: 10px 20px 10px; 
+    border-left: 0;
+    padding: 10px 20px 10px;
 }
 
 /*blockquote-4*/
-.quote { 
-    padding-top: 50px !important; 
+.quote {
+    padding-top: 50px !important;
 }
-.quote:before { 
-    content: "\201C"; 
-    font-size: 7.142rem; 
+.quote:before {
+    content: "\201C";
+    font-size: 7.142rem;
     font-family: Georgia, serif;
-    font-weight: bold; 
+    font-weight: bold;
     color: #fec400;
-    position: absolute; 
+    position: absolute;
     left: 14px;
     top: -30px;
 }
 /*quote right*/
-.blockquote.right.quote:before { 
-    left: inherit; 
-    right: 14px; 
+.blockquote.right.quote:before {
+    left: inherit;
+    right: 14px;
 }
 
 /*blockquote-5*/
-.blockquote.bg-theme { 
-    border: 0px; 
-    color: #ffffff; 
-    padding: 70px 30px 30px !important; 
-    border-radius: 6px; 
+.blockquote.bg-theme {
+    border: 0px;
+    color: #ffffff;
+    padding: 70px 30px 30px !important;
+    border-radius: 6px;
 }
-.blockquote.bg-theme:before { 
+.blockquote.bg-theme:before {
     left: 24px;
     top: -10px;
      color: #fff;
 }
 
 /*bg-theme*/
-.blockquote.bg-black { 
-    border: 0px; color: #ffffff; 
-    padding: 70px 30px 30px !important; 
-    border-radius: 6px; 
+.blockquote.bg-black {
+    border: 0px; color: #ffffff;
+    padding: 70px 30px 30px !important;
+    border-radius: 6px;
 }
 .blockquote.bg-black:before {
-    left: 24px; 
-    top: -10px; 
-    left: inherit; 
+    left: 24px;
+    top: -10px;
+    left: inherit;
      color: #fff;
 }
 /*-----------------------blockquote end-------------------*/
@@ -1136,7 +1136,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      padding: 20px 0 20px;
      position: relative;
  }
- 
+
  .timeline-blog .timeline:before {
      top: 0;
      bottom: 0;
@@ -1154,27 +1154,27 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      float: left;
      clear: both;
  }
- 
+
  .timeline-blog .timeline > li:before,
  .timeline-blog .timeline > li:after {
      content: " ";
      display: table;
  }
- 
+
  .timeline-blog .timeline > li:after {
      clear: both;
  }
- 
+
  .timeline-blog .timeline > li:before,
  .timeline-blog .timeline > li:after {
      content: " ";
      display: table;
  }
- 
+
  .timeline-blog .timeline > li:after {
      clear: both;
  }
- 
+
  .timeline-blog .timeline > li > .timeline-post {
      width: 95%;
      float: left;
@@ -1190,7 +1190,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      -o-transition: all 0.3s ease-in-out;
      -ms-transition: all 0.3s ease-in-out;
  }
- 
+
  .timeline-blog .timeline > li > .timeline-post:before {
      position: absolute;
      top: 26px;
@@ -1207,7 +1207,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      -o-transition: all 0.3s ease-in-out;
      -ms-transition: all 0.3s ease-in-out;
  }
- 
+
  .timeline-blog .timeline > li > .timeline-post:after {
      position: absolute;
      top: 27px;
@@ -1219,7 +1219,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      border-bottom: 14px solid transparent;
      content: " ";
  }
- 
+
  .timeline-blog .timeline > li > .timeline-badge {
      color: #fff;
      width: 54px;
@@ -1243,7 +1243,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
      -ms-transition: all 0.3s ease-in-out;
      /*z-index: 100;*/
  }
- 
+
  .timeline-blog .timeline > li > .timeline-badge span {
      font-size: 0.928rem;
      font-weight: normal;
@@ -1268,45 +1268,45 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
  .timeline-blog .timeline > li.timeline-inverted > .timeline-post {
      float: right;
  }
- 
+
  .timeline-blog .timeline > li.timeline-inverted > .timeline-post:before {
      border-left-width: 0;
      border-right-width: 15px;
      left: -15px;
      right: auto;
  }
- 
+
  .timeline-blog .timeline > li.timeline-inverted > .timeline-post:after {
      border-left-width: 0;
      border-right-width: 14px;
      left: -14px;
      right: auto;
- } 
+ }
  .timeline-blog .timeline-title {
      margin-top: 0;
      color: inherit;
  }
- 
+
  .timeline-blog .timeline-body > p,
  .timeline-blog .timeline-body > ul {
      padding: 20px;
      margin-bottom: 0;
  }
- 
+
  .timeline-blog .timeline-body > p + p {
      margin-top: 5px;
  }
- 
+
  .timeline-blog .timeline-footer {
      padding: 20px;
      background-color: #f4f4f4;
  }
- 
+
  .timeline-blog .timeline-footer > a {
      cursor: pointer;
      text-decoration: none;
  }
- 
+
  .timeline-blog .timeline > li.timeline-inverted {
      float: right;
      clear: right;
@@ -1510,31 +1510,31 @@ a.blog-btn i {
  .timeline-blog .timeline > li:nth-child(2) {
      margin-top: 60px;
  }
- 
+
  .timeline-blog .timeline > li:nth-child(3) {
      margin-top: 60px;
  }
- 
+
  .timeline-blog .timeline .entry-title i {
      font-size: 1.714rem;
  }
- 
+
  .timeline-blog .timeline-inverted .timeline-badge {
      margin-top: 70px
  }
- 
+
  .timeline-blog .timeline li.timeline-inverted .timeline-post:after {
      top: 98px;
  }
- 
+
  .timeline-blog .timeline li.timeline-inverted .timeline-post:before {
      top: 97px;
  }
- 
+
  .timeline-blog .timeline > li.timeline-inverted > .timeline-badge {
      left: -73px;
  }
- 
+
  .timeline-blog .timeline li.entry-date {
      top: 0;
      left: 0;
@@ -1543,7 +1543,7 @@ a.blog-btn i {
      text-align: center;
      width: 100%;
  }
- 
+
  .timeline-blog .timeline li.entry-date span {
      background: #f7f7f7;
      color: #363636;
@@ -1552,7 +1552,7 @@ a.blog-btn i {
      text-transform: capitalize;
      padding: 10px 25px;
  }
- 
+
  .timeline-blog .timeline li.entry-date-bottom {
      bottom: -30px;
      left: 0;
@@ -1561,7 +1561,7 @@ a.blog-btn i {
      text-align: center;
      width: 100%;
  }
- 
+
  .timeline-blog .timeline li.entry-date-bottom a {
      background: #f7f7f7;
      padding: 7px 10px;
@@ -1569,30 +1569,30 @@ a.blog-btn i {
      font-size: 1.142rem;
      padding: 10px 25px;
  }
- 
+
  .timeline-blog .timeline li.entry-date-bottom a:hover {
      background: #fec400;
      color: #fff;
  }
- 
+
  .timeline-blog .timeline li:hover .timeline-post {
      border-color: #fec400;
  }
- 
+
  .timeline-blog .timeline li:hover .timeline-badge a {
      color: #fff;
  }
- 
+
  .timeline-blog .timeline li:hover .timeline-badge {
      background: #fec400;
      border-color: #fec400;
  }
- 
+
  .timeline-blog .timeline li:hover .timeline-post:before {
      border-left-color: #fec400;
      border-right-color: #fec400;
  }
- 
+
  .timeline-blog .timeline-blog.timeline .entry-quote p {
      font-size: 1.142rem;
  }
@@ -1601,56 +1601,56 @@ a.blog-btn i {
  .timeline-blog.timeline-sidebar .timeline > li {
      width: 89%;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li .timeline-blog-entry-grid .grid-post li {
      width: 50%;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline:before {
      left: 54px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date {
      text-align: left;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date-bottom {
      text-align: left;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.timeline-inverted .timeline-badge {
       left: -66px;
  }
  .timeline-blog.timeline-sidebar .timeline > li > .timeline-badge:hover {
       background: #fec400;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline > li.timeline-inverted {
      margin-bottom: 0px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline > li:nth-child(3) {
      margin-top: 30px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date {
      top: 3px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date span {
      font-size: 1rem;
      padding: 10px 25px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date-bottom {
      bottom: -48px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li.entry-date-bottom a {
      font-size: 1rem;
      padding: 10px 25px;
  }
- 
+
  .timeline-blog.timeline-sidebar .timeline li .share ul li {
      width: auto;
  }
@@ -1925,27 +1925,27 @@ a.blog-btn i {
     border-bottom: 1px solid #eee;
 }
 /*---- clients colunm-4 ----*/
-.client.column-4 ul li { 
-    float: left; 
-    position: relative; 
-    width: 25%; 
-    padding: 10px; 
+.client.column-4 ul li {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding: 10px;
     text-align: center;
 }
 /*---- client column-3 ----*/
-.client.column-3 ul li { 
-    float: left; 
-    position: relative; 
-    width: 33.333%; 
-    padding: 10px; 
+.client.column-3 ul li {
+    float: left;
+    position: relative;
+    width: 33.333%;
+    padding: 10px;
     text-align: center;
 }
 /*---- client column-2 ----*/
-.client.column-2 ul li { 
-    float: left; 
-    position: relative; 
-    width: 50%; 
-    padding: 10px; 
+.client.column-2 ul li {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding: 10px;
 }
 /*---- carousels drag-bg ----*/
 .bg-drag{
@@ -2049,10 +2049,10 @@ a.blog-btn i {
 }
 
 /*-- border countdown --*/
-.countdown.countdown-border { 
-    padding: 10px; 
+.countdown.countdown-border {
+    padding: 10px;
     border:2px solid #eeeeee;
-    width: 100px; 
+    width: 100px;
 }
 .countdown.countdown-border.small{
   width: 90px;
@@ -2968,7 +2968,7 @@ svg #airplain {
 }
 .footer.bg-black .social-icons li:hover a{
   color: #fff;
-} 
+}
  .footer.bg-black p{
     color: #898989;
  }
@@ -3263,7 +3263,7 @@ footer.footer-3 .address li:hover a{
     color: #898989;
 }
 .footer.footer-3 .social-icons li:hover a{
-  color: #fff;  
+  color: #fff;
 }
 .footer.footer-3 .social-icons li:hover a{
     color: #fff;
@@ -3666,7 +3666,7 @@ footer.footer-3 .address li:hover a{
     top: -9999em;
     left: -9999em;
 }
-    
+
 @keyframes bgshadow {
   0% {
     box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);
@@ -3698,7 +3698,7 @@ html, button, input, select, textarea {
   margin: 30px 15px;
   color: #8a8a8a;
 }
-.zoom-area { 
+.zoom-area {
   max-width: 490px;
   margin: 30px auto 30px;
   font-size: 0.096px;
@@ -3862,7 +3862,7 @@ a.more-link {
      text-align: left;
      padding-left: 60px;
  }
- 
+
  .feature-txt.left-icon .feature-icon {
      position: absolute;
      left: 0;
@@ -3873,24 +3873,24 @@ a.more-link {
      text-align: right;
      padding-right: 60px;
  }
- 
+
  .feature-txt.right-icon .feature-icon {
      position: absolute;
      right: 0;
  }
- 
+
  .feature-txt.left-icon.round .feature-info {
      padding-left: 80px;
  }
- 
+
  .feature-txt.right-icon.round .feature-info {
      padding-right: 80px;
  }
- 
+
  .feature-txt.left-icon.square .feature-info {
      padding-left: 100px;
  }
- 
+
  .feature-txt.right-icon.square .feature-info {
      padding-right: 100px;
  }
@@ -3918,7 +3918,7 @@ a.more-link {
      top: -30px;
      left: 0;
  }
- 
+
  .featurebox {
      border: 1px solid #e6e6e6;
      padding: 1px;
@@ -3930,14 +3930,14 @@ a.more-link {
      transition: all 0.3s ease-out 0s;
      z-index: 1;
  }
- 
+
  .featurebox-content {
      position: relative;
      padding: 30px;
      padding-bottom: 0;
      z-index: 9;
  }
- 
+
  .featurebox i {
      width: 100%;
      font-size: 2.142rem;
@@ -3949,18 +3949,18 @@ a.more-link {
      -o-transition: all 0.3s ease-out 0s;
      transition: all 0.3s ease-out 0s;
  }
- 
+
  .featurebox h4 {
      text-transform: none;
      padding: 30px 0 0px;
      font-weight: 500;
      transition: all 0.3s ease-out 0s;
  }
- 
+
  .featurebox p {
      transition: all 0.3s ease-out 0s;
  }
- 
+
  .featurebox a {
      font-size: 1.142rem;
      font-weight: 300;
@@ -3971,7 +3971,7 @@ a.more-link {
      position: relative;
      z-index: 3;
  }
- 
+
  .featurebox .featurebox-img {
      bottom: 0;
      left: 0;
@@ -3990,7 +3990,7 @@ a.more-link {
      background-position: center center;
      background-image: url('https://via.placeholder.com/360x250');
  }
- 
+
  .featurebox .feature-border {
      position: absolute;
      background: #fec400;
@@ -4005,35 +4005,35 @@ a.more-link {
      -o-transition: all 0.3s ease-out 0s;
      transition: all 0.3s ease-out 0s;
  }
- 
+
  .featurebox:hover .featurebox-img,
  .featurebox.active .featurebox-img {
      opacity: 1;
  }
- 
+
  .featurebox:hover .feature-border,
  .featurebox.active .feature-border {
      height: 45px;
  }
- 
+
  .featurebox:hover i,
  .featurebox.active i {
      background: rgba(255, 255, 255, 0);
      color: #fff;
  }
- 
+
  .featurebox:hover h4,
  .featurebox.active h4,
  .featurebox:hover p,
  .featurebox.active p {
      color: #fff;
  }
- 
+
  .featurebox:hover a,
  .featurebox.active a {
      color: #fff;
  }
- 
+
  .featurebox:hover:before,
  .featurebox.active:before {
      background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
@@ -4468,7 +4468,7 @@ textarea.form-control {
 }
 .login-area .bg-gray{
     padding: 15px;
-} 
+}
 .social li {
     display: inline-block;
     margin: 2px 0px;
@@ -4837,8 +4837,6 @@ textarea.form-control {
 .portfolio-item img {
     width: 100%;
     -webkit-transition: -ms-transform 0.35s;
-    -o-transform 0.35s;
-    -moz-transform 0.35s;
     transition: transform 0.35s;
     -webkit-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -5074,7 +5072,7 @@ textarea.form-control {
 }
 /*portfolio-meta*/
 .portfolio-info{
-  
+
 }
 .portfolio-meta ul {
     margin-bottom: 30px;
@@ -5387,12 +5385,12 @@ textarea.form-control {
 }
 
 /*------------ portfolio03 -----------*/
-.portfolio03-about { 
-  padding: 0 50px; 
+.portfolio03-about {
+  padding: 0 50px;
 }
-.portfolio03-about p { 
-  font-size: 1rem; 
-  font-weight: 400; 
+.portfolio03-about p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /*---- port-post ----*/
@@ -5459,26 +5457,26 @@ textarea.form-control {
 
 /*------------------ heading start--------------------*/
 /*---- common heading Style ----*/
-.section-heading .heading { 
-	margin-top: 0px; 
-	position: relative; 
-} 
-.section-heading .heading{ 
+.section-heading .heading {
+	margin-top: 0px;
+	position: relative;
+}
+.section-heading .heading{
 	font-weight:600;
-} 
-.section-heading p { 
+}
+.section-heading p {
 	margin-bottom: 0px;
 }
-.section-heading .sub-heading { 
-	letter-spacing: 1px; 
-	font-weight: 300; 
-	margin-bottom: 10px; 
+.section-heading .sub-heading {
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-bottom: 10px;
 	text-transform: uppercase;
     font-size: 1rem;
-} 
-.section-heading { 
-	margin-bottom: 0px; 
-	position: relative; 
+}
+.section-heading {
+	margin-bottom: 0px;
+	position: relative;
 }
 
 /*----Common heading Style-1,2,3 ----*/
@@ -5639,7 +5637,7 @@ section:focus .heading-effect:nth-child(even) {
   clear: both;
   overflow: hidden;
 }
-.icon-section div { 
+.icon-section div {
     line-height: 50px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -6403,7 +6401,7 @@ section:focus .heading-effect:nth-child(even) {
     padding: 5px 5px;
 }
 .shop-grid .accordion-3 .tab-content ul li:hover{
-    background-color: #F7F7F7;  
+    background-color: #F7F7F7;
 }
 .shop-grid .accordion-3 .tab-wrapper.v1 .item .tab-btn a{
     padding: 5px;
@@ -6519,7 +6517,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 }
 .product-overlay a:last-child {
     border-right: 0;
-    
+
 }
 .product-overlay a:hover {
     background-color: #fec400;
@@ -7610,37 +7608,37 @@ ul.list-edit li:after {
                             Band Page
 *******************************************************************/
 .playlist-row table{
-	color:#FFF;	
+	color:#FFF;
 }
 .playlist-row th{
-	color:#FFF;	
+	color:#FFF;
 }
 .playlist-row h3, .playlist-row h5, .playlist-row h1{
-	color:#FFF;	
+	color:#FFF;
 }
 .playlist-row a{
-	color:#ccc;	
+	color:#ccc;
 }
 .playlist-row p{
 	font-size:1.468em;
-	margin-bottom:0px;	
+	margin-bottom:0px;
   color: #ccc;
 }
 .playlist-row th p{
   color: #fff;
 }
 .playlist-row table tr{
-	color:#FFF;	
+	color:#FFF;
 }
 .playlist-row table tr:hover{
 	color:#fec400;
 }
 .playlist-row table tr:hover a:hover{
-	color:#fec400;	
+	color:#fec400;
 }
 .playlist-row table tr th{
 	color:#fff;
-	background-color:transparent;	
+	background-color:transparent;
 }
 .iframe-yt{
     width:100%;
