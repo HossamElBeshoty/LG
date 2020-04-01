@@ -15,6 +15,7 @@ import {CabinetsComponent} from './Pages/products-page/cabinets/cabinets.compone
 import {VaultsDoorsComponent} from './Pages/products-page/vaults-doors/vaults-doors.component';
 import {MoneyCountingComponent} from './Pages/products-page/money-counting/money-counting.component';
 import {SafesComponent} from './Pages/products-page/safes/safes.component';
+import { CardComponent } from './Widgets/card/card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {SafesComponent} from './Pages/products-page/safes/safes.component';
     CabinetsComponent,
     VaultsDoorsComponent,
     MoneyCountingComponent,
-    SafesComponent
+    SafesComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
