@@ -50,17 +50,17 @@ function owlCarousel() {
       loop: $loop,
       items: $items,
       responsive: {
-        0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
-        480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-        768:{items: $this.data('sm-items') ? $this.data('sm-items') : 2},
-        980:{items: $this.data('md-items') ? $this.data('md-items') : 3},
-        1200:{items: $items}
+        0: {items: $this.data('xx-items') ? $this.data('xx-items') : 1},
+        480: {items: $this.data('xs-items') ? $this.data('xs-items') : 1},
+        768: {items: $this.data('sm-items') ? $this.data('sm-items') : 2},
+        980: {items: $this.data('md-items') ? $this.data('md-items') : 3},
+        1200: {items: $items}
       },
       dots: $navdots,
-      autoHeight:$autohgt,
-      margin:$space,
+      autoHeight: $autohgt,
+      margin: $space,
       nav: $navarrow,
-      navText:["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
+      navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
       autoplay: $autoplay,
       autoplayHoverPause: true,
     });
