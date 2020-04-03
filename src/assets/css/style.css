@@ -7199,6 +7199,12 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
   padding: 0 5px 0 5px;
 }
 
+.owl-carousel.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #ed1b24;
+  color: #FFF;
+  text-decoration: none;
+}
+
 .product-box .product-overlay a span {
   display: none;
   -webkit-transition: all 0.35s;
