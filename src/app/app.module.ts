@@ -16,6 +16,7 @@ import {VaultsDoorsComponent} from './Pages/products-page/vaults-doors/vaults-do
 import {MoneyCountingComponent} from './Pages/products-page/money-counting/money-counting.component';
 import {SafesComponent} from './Pages/products-page/safes/safes.component';
 import { CardComponent } from './Widgets/card/card.component';
+import { CardTwoComponent } from './Widgets/card-two/card-two.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardComponent } from './Widgets/card/card.component';
     VaultsDoorsComponent,
     MoneyCountingComponent,
     SafesComponent,
-    CardComponent
+    CardComponent,
+    CardTwoComponent
   ],
   imports: [
     BrowserModule,
