@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare function galleryfunction(): any;
+declare function owlCarousel(): any;
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -15,5 +16,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit(): void {
     galleryfunction();
+    owlCarousel();
   }
 }
