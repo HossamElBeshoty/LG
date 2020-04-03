@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LG-WebSite';
+
+  onActivate(event) {
+    // const scrollToTop = window.setInterval(() => {
+    //   const pos = window.pageYOffset;
+    //   if (pos > 0) {
+    //     window.scrollTo(0, pos - 20); // how far to scroll on each step
+    //   } else {
+    //     window.clearInterval(scrollToTop);
+    //   }
+    // }, 0);
+    window.scroll(0, 0);
+  }
 }
