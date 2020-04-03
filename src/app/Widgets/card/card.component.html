@@ -1,17 +1,27 @@
 <div class="product-box">
   <div class="product-image">
-    <a href="#"><img src="assets/images/shop/product-9.png" alt="product-images" class="img-fluid"></a>
-    <div class="sale-flash offer">50% Off*</div>
+    <a href="#">
+      <img [src]="[image]" style="max-height: 500px" alt="product-images" class="{{name}}">
+    </a>
+    <!--    <div class="sale-flash offer">50% Off*</div>-->
   </div>
   <div class="product-descb">
     <div class="product-title">
-      <h4><a href="#">Product name</a></h4>
-      <p>Collection 2020</p>
+      <h4>
+        {{name}}
+      </h4>
+      <p>
+        {{collectionName}}
+      </p>
     </div>
-
-    <div class="product-price">$24.99</div>
+    <!--    <div class="product-price">-->
+    <!--      $24.99-->
+    <!--    </div>-->
   </div>
-  <div class="product-overlay">
-    <a href="#" class="add-to-cart"><span> Add to Bag</span> <i class="fa fa-shopping-bag"></i></a>
-  </div>
+  <!--  <div class="product-overlay">-->
+  <!--    <a href="#" class="add-to-cart">-->
+  <!--      <span> Add to Bag</span>-->
+  <!--      <i class="fa fa-shopping-bag"></i>-->
+  <!--    </a>-->
+  <!--  </div>-->
 </div>
