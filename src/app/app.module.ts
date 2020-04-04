@@ -17,7 +17,7 @@ import {MoneyCountingComponent} from './Pages/products-page/money-counting/money
 import {SafesComponent} from './Pages/products-page/safes/safes.component';
 import { CardComponent } from './Widgets/card/card.component';
 import { CardTwoComponent } from './Widgets/card-two/card-two.component';
-
+import { NgxProgressiveImageLoaderModule, IImageLoaderOptions } from 'ngx-progressive-image-loader';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +38,20 @@ import { CardTwoComponent } from './Widgets/card-two/card-two.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxProgressiveImageLoaderModule.forRoot({
+      // rootMargin must be specified in pixels or percent
+      rootMargin: '30px',
+      threshold: 0.1,
+      // css filter
+      filter: 'blur(3px) drop-shadow(0 0 0.75rem crimson)',
+      // image width / height ratio for image holder
+      imageRatio: 4 / 3,
+      // loading image in placeholder. Can be URL or base64
+      placeholderImageSrc:
+      // tslint:disable-next-line:max-line-length
+        ''
+    } as IImageLoaderOptions)
   ],
   providers: [],
   bootstrap: [AppComponent]

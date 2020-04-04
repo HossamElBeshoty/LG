@@ -1,7 +1,11 @@
 <div class="product-box">
   <div class="product-image">
     <a href="#">
-      <img [src]="[image]" style="max-height: 500px" alt="product-images" class="{{name}}">
+<!--      <ngx-progressive-image-loader-->
+<!--        filter="blur(3px) drop-shadow(0 0 0.75rem crimson)" [imageRatio]="3/2">-->
+<!--        <img [src]="image" style="max-height: 500px" alt="{{name}}" ngxProgressiveImage class="img-fluid">-->
+<!--      </ngx-progressive-image-loader>-->
+      <img [src]="[image]" style="max-height: 500px" alt="{{name}}" class="img-fluid">
     </a>
     <!--    <div class="sale-flash offer">50% Off*</div>-->
   </div>

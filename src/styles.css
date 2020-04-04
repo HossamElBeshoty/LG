@@ -8,6 +8,6 @@
 @import "./assets/css/style.css";
 @import "./assets/css/responsive.css";
 /*@import "./assets/css/custom.css";*/
-
+@import '~ngx-progressive-image-loader/ngx-progressive-image-loader.scss';
 
 
