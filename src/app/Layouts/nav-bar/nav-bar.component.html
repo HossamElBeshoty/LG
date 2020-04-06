@@ -10,11 +10,11 @@
       </button>
     </div>
     <ul class="menu">
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="/aboutUs">About Us</a></li>
-      <li><a routerLink="/certificate">Certificate</a></li>
+      <li><a routerLink="">{{'Home' | translate}}</a></li>
+      <li><a routerLink="/aboutUs">{{'About Us' | translate}}</a></li>
+      <li><a routerLink="/certificate">{{'Certificate' | translate}}</a></li>
       <li class="dropdown">
-        <a href="#">Products</a>
+        <a href="#">{{'Products' | translate}}</a>
         <ul class="dropdown-menu">
           <li><a routerLink="/products/safes">Safes</a></li>
           <li><a routerLink="/products/cabinets">Cabinets</a></li>
@@ -22,8 +22,15 @@
           <li><a routerLink="/products/moneyCounting">Money Counting Machine</a></li>
         </ul>
       </li>
-      <li><a routerLink="/faq">FAQs</a></li>
-      <li><a routerLink="/contactUs">Contact Us</a></li>
+      <li><a routerLink="/faq">{{'FAQs' |translate}}</a></li>
+      <li><a routerLink="/contactUs">{{'Contact Us' | translate}}</a></li>
+      <li class="dropdown">
+        <a href="#"> <i class="fa fa-language" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a (click)="changeLanguage('ar')" style="cursor: pointer; text-align: center;">العربيه</a></li>
+          <li><a (click)="changeLanguage()" style="cursor: pointer; text-align: center;">English</a></li>
+        </ul>
+      </li>
     </ul>
     <ul class="attributes">
       <li><a href="tel:01099049044" class="d-block d-sm-none"><i class="fa fa-phone" aria-hidden="true"></i></a></li>

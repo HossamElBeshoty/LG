@@ -3,11 +3,11 @@ import { DOCUMENT } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 declare function navfunction(): any;
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.css']
+  selector: 'app-nav-bar-rtl',
+  templateUrl: './nav-bar-rtl.component.html',
+  styleUrls: ['./nav-bar-rtl.component.css']
 })
-export class NavBarComponent implements OnInit, AfterViewInit {
+export class NavBarRtlComponent implements OnInit, AfterViewInit {
   language: string;
 
   constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) { }
@@ -32,4 +32,3 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     }
   }
 }
-
