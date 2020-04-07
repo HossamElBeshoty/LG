@@ -4,12 +4,12 @@
 
 .product-menu-tabs ul li {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: bolder;
   display: inline-block;
   margin: 5px;
   list-style: none;
   padding: 10px 15px;
-  border: 1px solid #ed1b24;
+  border: 1px solid #17469e;
   border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all .5s ease;
@@ -20,11 +20,11 @@
 }
 
 .product-menu-tabs ul li:hover {
-  background: #ed1b24;
-  color: #ffffff;
+  background:  #17469e;
+  color:  #f4f4f4;
 }
 
 li.active {
-  background: #ed1b24;
-  color: #ffffff;
+  background:  #17469e;
+  color:  #f4f4f4;
 }
