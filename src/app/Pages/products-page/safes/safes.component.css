@@ -1,0 +1,27 @@
+.product-menu-tabs {
+  text-align: center;
+}
+
+.product-menu-tabs ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  border: 1px solid #ed1b24;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.product-menu-tabs ul li:hover {
+  background: #ed1b24;
+  color: #ffffff;
+}
+
+li.active {
+  background: #ed1b24;
+  color: #ffffff;
+}
