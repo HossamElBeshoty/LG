@@ -3,11 +3,14 @@
 }
 
 .product-menu-tabs ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   display: inline-block;
-  margin: 0;
+  margin: 5px;
   list-style: none;
   padding: 10px 15px;
   border: 1px solid #ed1b24;
+  border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
