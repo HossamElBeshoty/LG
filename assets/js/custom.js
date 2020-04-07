@@ -88,7 +88,6 @@ function isotopeProduct() {
     $('.product-menu-tabs ul li').removeClass('active');
     $(this).addClass('active');
     var selector = $(this).attr('data-filter');
-    console.log(selector);
     $('.product-item').isotope({
       filter: selector
     });
