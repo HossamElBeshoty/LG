@@ -321,7 +321,7 @@ $(document).ready(function () {
       }, delay);
     });
   });
-})(jQuery);// End of use strict
+})(jQuery); // End of use strict
 
 // Counter
 (function ($) {
@@ -337,7 +337,7 @@ $(document).ready(function () {
       }
     });
   });
-})(jQuery);// End of use strict
+})(jQuery); // End of use strict
 
 
 //audio and video
@@ -346,4 +346,4 @@ $(document).ready(function () {
   $(function () {
     $('audio,video').mediaelementplayer();
   });
-})(jQuery);// End of use strict
+})(jQuery); // End of use strict

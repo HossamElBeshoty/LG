@@ -50,11 +50,21 @@ function owlCarousel() {
       loop: $loop,
       items: $items,
       responsive: {
-        0: {items: $this.data('xx-items') ? $this.data('xx-items') : 1},
-        480: {items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-        768: {items: $this.data('sm-items') ? $this.data('sm-items') : 2},
-        980: {items: $this.data('md-items') ? $this.data('md-items') : 3},
-        1200: {items: $items}
+        0: {
+          items: $this.data('xx-items') ? $this.data('xx-items') : 1
+        },
+        480: {
+          items: $this.data('xs-items') ? $this.data('xs-items') : 1
+        },
+        768: {
+          items: $this.data('sm-items') ? $this.data('sm-items') : 2
+        },
+        980: {
+          items: $this.data('md-items') ? $this.data('md-items') : 3
+        },
+        1200: {
+          items: $items
+        }
       },
       dots: $navdots,
       autoHeight: $autohgt,
@@ -65,5 +75,23 @@ function owlCarousel() {
       autoplayHoverPause: true,
     });
 
+  });
+}
+
+
+function isotopeProduct() {
+  $('.product-item').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
+  $('.product-menu-tabs ul li').click(function () {
+    $('.product-menu-tabs ul li').removeClass('active');
+    $(this).addClass('active');
+    var selector = $(this).attr('data-filter');
+    console.log(selector);
+    $('.product-item').isotope({
+      filter: selector
+    });
+    return false
   });
 }
