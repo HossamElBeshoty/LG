@@ -8,24 +8,24 @@ declare function navfunction(): any;
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit, AfterViewInit {
-  language: string;
+  language: string = localStorage.getItem('language');
 
   constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) { }
 
   ngOnInit(): void {
-    // localStorage.setItem('language', 'en');
+    localStorage.setItem('language', 'en');
   }
   ngAfterViewInit(): void {
     navfunction();
   }
   changeLanguage(lang?: string) {
     if (lang === 'ar') {
-      this.document.getElementById('direction').setAttribute('dir', 'rtl');
+      this.document.body.setAttribute('dir', 'rtl');
       this.translateService.use('ar');
       localStorage.setItem('language', 'ar');
       this.language = 'ar';
     } else {
-      this.document.getElementById('direction').setAttribute('dir', 'ltr');
+      this.document.body.setAttribute('dir', 'ltr');
       this.translateService.use('en');
       localStorage.setItem('language', 'en');
       this.language = 'en';

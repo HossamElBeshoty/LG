@@ -1,0 +1,8 @@
+.nav-left {
+  display: block;
+  float: left;
+}
+.nav-right {
+  display: block;
+  float: right;
+}
