@@ -3,7 +3,7 @@ nav {
   min-height: 60px;
   background: #fff;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans','Almarai', sans-serif;
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ nav button {
 nav .menu .megamenu-content li a {
   font-weight: 400;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   text-transform: capitalize;
 }
 

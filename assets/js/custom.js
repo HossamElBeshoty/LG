@@ -45,36 +45,67 @@ function owlCarousel() {
       $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
       $autowdt = ($this.data('autoWidth')) ? $this.data('autoWidth') : true,
       $space = ($this.attr('data-space')) ? $this.data('space') : 20;
-
-    $(this).owlCarousel({
-      loop: $loop,
-      items: $items,
-      responsive: {
-        0: {
-          items: $this.data('xx-items') ? $this.data('xx-items') : 1
+    if (localStorage.getItem('language') === 'ar'){
+      $(this).owlCarousel({
+        loop: $loop,
+        items: $items,
+        rtl: false,
+        responsive: {
+          0: {
+            items: $this.data('xx-items') ? $this.data('xx-items') : 1
+          },
+          480: {
+            items: $this.data('xs-items') ? $this.data('xs-items') : 1
+          },
+          768: {
+            items: $this.data('sm-items') ? $this.data('sm-items') : 2
+          },
+          980: {
+            items: $this.data('md-items') ? $this.data('md-items') : 3
+          },
+          1200: {
+            items: $items
+          }
         },
-        480: {
-          items: $this.data('xs-items') ? $this.data('xs-items') : 1
+        dots: $navdots,
+        autoHeight: $autohgt,
+        margin: $space,
+        nav: $navarrow,
+        navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+        autoplay: $autoplay,
+        autoplayHoverPause: true,
+      });
+    } else {
+      $(this).owlCarousel({
+        loop: $loop,
+        items: $items,
+        rtl: true,
+        responsive: {
+          0: {
+            items: $this.data('xx-items') ? $this.data('xx-items') : 1
+          },
+          480: {
+            items: $this.data('xs-items') ? $this.data('xs-items') : 1
+          },
+          768: {
+            items: $this.data('sm-items') ? $this.data('sm-items') : 2
+          },
+          980: {
+            items: $this.data('md-items') ? $this.data('md-items') : 3
+          },
+          1200: {
+            items: $items
+          }
         },
-        768: {
-          items: $this.data('sm-items') ? $this.data('sm-items') : 2
-        },
-        980: {
-          items: $this.data('md-items') ? $this.data('md-items') : 3
-        },
-        1200: {
-          items: $items
-        }
-      },
-      dots: $navdots,
-      autoHeight: $autohgt,
-      margin: $space,
-      nav: $navarrow,
-      navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
-      autoplay: $autoplay,
-      autoplayHoverPause: true,
-    });
-
+        dots: $navdots,
+        autoHeight: $autohgt,
+        margin: $space,
+        nav: $navarrow,
+        navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+        autoplay: $autoplay,
+        autoplayHoverPause: true,
+      });
+    }
   });
 }
 

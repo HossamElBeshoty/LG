@@ -139,7 +139,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-1 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -235,7 +235,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .tab-wrapper.v2 .tab-content .item p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -299,7 +299,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-3 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -358,7 +358,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-4 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -433,7 +433,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-5 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -509,7 +509,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-6 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -569,7 +569,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 }
 
 .accordion-7 .tab-wrapper.v1 .item .tab-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Almarai', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   word-spacing: 1px;
@@ -595,7 +595,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 
 .plugins a {
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Almarai', Serif;
   color: #7b7b7b;
   font-size: 1rem;
   margin: 10px;
@@ -1108,7 +1108,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 .quote:before {
   content: "\201C";
   font-size: 7.142rem;
-  font-family: Georgia, serif;
+  font-family: Georgia, 'Almarai', serif;
   font-weight: bold;
   color: #ed1b24;
   position: absolute;
@@ -1260,7 +1260,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 
 .blog-post.blockquote blockquote:before {
   content: "\201C";
-  font-family: Georgia, serif;
+  font-family: Georgia, 'Almarai', serif;
   font-size: 7.142rem;
   font-weight: bold;
   color: #ffffff;
@@ -4110,7 +4110,7 @@ footer.footer-3 .address li:hover a {
 }
 
 html, button, input, select, textarea {
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Almarai', Helvetica, sans-serif;
   color: #bbb;
 }
 
@@ -6194,7 +6194,7 @@ section:focus .heading-effect:nth-child(even) {
 .title-box-1 {
   background-color: #ed1b24;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", 'Almarai', sans-serif;
   font-size: 3.428px;
   letter-spacing: 4px;
   line-height: 68px;
@@ -8241,7 +8241,7 @@ ul.list-edit li:after {
   left: -35px;
   color: #ed1b24;
   content: "\201C";
-  font-family: Georgia, serif;
+  font-family: Georgia, 'Almarai', serif;
   font-size: 7.142rem;
 }
 
