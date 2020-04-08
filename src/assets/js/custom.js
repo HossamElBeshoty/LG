@@ -101,7 +101,7 @@ function owlCarousel() {
         autoHeight: $autohgt,
         margin: $space,
         nav: $navarrow,
-        navText: ["<i class='ti-arrow-left'></i>", "<i class='ti-arrow-right'></i>"],
+        navText: ["<i class='ti-arrow-right'></i>", "<i class='ti-arrow-left'></i>"],
         autoplay: $autoplay,
         autoplayHoverPause: true,
       });
