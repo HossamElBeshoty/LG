@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us-page.component.css']
 })
 export class AboutUsPageComponent implements OnInit {
-
+  language: string = localStorage.getItem('language');
   constructor() { }
 
   ngOnInit(): void {

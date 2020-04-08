@@ -19,10 +19,11 @@
       <li [ngStyle]="language === 'ar'? {'float': 'right'}: {'float': 'left'}" class="dropdown">
         <a href="#">{{'Products' | translate}}</a>
         <ul class="dropdown-menu">
-          <li><a routerLink="/products/safes">Safes</a></li>
-          <li><a routerLink="/products/cabinets">Cabinets</a></li>
-          <li><a routerLink="/products/vaultsDoors">Vaults Doors</a></li>
-          <li><a routerLink="/products/moneyCounting">Money Counting Machine</a></li>
+          <li><a style="text-align: center;" routerLink="/products/safes">{{'Safes' | translate}}</a></li>
+          <li><a style="text-align: center;" routerLink="/products/cabinets">{{'Cabinets' | translate}}</a></li>
+          <li><a style="text-align: center;" routerLink="/products/vaultsDoors">{{'Vaults Doors' | translate}}</a></li>
+          <li><a style="text-align: center;"
+                 routerLink="/products/moneyCounting">{{'Money Counting Machine' | translate}}</a></li>
         </ul>
       </li>
       <li [ngStyle]="language === 'ar'? {'float': 'right'}: {'float': 'left'}"><a
