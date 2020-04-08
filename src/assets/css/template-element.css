@@ -571,7 +571,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
   padding: 10px 20px;
   font-size: 0.928rem;
   letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Almarai', sans-serif;
   border: 0;
   color: #ffffff;
   text-transform: uppercase;
