@@ -21,6 +21,13 @@ export class NavBarComponent implements OnInit, AfterViewInit {
   changeLanguage(lang?: string) {
     if (lang === 'ar') {
       this.document.body.setAttribute('dir', 'rtl');
+      const list = this.document.getElementsByClassName('tp-parallax-wrap');
+      // tslint:disable-next-line: prefer-for-of
+      for (let i = 0; i < list.length; i++) {
+        const right = list[i].style.left;
+        list[i].style.right = right;
+      }
+
       this.translateService.use('ar');
       localStorage.setItem('language', 'ar');
       this.language = 'ar';
