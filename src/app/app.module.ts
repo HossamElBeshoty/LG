@@ -21,7 +21,6 @@ import {NgxProgressiveImageLoaderModule, IImageLoaderOptions} from 'ngx-progress
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {NavBarRtlComponent} from './Layouts/nav-bar-rtl/nav-bar-rtl.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,8 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
     MoneyCountingComponent,
     SafesComponent,
     CardComponent,
-    CardTwoComponent,
-    NavBarRtlComponent
+    CardTwoComponent
   ],
   imports: [
     BrowserModule,
