@@ -1,9 +1,7 @@
-import {Component, OnInit, AfterViewInit} from '@angular/core';
-
+import { Component, OnInit, AfterViewInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 declare function galleryfunction(): any;
-
 declare function owlCarousel(): any;
-
 
 @Component({
   selector: 'app-home-page',
@@ -12,16 +10,24 @@ declare function owlCarousel(): any;
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
 
-
-  constructor() {
+  constructor(@Inject(DOCUMENT) private document) {
   }
-
   ngOnInit(): void {
-
   }
-
   ngAfterViewInit(): void {
     galleryfunction();
     owlCarousel();
+
+    if (localStorage.getItem('language') === 'ar') {
+      setTimeout(() => {
+        const list = this.document.getElementsByClassName('tp-parallax-wrap');
+        for (const item of list) {
+          const right = item.style.left;
+          console.log(right);
+          item.style.right = right;
+        }
+      }, 500);
+
+    }
   }
 }

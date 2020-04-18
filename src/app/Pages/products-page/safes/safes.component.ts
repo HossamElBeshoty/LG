@@ -6,9 +6,7 @@ declare function isotopeProduct(): any;
   styleUrls: ['./safes.component.css']
 })
 export class SafesComponent implements OnInit, AfterViewInit {
-
   constructor() { }
-
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {

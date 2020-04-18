@@ -9,9 +9,7 @@ declare function navfunction(): any;
 })
 export class NavBarComponent implements OnInit, AfterViewInit {
   language: string = localStorage.getItem('language');
-
   constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) { }
-
   ngOnInit(): void {
     localStorage.setItem('language', 'en');
   }
@@ -22,12 +20,10 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     if (lang === 'ar') {
       this.document.body.setAttribute('dir', 'rtl');
       const list = this.document.getElementsByClassName('tp-parallax-wrap');
-      // tslint:disable-next-line: prefer-for-of
-      for (let i = 0; i < list.length; i++) {
-        const right = list[i].style.left;
-        list[i].style.right = right;
+      for (const item of list) {
+        const right = item.style.left;
+        item.style.right = right;
       }
-
       this.translateService.use('ar');
       localStorage.setItem('language', 'ar');
       this.language = 'ar';
@@ -39,4 +35,3 @@ export class NavBarComponent implements OnInit, AfterViewInit {
     }
   }
 }
-

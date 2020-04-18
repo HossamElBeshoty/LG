@@ -11,7 +11,6 @@ import {MoneyCountingComponent} from './Pages/products-page/money-counting/money
 import {FaqsPageComponent} from './Pages/faqs-page/faqs-page.component';
 import {ContactUsPageComponent} from './Pages/contact-us-page/contact-us-page.component';
 
-
 const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'aboutUs', component: AboutUsPageComponent},
@@ -24,7 +23,6 @@ const routes: Routes = [
   {path: 'faq', component: FaqsPageComponent},
   {path: 'contactUs', component: ContactUsPageComponent},
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

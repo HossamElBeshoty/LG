@@ -6,13 +6,10 @@ declare function owlCarousel(): any;
   styleUrls: ['./products-page.component.css']
 })
 export class ProductsPageComponent implements OnInit, AfterViewInit {
-
   constructor() { }
-
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {
     owlCarousel();
   }
-
 }

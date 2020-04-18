@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-about-us-page',
   templateUrl: './about-us-page.component.html',
@@ -8,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 export class AboutUsPageComponent implements OnInit {
   language: string = localStorage.getItem('language');
   constructor() { }
-
   ngOnInit(): void {
   }
-
 }
