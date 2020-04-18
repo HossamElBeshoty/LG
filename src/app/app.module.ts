@@ -21,7 +21,8 @@ import {NgxProgressiveImageLoaderModule, IImageLoaderOptions} from 'ngx-progress
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import { CardImageCarouselComponent } from './Widgets/card-image-carousel/card-image-carousel.component';
+import {CardImageCarouselComponent} from './Widgets/card-image-carousel/card-image-carousel.component';
+import {MoneyCountComponent} from './Components/money-count/money-count.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -44,7 +45,8 @@ export function createTranslateLoader(http: HttpClient) {
     SafesComponent,
     CardComponent,
     CardTwoComponent,
-    CardImageCarouselComponent
+    CardImageCarouselComponent,
+    MoneyCountComponent
   ],
   imports: [
     BrowserModule,
