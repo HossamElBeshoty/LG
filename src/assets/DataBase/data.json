@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Asd 1",
+    "imagePath": "assets/images/Products/300.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Asd 2",
+    "imagePath": "assets/images/Products/300.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Asd 3",
+    "imagePath": "assets/images/Products/300.jpg"
+  }
+]
