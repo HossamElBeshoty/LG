@@ -2,7 +2,7 @@
   <div id="{{cardImageCarouselData.name}}" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div *ngFor="let Data of cardImageCarouselData.images ,let i=index" [ngClass]="i==0 ?'active':'inactive' " class="carousel-item">
-        <img [src]="Data" class="d-block w-100" alt="...">
+        <img style="height: 300px" [src]="Data" class="d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#{{cardImageCarouselData.name}}" role="button" data-slide="prev">

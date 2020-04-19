@@ -10,11 +10,18 @@ declare function isotopeProduct(): any;
 })
 export class SafesComponent implements OnInit, AfterViewInit {
   homeData: ICardImageCarouselData;
+  officeData: ICardImageCarouselData;
+  fireproofData: ICardImageCarouselData;
 
   constructor() {
     this.homeData = {
       id: 1,
-      images: ['assets/images/Products/Safes3/safes/safes', 'assets/images/Products/300.jpg', 'assets/images/Products/300.jpg'],
+      images: [
+        'assets/images/Products/Safes3/safes/safes/Home%20safe/Book%20Safe/img%20(33).jpeg',
+        'assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(31).jpeg',
+        'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
+        'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
+      ],
       name: 'Home',
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
@@ -23,6 +30,36 @@ export class SafesComponent implements OnInit, AfterViewInit {
         {routerName: 'Motorized', routerPath: 'asd'},
         {routerName: 'Cash Box', routerPath: 'asd'},
         {routerName: 'Book Safe', routerPath: 'asd'},
+      ]
+    };
+    this.officeData = {
+      id: 1,
+      images: [
+        'assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(40).jpeg',
+        'assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(37).jpeg',
+        'assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(27).jpeg',
+      ],
+      name: 'Office',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
+      route: [
+        {routerName: 'BN Series', routerPath: 'asd'},
+        {routerName: 'Fingerprint', routerPath: 'asd'},
+        {routerName: 'key', routerPath: 'asd'},
+      ]
+    };
+    this.fireproofData = {
+      id: 1,
+      images: [
+        'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(22).jpeg',
+        'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4066.PNG',
+        'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/2.jpg',
+      ],
+      name: 'Fireproof',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
+      route: [
+        {routerName: 'Chinese', routerPath: 'asd'},
+        {routerName: 'Korean', routerPath: 'asd'},
+        {routerName: 'Vietnam', routerPath: 'asd'},
       ]
     };
   }

@@ -11,16 +11,24 @@
     </div>
   </div>
 </section>
-
 <section class="section-ptb-30 shop-grid">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" *ngIf="homeData">
         <app-card-image-carousel
         [cardImageCarouselData]="homeData">
         </app-card-image-carousel>
       </div>
-
+      <div class="col-md-4" *ngIf="officeData">
+        <app-card-image-carousel
+          [cardImageCarouselData]="officeData">
+        </app-card-image-carousel>
+      </div>
+      <div class="col-md-4" *ngIf="fireproofData">
+        <app-card-image-carousel
+          [cardImageCarouselData]="fireproofData">
+        </app-card-image-carousel>
+      </div>
     </div>
   </div>
 </section>
