@@ -1,7 +1,8 @@
 <div class="card">
   <div id="{{cardImageCarouselData.name}}" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div *ngFor="let Data of cardImageCarouselData.images ,let i=index" [ngClass]="i==0 ?'active':'inactive' " class="carousel-item">
+      <div *ngFor="let Data of cardImageCarouselData.images ,let i=index" [ngClass]="i==0 ?'active':'inactive' "
+           class="carousel-item">
         <img style="height: 300px" [src]="Data" class="d-block w-100" alt="...">
       </div>
     </div>
@@ -17,6 +18,7 @@
   <div class="card-body text-center">
     <h3 class="theme-color">{{cardImageCarouselData.name}}</h3>
     <p class="card-text">{{cardImageCarouselData.paragraph}}</p>
-    <a *ngFor="let x of cardImageCarouselData.route" routerLink="./{{x.routerPath}}" class="btn m-2 btn-outline-primary">{{x.routerName}}</a>
+    <a *ngFor="let x of cardImageCarouselData.route" routerLink="./{{x.routerPath}}"
+       class="btn m-2 btn-outline-primary">{{x.routerName}}</a>
   </div>
 </div>

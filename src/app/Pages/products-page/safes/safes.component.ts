@@ -23,13 +23,14 @@ export class SafesComponent implements OnInit, AfterViewInit {
         'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
       ],
       name: 'Home',
+      // tslint:disable-next-line:max-line-length
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
-        {routerName: 'Digital', routerPath: 'asd'},
-        {routerName: 'Colored', routerPath: 'asd'},
-        {routerName: 'Motorized', routerPath: 'asd'},
-        {routerName: 'Cash Box', routerPath: 'asd'},
-        {routerName: 'Book Safe', routerPath: 'asd'},
+        {routerName: 'Digital', routerPath: 'digital'},
+        {routerName: 'Colored', routerPath: 'colored'},
+        {routerName: 'Motorized', routerPath: 'motorized'},
+        {routerName: 'Cash Box', routerPath: 'cashBox'},
+        {routerName: 'Book Safe', routerPath: 'bookSafe'},
       ]
     };
     this.officeData = {
@@ -40,11 +41,12 @@ export class SafesComponent implements OnInit, AfterViewInit {
         'assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(27).jpeg',
       ],
       name: 'Office',
+      // tslint:disable-next-line:max-line-length
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
-        {routerName: 'BN Series', routerPath: 'asd'},
-        {routerName: 'Fingerprint', routerPath: 'asd'},
-        {routerName: 'key', routerPath: 'asd'},
+        {routerName: 'BN Series', routerPath: 'bN-Series'},
+        {routerName: 'Fingerprint', routerPath: 'fingerprint'},
+        {routerName: 'Key', routerPath: 'key'},
       ]
     };
     this.fireproofData = {
@@ -55,11 +57,12 @@ export class SafesComponent implements OnInit, AfterViewInit {
         'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/2.jpg',
       ],
       name: 'Fireproof',
+      // tslint:disable-next-line:max-line-length
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
-        {routerName: 'Chinese', routerPath: 'asd'},
-        {routerName: 'Korean', routerPath: 'asd'},
-        {routerName: 'Vietnam', routerPath: 'asd'},
+        {routerName: 'Chinese', routerPath: 'chinese'},
+        {routerName: 'Korean', routerPath: 'korean'},
+        {routerName: 'Vietnam', routerPath: 'vietnam'},
       ]
     };
   }
