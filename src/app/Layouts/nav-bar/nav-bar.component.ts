@@ -1,7 +1,11 @@
-import { Component, OnInit, AfterViewInit, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
+import {Component, OnInit, AfterViewInit, Inject} from '@angular/core';
+import {DOCUMENT} from '@angular/common';
+import {TranslateService} from '@ngx-translate/core';
+
 declare function navfunction(): any;
+
+declare var $: any;
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -9,13 +13,18 @@ declare function navfunction(): any;
 })
 export class NavBarComponent implements OnInit, AfterViewInit {
   language: string = localStorage.getItem('language');
-  constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) { }
+
+  constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) {
+  }
+
   ngOnInit(): void {
     localStorage.setItem('language', 'en');
   }
+
   ngAfterViewInit(): void {
     navfunction();
   }
+
   changeLanguage(lang?: string) {
     if (lang === 'ar') {
       this.document.body.setAttribute('dir', 'rtl');
