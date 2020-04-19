@@ -20,10 +20,11 @@
         <a href="#">{{'Products' | translate}}</a>
         <ul class="dropdown-menu">
           <li><a style="text-align: center;" routerLink="/products/safes">{{'Safes' | translate}}</a></li>
-          <li><a style="text-align: center;" routerLink="/products/cabinets">{{'Cabinets' | translate}}</a></li>
-          <li><a style="text-align: center;" routerLink="/products/vaultsDoors">{{'Vaults Doors' | translate}}</a></li>
+<!--          <li><a style="text-align: center;" routerLink="/products/cabinets">{{'Cabinets' | translate}}</a></li>-->
+<!--          <li><a style="text-align: center;" routerLink="/products/vaultsDoors">{{'Vaults Doors' | translate}}</a></li>-->
           <li><a style="text-align: center;"
                  routerLink="/products/moneyCounting">{{'Money Counting Machine' | translate}}</a></li>
+                    <li><a style="text-align: center;" routerLink="/products/vaultsDoors">Others</a></li>
         </ul>
       </li>
       <li [ngStyle]="language === 'ar'? {'float': 'right'}: {'float': 'left'}"><a
