@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-// @ts-ignore
 // tslint:disable-next-line:import-spacing
 import *  as  data from '../../../../assets/DataBase/data.json';
 

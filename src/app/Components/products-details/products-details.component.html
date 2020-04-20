@@ -10,4 +10,21 @@
     </div>
   </div>
 </section>
-<p>products-details works!</p>
+<section class="section-ptb-30 shop-grid">
+  <div class="container">
+    <div class="shorter">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="row">
+            <div *ngFor="let digital of digitalData" class="col-md-4 col-12 mb-30">
+              <app-card [name]="digital.name" [image]="digital.imgPath"
+                        [collectionName]="digital.category.name"></app-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--<img src="../../../assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(31).jpeg" alt="">-->
