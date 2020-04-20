@@ -11,6 +11,7 @@ export class CardImageCarouselComponent implements OnInit {
   // @Input() name: string;
   // @Input() paragraph: string;
   @Input() cardImageCarouselData: ICardImageCarouselData;
+
   constructor() {
   }
 

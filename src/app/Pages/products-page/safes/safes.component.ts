@@ -61,8 +61,8 @@ export class SafesComponent implements OnInit, AfterViewInit {
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
         {routerName: 'Chinese', routerPath: 'chinese'},
-        {routerName: 'Korean', routerPath: 'korean'},
-        {routerName: 'Vietnam', routerPath: 'vietnam'},
+        {routerName: 'Korean', routerPath: 'korean/filter'},
+        {routerName: 'Vietnam', routerPath: 'vietnam/filter'},
       ]
     };
   }

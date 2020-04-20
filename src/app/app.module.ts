@@ -22,6 +22,8 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {CardImageCarouselComponent} from './Widgets/card-image-carousel/card-image-carousel.component';
 import {MoneyCountComponent} from './Components/money-count/money-count.component';
+import { ProductsDetailsComponent } from './Components/products-details/products-details.component';
+import { ProductsFilterDetailsComponent } from './Components/products-filter-details/products-filter-details.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -43,7 +45,9 @@ export function createTranslateLoader(http: HttpClient) {
     CardComponent,
     CardTwoComponent,
     CardImageCarouselComponent,
-    MoneyCountComponent
+    MoneyCountComponent,
+    ProductsDetailsComponent,
+    ProductsFilterDetailsComponent
   ],
   imports: [
     BrowserModule,

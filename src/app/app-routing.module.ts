@@ -10,6 +10,8 @@ import {VaultsDoorsComponent} from './Pages/products-page/vaults-doors/vaults-do
 import {MoneyCountingComponent} from './Pages/products-page/money-counting/money-counting.component';
 import {FaqsPageComponent} from './Pages/faqs-page/faqs-page.component';
 import {ContactUsPageComponent} from './Pages/contact-us-page/contact-us-page.component';
+import {ProductsDetailsComponent} from './Components/products-details/products-details.component';
+import {ProductsFilterDetailsComponent} from './Components/products-filter-details/products-filter-details.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -17,12 +19,15 @@ const routes: Routes = [
   {path: 'certificate', component: CertificatePageComponent},
   {path: 'products', component: ProductsPageComponent},
   {path: 'products/safes', component: SafesComponent},
+  {path: 'products/safes/:name', component: ProductsDetailsComponent},
+  {path: 'products/safes/:name/filter', component: ProductsFilterDetailsComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},
   {path: 'products/moneyCounting', component: MoneyCountingComponent},
   {path: 'faq', component: FaqsPageComponent},
   {path: 'contactUs', component: ContactUsPageComponent},
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
