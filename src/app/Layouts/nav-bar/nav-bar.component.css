@@ -2,7 +2,12 @@
   display: block;
   float: left;
 }
+
 .nav-right {
   display: block;
   float: right;
+}
+
+nav .menu li.active > a {
+  color: #ed1b24;
 }
