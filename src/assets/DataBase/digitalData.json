@@ -438,5 +438,60 @@
     "pageName": "key",
     "type": "Key Safes",
     "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(30).jpeg"
+  },
+  {
+    "id": 38,
+    "category": {
+      "id": 12,
+      "name": "Electronic Safes"
+    },
+    "name": "350ALG",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(22).jpeg"
+  },
+  {
+    "id": 39,
+    "category": {
+      "id": 12,
+      "name": "Electronic Safes"
+    },
+    "name": "500ALG",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(23).jpeg"
+  },
+  {
+    "id": 39,
+    "category": {
+      "id": 12,
+      "name": "Electronic Safes"
+    },
+    "name": "900ALD",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg"
+  },
+  {
+    "id": 40,
+    "category": {
+      "id": 12,
+      "name": ""
+    },
+    "name": "",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+  },
+  {
+    "id": 40,
+    "category": {
+      "id": 12,
+      "name": ""
+    },
+    "name": "418ALD",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20Trending.jpeg"
   }
 ]
