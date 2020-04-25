@@ -24,6 +24,8 @@ import {CardImageCarouselComponent} from './Widgets/card-image-carousel/card-ima
 import {MoneyCountComponent} from './Components/money-count/money-count.component';
 import { ProductsDetailsComponent } from './Components/products-details/products-details.component';
 import { ProductsFilterDetailsComponent } from './Components/products-filter-details/products-filter-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AngularMaterialModule} from './Modules/angular-material.module';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -53,6 +55,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AngularMaterialModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -72,7 +75,8 @@ export function createTranslateLoader(http: HttpClient) {
       placeholderImageSrc:
       // tslint:disable-next-line:max-line-length
         ''
-    } as IImageLoaderOptions)
+    } as IImageLoaderOptions),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
