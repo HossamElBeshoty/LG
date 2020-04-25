@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "pageName": "colored",
+    "category": "23CLR",
+    "details": [
+      {
+        "id": 1,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "pageName": "colored",
+    "category": "25CLR",
+    "details": [
+      {
+        "id": 1,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/7.jpg"
+      }
+    ]
+  }
+]

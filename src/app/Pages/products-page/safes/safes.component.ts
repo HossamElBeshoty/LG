@@ -27,7 +27,7 @@ export class SafesComponent implements OnInit, AfterViewInit {
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo quas rem velit veritatis. Accusamus amet, animi eligendi est facere iure nemo officia pariatur quibusdam recusandae reiciendis suscipit totam, voluptatem?',
       route: [
         {routerName: 'Digital', routerPath: 'digital'},
-        {routerName: 'Colored', routerPath: 'colored'},
+        {routerName: 'Colored', routerPath: 'colored/filter'},
         {routerName: 'Motorized', routerPath: 'motorized'},
         {routerName: 'Cash Box', routerPath: 'cashBox'},
         {routerName: 'Book Safe', routerPath: 'bookSafe'},

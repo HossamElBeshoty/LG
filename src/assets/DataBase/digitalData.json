@@ -295,5 +295,148 @@
     "pageName": "cashBox",
     "type": "",
     "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(34).jpeg"
+  },
+  {
+    "id": 27,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 12 Kgs"
+    },
+    "name": "28BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(40).jpeg"
+  },
+  {
+    "id": 28,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 16.5 Kgs"
+    },
+    "name": "38BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(41).jpeg"
+  },
+  {
+    "id": 29,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 46 Kgs"
+    },
+    "name": "53BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(42).jpeg"
+  },
+  {
+    "id": 30,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 21.5 Kgs"
+    },
+    "name": "42BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(43).jpeg"
+  },
+  {
+    "id": 31,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 50 Kgs"
+    },
+    "name": "63BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(44).jpeg"
+  },
+  {
+    "id": 32,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 56 Kgs"
+    },
+    "name": "73BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(45).jpeg"
+  },
+  {
+    "id": 33,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 46 Kgs"
+    },
+    "name": "53CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(37).jpeg"
+  },
+  {
+    "id": 34,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 50 Kgs"
+    },
+    "name": "63CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(38).jpeg"
+  },
+  {
+    "id": 35,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 56 Kgs"
+    },
+    "name": "73CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(39).jpeg"
+  },
+  {
+    "id": 35,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "20K-20",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(27).jpeg"
+  },
+  {
+    "id": 36,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "25K-48",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(28).jpeg"
+  },
+  {
+    "id": 37,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "30K-93",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(29).jpeg"
+  },
+  {
+    "id": 38,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "30K-45",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(30).jpeg"
   }
 ]

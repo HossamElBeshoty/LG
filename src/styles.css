@@ -9,9 +9,18 @@
 @import "./assets/css/responsive.css";
 /*@import "./assets/css/custom.css";*/
 @import '~ngx-progressive-image-loader/ngx-progressive-image-loader.scss';
+
 /* .tp-parallax-wrap{
   right: 50% !important;
 } */
 
 /*html, body { height: 100%; }*/
 /*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
+.mat-tab-label .mat-tab-label-content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  color: #ED1B24;
+}
+
