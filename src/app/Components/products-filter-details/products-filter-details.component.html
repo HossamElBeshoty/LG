@@ -4,7 +4,7 @@
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">Filter</span></h1>
+          <h1 class="heading theme-color"><span class="theme-color">Safes Products</span></h1>
         </div>
       </div>
     </div>
@@ -12,7 +12,7 @@
 </section>
 <mat-tab-group mat-align-tabs="center">
   <mat-tab *ngFor="let data of filterData" label="{{data.category}}">
-    <div class="container">
+    <div class="container mt-15">
       <div class="row">
         <div *ngFor="let details of data.details" class="col-md-4">
           <app-card [name]="details.name" [image]="details.imgPath"></app-card>
@@ -21,4 +21,4 @@
     </div>
   </mat-tab>
 </mat-tab-group>
-<!--<img src="../../../assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/1.jpg" alt="">-->
+<!--<img src="../../../assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/IMG_4071.PNG" alt="">-->

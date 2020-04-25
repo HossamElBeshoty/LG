@@ -77,5 +77,121 @@
         "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/7.jpg"
       }
     ]
+  },
+  {
+    "id": 3,
+    "pageName": "korean",
+    "category": "Combination",
+    "details": [
+      {
+        "id": 1,
+        "name": "SD-104",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4078.PNG"
+      },
+      {
+        "id": 2,
+        "name": "SD-105",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4080.PNG"
+      },
+      {
+        "id": 3,
+        "name": "SD-106",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4081.PNG"
+      },
+      {
+        "id": 4,
+        "name": "SD-680",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4082.PNG"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "pageName": "korean",
+    "category": "Digital",
+    "details": [
+      {
+        "id": 1,
+        "name": "ESD-101",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4066.PNG"
+      },
+      {
+        "id": 2,
+        "name": "ESD-101T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4067.PNG"
+      },
+      {
+        "id": 3,
+        "name": "ESD-103",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4068.PNG"
+      },
+      {
+        "id": 4,
+        "name": "ESD-103T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4069.PNG"
+      },
+      {
+        "id": 5,
+        "name": "ESD-104",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4070.PNG"
+      },
+      {
+        "id": 6,
+        "name": "ESD-104A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4071.PNG"
+      },
+      {
+        "id": 7,
+        "name": "ESD-105",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4072.PNG"
+      },
+      {
+        "id": 8,
+        "name": "ESD-680",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4073.PNG"
+      },
+      {
+        "id": 9,
+        "name": "ESD-106A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4086.PNG"
+      },
+      {
+        "id": 10,
+        "name": "ESD-106",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4087.PNG"
+      },
+      {
+        "id": 11,
+        "name": "ESD-108",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4088.PNG"
+      },
+      {
+        "id": 12,
+        "name": "ESD-109",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4089.PNG"
+      },
+      {
+        "id": 13,
+        "name": "ESD-102T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_8440.jpg"
+      },
+      {
+        "id": 14,
+        "name": "ESD-102",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_8441.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "pageName": "korean",
+    "category": "Dual Key",
+    "details": [
+      {
+        "id": 1,
+        "name": "ESD-104A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/IMG_4071.PNG"
+      }
+    ]
   }
 ]
