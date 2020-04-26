@@ -19,16 +19,16 @@
       </p>
     </div>
     <div *ngIf="size" class="product-price">
-      Size: {{size}}
+      <span>Size:</span> {{size}}
     </div>
     <div *ngIf="weight" class="product-price">
-      Weight: {{weight}}
+      <span>Weight:</span> {{weight}}
     </div>
     <div *ngIf="quantity" class="product-price">
-      Qty/Ctn: {{quantity}}
+      <span>Qty/Ctn:</span> {{quantity}}
     </div>
     <div *ngIf="nwGw" class="product-price">
-      NW/GW: {{nwGw}}
+      <span>NW/GW:</span> {{nwGw}}
     </div>
   </div>
   <!--  <div class="product-overlay">-->
@@ -38,3 +38,20 @@
   <!--    </a>-->
   <!--  </div>-->
 </div>
+
+
+<!--<div class="boxing">-->
+<!--  <div class="frameImg">-->
+<!--    <img class="img-responsive" [src]="image" alt="{{name}}">-->
+<!--  </div>-->
+
+<!--  <div class="box-content">-->
+<!--    <div class="content">-->
+<!--      <h3 class="title"> {{name}} {{collectionName}}</h3><br>-->
+<!--      <span *ngIf="size" class="post"><span style="color: #17469E">Size: </span>{{size}}</span><br>-->
+<!--      <span *ngIf="weight" class="post"><span style="color: #17469E">Weight:</span> {{weight}}</span><br>-->
+<!--      <span *ngIf="quantity" class="post"><span style="color: #17469E">Qty/Ctn:</span> {{quantity}}</span><br>-->
+<!--      <span *ngIf="nwGw" class="post"><span style="color: #17469E">NW/GW:</span> {{nwGw}}</span><br>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
