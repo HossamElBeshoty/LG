@@ -18,7 +18,8 @@
           <div class="row">
             <div *ngFor="let digital of digitalData" class="col-md-4 col-12 mb-30">
               <app-card [name]="digital.name" [image]="digital.imgPath"
-                        [collectionName]="digital.category.name"></app-card>
+                        [collectionName]="digital.category.name" [size]="digital.size" [weight]="digital.weight"
+                        [nwGw]="digital.nwGw" [quantity]="digital.quantity"></app-card>
             </div>
           </div>
         </div>

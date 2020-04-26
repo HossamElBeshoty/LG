@@ -8,6 +8,10 @@ export class CardComponent implements OnInit {
   @Input() image: string;
   @Input() name: string;
   @Input() collectionName: string;
+  @Input() size: string;
+  @Input() weight: string;
+  @Input() quantity: string;
+  @Input() nwGw: string;
   constructor() { }
   ngOnInit(): void {
   }

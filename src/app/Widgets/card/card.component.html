@@ -11,16 +11,25 @@
   </div>
   <div class="product-descb">
     <div class="product-title">
-      <h4>
+      <h4 *ngIf="name">
         {{name}}
       </h4>
-      <p>
+      <p *ngIf="collectionName">
         {{collectionName}}
       </p>
     </div>
-    <!--    <div class="product-price">-->
-    <!--      $24.99-->
-    <!--    </div>-->
+    <div *ngIf="size" class="product-price">
+      Size: {{size}}
+    </div>
+    <div *ngIf="weight" class="product-price">
+      Weight: {{weight}}
+    </div>
+    <div *ngIf="quantity" class="product-price">
+      Qty/Ctn: {{quantity}}
+    </div>
+    <div *ngIf="nwGw" class="product-price">
+      NW/GW: {{nwGw}}
+    </div>
   </div>
   <!--  <div class="product-overlay">-->
   <!--    <a href="#" class="add-to-cart">-->
