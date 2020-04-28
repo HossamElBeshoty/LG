@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG820",
+    "isotopeClasses": "topLanding sorting mixedValue dualPocket detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 2,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG810",
+    "isotopeClasses": "topLanding sorting mixedValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 3,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG830",
+    "isotopeClasses": "topLanding sorting mixedValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 4,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG446",
+    "isotopeClasses": "topLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 5,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG740",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 6,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG780",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 7,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG790",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 8,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG750",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 9,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG800",
+    "isotopeClasses": "topLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 10,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG770",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 11,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG760",
+    "isotopeClasses": "frontLanding manualValue detection",
+    "productCategory": "asd"
+  },
+  {
+    "id": 12,
+    "imagePath": "assets/images/Products/300.jpg",
+    "codeName": "LG306",
+    "isotopeClasses": "frontLanding",
+    "productCategory": "asd"
+  }
+]
