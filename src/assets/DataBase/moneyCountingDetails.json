@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "codeName": "Asd 1",
+    "imagePath": "assets/images/Products/300.jpg"
+  },
+  {
+    "id": 1,
+    "productId": 2,
+    "codeName": "Asd 2",
+    "imagePath": "assets/images/Products/300.jpg"
+  },
+  {
+    "id": 1,
+    "productId": 3,
+    "codeName": "Asd 3",
+    "imagePath": "assets/images/Products/300.jpg"
+  }
+]

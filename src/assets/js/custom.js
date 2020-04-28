@@ -109,6 +109,18 @@ function owlCarousel() {
   });
 }
 
+function carouselForMoneyCounting() {
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: 'slide',
+      controlNav: 'thumbnails',
+      // tslint:disable-next-line:only-arrow-functions
+      start: function(slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+}
 
 function isotopeProduct() {
   // $('.product-item').isotope({
