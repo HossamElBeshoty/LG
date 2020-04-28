@@ -25,6 +25,7 @@
     "@ngx-translate/core": "^12.1.2",
     "@ngx-translate/http-loader": "^4.0.0",
     "angular-cli-ghpages": "^0.6.2",
+    "isotope-layout": "^3.0.6",
     "ngx-progressive-image-loader": "^4.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

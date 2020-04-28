@@ -111,17 +111,39 @@ function owlCarousel() {
 
 
 function isotopeProduct() {
-  $('.product-item').isotope({
-    itemSelector: '.item',
-    layoutMode: 'fitRows'
-  });
-  $('.product-menu-tabs ul li').click(function () {
-    $('.product-menu-tabs ul li').removeClass('active');
-    $(this).addClass('active');
-    var selector = $(this).attr('data-filter');
-    $('.product-item').isotope({
-      filter: selector
+  // $('.product-item').isotope({
+  //   itemSelector: '.item',
+  //   layoutMode: 'fitRows'
+  // });
+  // $('.product-menu-tabs ul li').click(function () {
+  //   $('.product-menu-tabs ul li').removeClass('active');
+  //   $(this).addClass('active');
+  //   var selector = $(this).attr('data-filter');
+  //   $('.product-item').isotope({
+  //     filter: selector
+  //   });
+  //   return false
+  // });
+
+
+
+
+  const grid = $('.money-counting-item');
+
+    // grid.isotope({
+    //   itemSelector: '.item',
+    //   layoutMode: 'fitRows',
+    // });
+    $('.tab-content ul li').click(function() {
+      $('.tab-content ul li').removeClass('activeIsotope');
+      $(this).addClass('activeIsotope');
+      const selector = $(this).attr('data-filter');
+      grid.isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows',
+        filter: selector
+      });
+      return false;
     });
-    return false
-  });
+
 }

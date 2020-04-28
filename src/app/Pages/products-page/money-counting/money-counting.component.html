@@ -14,77 +14,87 @@
 
 <section class="section-ptb-30 shop-grid">
   <div class="container">
-    <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">
-        Currency counter 150</h1>
-    </div>
     <div class="shorter">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <img src="../../../../assets/images/Products/150.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
+      <div class="row justify-content-end">
+        <div class="col-12 text-left">
+          <span>Showing 1–12 of 30 products</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!--  <app-money-count [header]="'Currency counter 150'">-->
-<!--    <div class="row" imgCarousel>-->
-<!--      <div class="col-md-12 text-center">-->
-<!--        <img src="../../../../assets/images/Products/150.jpg" class="img-fluid" alt="">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="row" specifications>-->
-<!--      <div class="col-md-12">-->
-<!--        <p>specifications</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="row" features>-->
-<!--      <div class="col-md-12 text-center">-->
-<!--        <p>features</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </app-money-count>-->
-
-<section class="section-ptb-30 shop-grid">
-  <div class="container">
-    <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">
-        Currency counter 3000
-      </h1>
-    </div>
-    <div class="shorter">
+      <br>
       <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <img src="../../../../assets/images/Products/300.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-md-12">
-              <div class="alert alert-light" role="alert">
-                <h4 class="alert-heading theme-color">Performance & Description</h4>
-                <p>
-                  - Feed: roller friction system. <br>
-                  - Currencies available: Euro, USD and Kenyan Shillings.<br>
-                  - Counting modes: automatic or manual start mode, continuous counting mode, batch counting mode,
-                  only
-                  counting mode, value counting mode (mixed, single,face orientation), sort counting mode.<br>
-                  - Counterfeit detection: DEN (Double detection mode), DD (widht detection), 3D(Length Detection),
-                  MG,
-                  THD(Mental Thread counterfeit Detection), IR
-                </p>
+        <!-- Shop Accordion start-->
+        <div class="col-lg-3 col-md-4 accordion-3">
+          <div class="section-heading line left text-left mb-20">
+            <h4 class="heading fs-20">Categories</h4>
+          </div>
+          <div class="tab-wrapper v1">
+            <div class="list">
+              <div class="item selected">
+                <div class="tab-btn">
+                  <a href="#">Options<em class="mdi mdi-minus"></em></a>
+                </div>
+                <div class="tab-content">
+                  <ul>
+                    <li class="activeIsotope" data-filter="*">All</li>
+                    <li data-filter=".topLanding">Top Loading</li>
+                    <li data-filter=".frontLanding">Front Loading</li>
+                    <li data-filter=".sorting">Sorting</li>
+                    <li data-filter=".mixedValue">Mixed Value</li>
+                    <li data-filter=".manualValue">Manual Value</li>
+                    <li data-filter=".detection">Detection</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Shop Accordion end-->
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="row money-counting-item">
+            <div class="col-md-4 item topLanding col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'1'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+            <div class="col-md-4 item frontLanding detection col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'2'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+            <div class="col-md-4 item sorting col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'3'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+            <div class="col-md-4 item mixedValue col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'4'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+            <div class="col-md-4 item manualValue col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'5'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+            <div class="col-md-4 item detection col-12 mb-30">
+              <app-route-card [route]="''"
+                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
+                              [productCode]="'6'"
+                              [productCategory]="'Collection 2020'"></app-route-card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
 <section class="section section-ptb-100 sm-pb-50 sm-pt-50 bg-black text-center">
   <div class="container">
     <div class="row justify-content-center">

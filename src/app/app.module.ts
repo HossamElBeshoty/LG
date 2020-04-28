@@ -26,6 +26,7 @@ import { ProductsDetailsComponent } from './Components/products-details/products
 import { ProductsFilterDetailsComponent } from './Components/products-filter-details/products-filter-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AngularMaterialModule} from './Modules/angular-material.module';
+import { RouteCardComponent } from './Widgets/route-card/route-card.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -49,7 +50,8 @@ export function createTranslateLoader(http: HttpClient) {
     CardImageCarouselComponent,
     MoneyCountComponent,
     ProductsDetailsComponent,
-    ProductsFilterDetailsComponent
+    ProductsFilterDetailsComponent,
+    RouteCardComponent
   ],
   imports: [
     BrowserModule,
