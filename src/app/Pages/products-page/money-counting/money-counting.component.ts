@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 // tslint:disable-next-line:import-spacing
-import *  as  data from '../../../../assets/DataBase/data.json';
+import *  as  data from '../../../../assets/DataBase/moneyCounting.json';
 
 declare var $: any;
 declare function isotopeProduct(): any;
@@ -16,7 +16,7 @@ export class MoneyCountingComponent implements OnInit , AfterViewInit{
   }
 
   ngOnInit(): void {
-    console.log(this.products.map(c => c.name));
+    console.log(this.products);
     // tslint:disable-next-line:only-arrow-functions
     $(function() {
       $('.tab-wrapper.v1 .item .tab-btn a').click(function(e) {

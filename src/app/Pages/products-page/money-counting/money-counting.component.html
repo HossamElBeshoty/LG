@@ -31,9 +31,10 @@
                   <ul>
                     <li class="activeIsotope" data-filter="*">All</li>
                     <li data-filter=".topLanding">Top Loading</li>
-                    <li data-filter=".frontLanding">Front Loading</li>
                     <li data-filter=".sorting">Sorting</li>
+                    <li data-filter=".frontLanding">Front Loading</li>
                     <li data-filter=".mixedValue">Mixed Value</li>
+                    <li data-filter=".dualPocket">Dual Pocket</li>
                     <li data-filter=".manualValue">Manual Value</li>
                     <li data-filter=".detection">Detection</li>
                   </ul>
@@ -45,41 +46,11 @@
         </div>
         <div class="col-lg-9 col-md-8">
           <div class="row money-counting-item">
-            <div class="col-md-4 item topLanding col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'1'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
-            </div>
-            <div class="col-md-4 item frontLanding detection col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'2'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
-            </div>
-            <div class="col-md-4 item sorting col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'3'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
-            </div>
-            <div class="col-md-4 item mixedValue col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'4'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
-            </div>
-            <div class="col-md-4 item manualValue col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'5'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
-            </div>
-            <div class="col-md-4 item detection col-12 mb-30">
-              <app-route-card [route]="'products/moneyCounting/1'"
-                              [imgPath]="'assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg'"
-                              [productCode]="'6'"
-                              [productCategory]="'Collection 2020'"></app-route-card>
+            <div *ngFor="let prod of products" class="col-md-4 item {{prod.isotopeClasses}} col-12 mb-30">
+              <app-route-card [route]="prod.id"
+                              [imgPath]="prod.imagePath"
+                              [productCode]="prod.codeName"
+                              [productCategory]="prod.productCategory"></app-route-card>
             </div>
           </div>
         </div>
