@@ -12,6 +12,7 @@ import {FaqsPageComponent} from './Pages/faqs-page/faqs-page.component';
 import {ContactUsPageComponent} from './Pages/contact-us-page/contact-us-page.component';
 import {ProductsDetailsComponent} from './Components/products-details/products-details.component';
 import {ProductsFilterDetailsComponent} from './Components/products-filter-details/products-filter-details.component';
+import {MoneyCountingDetailsComponent} from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},
   {path: 'products/moneyCounting', component: MoneyCountingComponent},
+  {path: 'products/moneyCounting/:id', component: MoneyCountingDetailsComponent},
   {path: 'faq', component: FaqsPageComponent},
   {path: 'contactUs', component: ContactUsPageComponent},
 ];

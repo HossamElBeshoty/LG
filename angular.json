@@ -40,6 +40,7 @@
               "src/assets/js/customizer.js",
               "src/assets/js/jarallax.js",
               "src/assets/vendor/isotopeTwo/isotope.pkgd.min.js",
+              "src/assets/vendor/flex-slider/jquery.flexslider.js",
               "src/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js",
               "src/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js",
               "src/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js",
