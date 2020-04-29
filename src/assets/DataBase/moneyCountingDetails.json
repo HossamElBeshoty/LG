@@ -2,19 +2,236 @@
   {
     "id": 1,
     "productId": 1,
-    "codeName": "Asd 1",
-    "imagePath": "assets/images/Products/300.jpg"
+    "codeName": "LG820",
+    "imagePaths": [
+      {
+        "id": 1,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      },
+      {
+        "id": 2,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      }
+    ],
+    "specifications": [
+      {
+        "id": 1,
+        "title": "Hopper Capacity",
+        "spec": "Approx 500 bills"
+      },
+      {
+        "id": 2,
+        "title": "Stacker Capacity",
+        "spec": "Approx 300 bills"
+      },
+      {
+        "id": 3,
+        "title": "Counting Speed",
+        "spec": "800pcs/min(MDC SDC and CNT MODE) 1200 ,1000 ,800pcs/min"
+      },
+      {
+        "id": 4,
+        "title": "Dimensions",
+        "spec": "370 x 420 x 375 mm"
+      },
+      {
+        "id": 5,
+        "title": "Power Supply",
+        "spec": "Width voltage 90 to 220V60/50 %10±HZ"
+      },
+      {
+        "id": 6,
+        "title": "Thickness of Countable Notes",
+        "spec": "0.12-0.08mm"
+      },
+      {
+        "id": 7,
+        "title": "Net Weight",
+        "spec": "11KG"
+      },
+      {
+        "id": 8,
+        "title": "Gross Weight",
+        "spec": "12KG"
+      },
+      {
+        "id": 9,
+        "title": "Power Consumption",
+        "spec": "≤ 80W"
+      },
+      {
+        "id": 10,
+        "title": "Reject Stacker Capacity",
+        "spec": "Approx 50 bills"
+      }
+    ],
+    "features": [
+      {
+        "id": 1,
+        "feature": "With 2 CIS"
+      },
+      {
+        "id": 2,
+        "feature": "Non-stop counting with reject pocket"
+      },
+      {
+        "id": 3,
+        "title": "Fake note check",
+        "feature": " The reason of rejection can be checked"
+      },
+      {
+        "id": 4,
+        "title": "Serial number",
+        "feature": "The serial numbers of the notes can be checked"
+      },
+      {
+        "id": 5,
+        "feature": "Authenticating function strengthened by IR/UV/MG/Image"
+      },
+      {
+        "id": 6,
+        "feature": "Face / Orientation / Version / Denomination notes sorting"
+      },
+      {
+        "id": 7,
+        "feature": "Improved feeding mechanism, easy to remove jam bills"
+      },
+      {
+        "id": 8,
+        "feature": "Multi language interface"
+      },
+      {
+        "id": 9,
+        "feature": "Available currencies select: USD, EUR, GBP, EGP, RUB, CHF, MOP, CAD, HKD, JPY, KRW, THB, SGD... up to 60 currencies"
+      },
+      {
+        "id": 10,
+        "title": "Interface",
+        "feature": "RS - 232, USB, SD Card"
+      },
+      {
+        "id": 11,
+        "title": "Options",
+        "feature": " Customer Display / Thermal Printer / PC connection"
+      },
+      {
+        "id": 12,
+        "feature": "Touch panel and big size TFT display"
+      }
+    ]
   },
   {
-    "id": 1,
+    "id": 2,
     "productId": 2,
-    "codeName": "Asd 2",
-    "imagePath": "assets/images/Products/300.jpg"
-  },
-  {
-    "id": 1,
-    "productId": 3,
-    "codeName": "Asd 3",
-    "imagePath": "assets/images/Products/300.jpg"
+    "codeName": "LG810",
+    "imagePaths": [
+      {
+        "id": 1,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      },
+      {
+        "id": 2,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      }
+    ],
+    "specifications": [
+      {
+        "id": 1,
+        "title": "Hopper Capacity",
+        "spec": "500 bills"
+      },
+      {
+        "id": 2,
+        "title": "Stacker Capacity",
+        "spec": "200 bills"
+      },
+      {
+        "id": 3,
+        "title": "Counting Speed",
+        "spec": "900pcs/min(MDC & SDC MODE) 900 ,1200 ,1500pcs/min (CNT MODE only)"
+      },
+      {
+        "id": 4,
+        "title": "Dimensions",
+        "spec": "360 x 230 x 240 mm"
+      },
+      {
+        "id": 5,
+        "title": "Power Supply",
+        "spec": "AC 100-240V 50-60Hz"
+      },
+      {
+        "id": 5,
+        "title": "Size of Countable Notes",
+        "spec": "50x90-110x90 mm"
+      },
+      {
+        "id": 6,
+        "title": "Thickness of Countable Notes",
+        "spec": "0.075-0.15 mm"
+      },
+      {
+        "id": 7,
+        "title": "Net Weight",
+        "spec": "6.5 KG"
+      },
+      {
+        "id": 8,
+        "title": "Gross Weight",
+        "spec": "7.5 KG"
+      },
+      {
+        "id": 9,
+        "title": "Power Consumption",
+        "spec": "≤ 80W"
+      }
+    ],
+    "features": [
+      {
+        "id": 1,
+        "feature": "Mix value counting of multi currency"
+      },
+      {
+        "id": 2,
+        "feature": "Auto currency identification"
+      },
+      {
+        "id": 3,
+        "title": "Counterfeit Detection",
+        "feature": " Image, Magnetic, Infrared, Ultraviolet"
+      },
+      {
+        "id": 4,
+        "title": "Error Detection",
+        "feature": "Double Note Detection, Half Note Detection,Chain Note Detection"
+      },
+      {
+        "id": 5,
+        "feature": "Serial numbers reading"
+      },
+      {
+        "id": 6,
+        "title": "Available currencies select",
+        "feature": "USD, EUR, GBP, EGP, RUB, CHF, MOP, THB, CAD, HKD, JPY, KRW, THB, SGD.... up to 60"
+      },
+      {
+        "id": 7,
+        "title": "Options",
+        "feature": " Customer Display / Thermal Printer / PC connection"
+      },
+      {
+        "id": 8,
+        "title": "Interface",
+        "feature": " RS - 232, USB,SD Card"
+      },
+      {
+        "id": 9,
+        "feature": "Multi language interface"
+      },
+      {
+        "id": 10,
+        "feature": "Touch panel and big size TFT display"
+      }
+    ]
   }
 ]

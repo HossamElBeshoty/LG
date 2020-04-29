@@ -1,65 +1,56 @@
-<section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
-         style="background-image: url(assets/images/bg-img.jpg);">
-  <div class="container">
-    <div class="row dark-bg">
-      <div class="col-12">
-        <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">Details</span></h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-ptb-30 shop-pages">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg"
-                   class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
-                   class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20Trending.jpeg"
-                class="d-block w-100" alt="...">
-            </div>
+<div *ngFor="let data of productData">
+  <section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
+           style="background-image: url(assets/images/bg-img.jpg);">
+    <div class="container">
+      <div class="row dark-bg">
+        <div class="col-12">
+          <div class="section-heading mt-80 text-center">
+            <h1 class="heading theme-color"><span class="theme-color">{{data.codeName}}</span></h1>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <mat-tab-group mat-align-tabs="center">
-          <mat-tab label="Specifications">
-            <br>
-            <ul class="list-group">
-              <li class="list-group-item list-group-item-warning">A simple secondary list group item</li>
-              <li class="list-group-item list-group-item-warning">A simple secondary list group item</li>
-              <li class="list-group-item list-group-item-warning">A simple secondary list group item</li>
-              <li class="list-group-item list-group-item-warning">A simple secondary list group item</li>
-            </ul>
-          </mat-tab>
-          <mat-tab label="Features">
-            <br>
-            <li class="list-group-item list-group-item-primary">A simple secondary list group item</li>
-            <li class="list-group-item list-group-item-primary">A simple secondary list group item</li>
-            <li class="list-group-item list-group-item-primary">A simple secondary list group item</li>
-            <li class="list-group-item list-group-item-primary">A simple secondary list group item</li>
-          </mat-tab>
-        </mat-tab-group>
+    </div>
+  </section>
+  <section  class="section-ptb-30 shop-pages">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let imgs of data.imagePaths ,let i=index" [ngClass]="i==0 ?'active':'inactive'"
+                   class="carousel-item">
+                <img src="{{imgs.path}}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Specifications">
+              <br>
+              <ul class="list-group">
+                <li *ngFor="let d of data.specifications" class="list-group-item list-group-item-warning">
+                  <strong>{{d.title}}:</strong> {{d.spec}}
+                </li>
+              </ul>
+            </mat-tab>
+            <mat-tab label="Features">
+              <br>
+              <li *ngFor="let d of data.features" class="list-group-item list-group-item-primary">
+                <strong *ngIf="d.title">{{d.title}}:</strong> {{d.feature}}
+              </li>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

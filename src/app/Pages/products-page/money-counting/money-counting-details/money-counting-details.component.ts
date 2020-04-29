@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import *  as  productsData from '../../../../../assets/DataBase/moneyCountingDetails.json';
 
+
 @Component({
   selector: 'app-money-counting-details',
   templateUrl: './money-counting-details.component.html',
@@ -10,7 +11,7 @@ import *  as  productsData from '../../../../../assets/DataBase/moneyCountingDet
 export class MoneyCountingDetailsComponent implements OnInit {
   productId: string;
   data = (productsData as any).default;
-  productData;
+  productData: [];
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
@@ -29,3 +30,5 @@ export class MoneyCountingDetailsComponent implements OnInit {
   }
 
 }
+
+
