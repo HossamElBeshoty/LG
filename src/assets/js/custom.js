@@ -33,7 +33,7 @@
 //
 //        });
 //  });
-function owlCarousel() {
+function owlCarousel(rtl) {
   var owlslider = jQuery("div.owl-carousel");
   owlslider.each(function () {
     var $this = $(this),
@@ -49,7 +49,7 @@ function owlCarousel() {
       $(this).owlCarousel({
         loop: $loop,
         items: $items,
-        rtl: false,
+        rtl: rtl,
         responsive: {
           0: {
             items: $this.data('xx-items') ? $this.data('xx-items') : 1

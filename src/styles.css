@@ -24,3 +24,11 @@
   color: #ED1B24;
 }
 
+
+*[dir=rtl] .img-fluid {
+  float:right !important;
+}
+*[dir=rtl] .trend-pro .owl-theme .owl-nav {
+  right: -290px;
+  left: auto;
+}
