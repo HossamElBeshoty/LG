@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  digitalData from '../../../assets/DataBase/digitalData.json';
-import {ActivatedRoute} from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products-details',
@@ -16,6 +16,7 @@ export class ProductsDetailsComponent implements OnInit {
   motorizedData: [];
   cashBoxData: [];
   bookSafeData: [];
+  categories:any;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
@@ -53,7 +54,10 @@ export class ProductsDetailsComponent implements OnInit {
     //     break;
     // }
     this.digitalData = this.data.filter(c => c.pageName === this.pageName);
-    console.log(this.digitalData);
+    const allCategory: any = (this.digitalData.map((a: { category: [] }) => a.category));
+    this.categories = [...new Set(allCategory.map(item => item.name))];
+    console.log(this.categories);
+
   }
 
 
