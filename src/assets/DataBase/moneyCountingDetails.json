@@ -3,18 +3,51 @@
     "id": 1,
     "productId": 1,
     "codeName": "Asd 1",
-    "imagePath": "assets/images/Products/300.jpg"
-  },
-  {
-    "id": 1,
-    "productId": 2,
-    "codeName": "Asd 2",
-    "imagePath": "assets/images/Products/300.jpg"
-  },
-  {
-    "id": 1,
-    "productId": 3,
-    "codeName": "Asd 3",
-    "imagePath": "assets/images/Products/300.jpg"
+    "imagePaths": [
+      {
+        "id": 1,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      },
+      {
+        "id": 2,
+        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+      }
+    ],
+    "specifications": [
+      {
+        "id": 1,
+        "spec": "asd"
+      },
+      {
+        "id": 1,
+        "spec": "asd"
+      },
+      {
+        "id": 1,
+        "spec": "asd"
+      },
+      {
+        "id": 1,
+        "spec": "asd"
+      }
+    ],
+    "features": [
+      {
+        "id": 1,
+        "feature": "asd"
+      },
+      {
+        "id": 1,
+        "feature": "asd"
+      },
+      {
+        "id": 1,
+        "feature": "asd"
+      },
+      {
+        "id": 1,
+        "feature": "asd"
+      }
+    ]
   }
 ]
