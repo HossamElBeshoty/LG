@@ -6,11 +6,15 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg820/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg820/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg820/3.jpg"
       }
     ],
     "specifications": [
@@ -127,11 +131,19 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg810/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg810/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg810/3.jpg"
+      },
+      {
+        "id": 4,
+        "path": "assets/images/Products/Counting Machine/lg810/4.jpg"
       }
     ],
     "specifications": [
@@ -241,11 +253,11 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg830/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg830/2.jpg"
       }
     ],
     "specifications": [
@@ -355,11 +367,15 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg446/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg446/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg446/3.jpg"
       }
     ],
     "specifications": [
@@ -458,15 +474,15 @@
   {
     "id": 5,
     "productId": 5,
-    "codeName": "LG740",
+    "codeName": "LG800",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg800/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg800/2.jpg"
       }
     ],
     "specifications": [
@@ -569,15 +585,19 @@
   {
     "id": 6,
     "productId": 6,
-    "codeName": "LG780",
+    "codeName": "LG770",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg770/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg770/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg770/3.jpg"
       }
     ],
     "specifications": [
@@ -680,11 +700,15 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg790/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg790/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg790/3.jpg"
       }
     ],
     "specifications": [
@@ -779,15 +803,19 @@
   {
     "id": 8,
     "productId": 8,
-    "codeName": "LG750",
+    "codeName": "LG740",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg740/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg740/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg740/3.jpg"
       }
     ],
     "specifications": [
@@ -890,15 +918,19 @@
   {
     "id": 9,
     "productId": 9,
-    "codeName": "LG800",
+    "codeName": "LG780",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg780/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg780/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg780/3.jpg"
       }
     ],
     "specifications": [
@@ -993,16 +1025,17 @@
   {
     "id": 10,
     "productId": 10,
-    "codeName": "LG770",
+    "codeName": "LG760",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg760/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg760/2.jpg"
       }
+
     ],
     "specifications": [
       {
@@ -1100,15 +1133,19 @@
   {
     "id": 11,
     "productId": 11,
-    "codeName": "LG760",
+    "codeName": "LG750",
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg750/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg750/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg750/3.jpg"
       }
     ],
     "specifications": [
@@ -1215,11 +1252,15 @@
     "imagePaths": [
       {
         "id": 1,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg306/1.jpg"
       },
       {
         "id": 2,
-        "path": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+        "path": "assets/images/Products/Counting Machine/lg306/2.jpg"
+      },
+      {
+        "id": 3,
+        "path": "assets/images/Products/Counting Machine/lg306/3.jpg"
       }
     ],
     "specifications": [
