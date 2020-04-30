@@ -38,3 +38,18 @@ body[dir=rtl] {
   right: -290px;
   left: auto;
 }
+*[dir=rtl] .contact-form .form-field{
+  /*position: relative;*/
+  /*width: 31.3%;*/
+  margin-right: 2%;
+  float: right;
+}
+*[dir=rtl] .text-left {
+  text-align: right!important;
+}
+*[dir=rtl] .tab-wrapper {
+  text-align: right;
+}
+*[dir=rtl] .section-heading.line.left .heading:before {
+  right: 0;
+}
