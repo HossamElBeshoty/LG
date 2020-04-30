@@ -16,7 +16,7 @@ export class ProductsDetailsComponent implements OnInit {
   motorizedData: [];
   cashBoxData: [];
   bookSafeData: [];
-  categories:any;
+  categories: any;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }

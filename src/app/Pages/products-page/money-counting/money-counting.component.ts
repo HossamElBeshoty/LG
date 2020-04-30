@@ -9,7 +9,7 @@ declare function isotopeProduct(): any;
   templateUrl: './money-counting.component.html',
   styleUrls: ['./money-counting.component.css']
 })
-export class MoneyCountingComponent implements OnInit , AfterViewInit{
+export class MoneyCountingComponent implements OnInit , AfterViewInit {
   products = (data as any).default;
 
   constructor() {
