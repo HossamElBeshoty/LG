@@ -820,8 +820,8 @@ button {
 }
 
 .btn-primary:hover {
-  background: #000000;
-  border-color: #000000;
+  background: #17459C;
+  border-color: #17459C;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {

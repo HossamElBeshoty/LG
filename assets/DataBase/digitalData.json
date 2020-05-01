@@ -1,0 +1,547 @@
+[
+  {
+    "id": 1,
+    "category": {
+      "id": 1,
+      "name": "ALC 6"
+    },
+    "pageName": "digital",
+    "name": "30ALC",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/ALC%206/img%20(14).jpeg",
+    "size": "H300 X W380 X D300mm"
+  },
+  {
+    "id": 2,
+    "category": {
+      "id": 1,
+      "name": "ALC 6"
+    },
+    "name": "50ALC",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/ALC%206/img%20(16).jpeg",
+    "size": "H500 X W350 X D310mm"
+  },
+  {
+    "id": 3,
+    "category": {
+      "id": 2,
+      "name": "EA 1"
+    },
+    "name": "20EA",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EA%201/img%20(3).jpeg",
+    "size": "H200 X W310 X D200mm"
+  },
+  {
+    "id": 4,
+    "category": {
+      "id": 2,
+      "name": "EA 1"
+    },
+    "name": "25EA",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EA%201/img%20(6).jpeg",
+    "size": "H250 X W350 X D250mm"
+  },
+  {
+    "id": 5,
+    "category": {
+      "id": 2,
+      "name": "EA 1"
+    },
+    "name": "50EA",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EA%201/img%20(6).jpeg",
+    "size": "H250 X W350 X D250mm"
+  },
+  {
+    "id": 6,
+    "category": {
+      "id": 3,
+      "name": "EK 1"
+    },
+    "name": "20EK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EK%202/img%20(1).jpeg",
+    "size": "H200 X W310 X D200mm"
+  },
+  {
+    "id": 7,
+    "category": {
+      "id": 3,
+      "name": "EK 1"
+    },
+    "name": "30EK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EK%202/img%20(2).jpeg",
+    "size": "H300 X W380 X D300mm"
+  },
+  {
+    "id": 8,
+    "category": {
+      "id": 3,
+      "name": "EK 1"
+    },
+    "name": "50EK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EK%202/img%20(4).jpeg",
+    "size": "H500 X W350 X D310mm"
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 3,
+      "name": "EK 1"
+    },
+    "name": "25EK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EK%202/img%20(5).jpeg",
+    "size": "H250 X W350 X D250mm"
+  },
+  {
+    "id": 10,
+    "category": {
+      "id": 4,
+      "name": "EUD 5"
+    },
+    "name": "30EUD",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EUD%205/img%20(15).jpeg",
+    "size": "H300 X W380 X D300mm"
+  },
+  {
+    "id": 11,
+    "category": {
+      "id": 4,
+      "name": "EUD 5"
+    },
+    "name": "50EUD",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EUD%205/img%20(18).jpeg",
+    "size": "H500 X W350 X D310mm"
+  },
+  {
+    "id": 12,
+    "category": {
+      "id": 5,
+      "name": "NEK 3"
+    },
+    "name": "20NEK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/NEK%203/img%20(7).jpeg",
+    "size": "H200 X W310 X D200mm"
+  },
+  {
+    "id": 13,
+    "category": {
+      "id": 5,
+      "name": "NEK 3"
+    },
+    "name": "30NEK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/NEK%203/img%20(9).jpeg",
+    "size": "H300 X W380 X D300mm"
+  },
+  {
+    "id": 14,
+    "category": {
+      "id": 5,
+      "name": "NEK 3"
+    },
+    "name": "25NEK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/NEK%203/img%20(10).jpeg",
+    "size": "H250 X W350 X D250mm"
+  },
+  {
+    "id": 15,
+    "category": {
+      "id": 5,
+      "name": "NEK 3"
+    },
+    "name": "50NEK",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/NEK%203/img%20(11).jpeg",
+    "size": "H500 X W350 X D310mm"
+  },
+  {
+    "id": 16,
+    "category": {
+      "id": 6,
+      "name": "SABD 4"
+    },
+    "name": "30SABD",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/SABD%204/img%20(12).jpeg",
+    "size": "H300 X W380 X D300mm"
+  },
+  {
+    "id": 17,
+    "category": {
+      "id": 6,
+      "name": "SABD 4"
+    },
+    "name": "50SABD",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/SABD%204/img%20(13).jpeg",
+    "size": "H500 X W350 X D310mm"
+  },
+  {
+    "id": 18,
+    "category": {
+      "id": 7,
+      "name": "Others"
+    },
+    "name": "17EF",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg",
+    "size": "H170 X W230 X D170mm"
+  },
+  {
+    "id": 19,
+    "category": {
+      "id": 7,
+      "name": "Others"
+    },
+    "name": "195LP",
+    "pageName": "digital",
+    "type": "Electronic Safe",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(21).jpeg",
+    "size": "H195 X W420 X D370mm"
+  },
+  {
+    "id": 20,
+    "category": {
+      "id": 7,
+      "name": "Others"
+    },
+    "name": "RW801",
+    "pageName": "bookSafe",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Book%20Safe/img%20(33).jpeg"
+  },
+  {
+    "id": 21,
+    "category": {
+      "id": 7,
+      "name": "Others"
+    },
+    "name": "RW802",
+    "pageName": "bookSafe",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Book%20Safe/img%20(35).jpeg"
+  },
+  {
+    "id": 22,
+    "category": {
+      "id": 7,
+      "name": "Others"
+    },
+    "name": "RW803",
+    "pageName": "bookSafe",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Book%20Safe/img%20(36).jpeg"
+  },
+  {
+    "id": 23,
+    "category": {
+      "id": 8,
+      "name": "Laptop Safe 14 15 17"
+    },
+    "name": "23RG",
+    "pageName": "motorized",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg",
+    "size": "H229 X W406 X D335mm"
+  },
+  {
+    "id": 24,
+    "category": {
+      "id": 9,
+      "name": "Laptop Safe 14"
+    },
+    "name": "25RG",
+    "pageName": "motorized",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(19).jpeg",
+    "size": "H229 X W406 X D335mm"
+  },
+  {
+    "id": 25,
+    "category": {
+      "id": 10,
+      "name": "Chash Box"
+    },
+    "name": "YFC-20",
+    "pageName": "cashBox",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(31).jpeg",
+    "size": "200 X 160 X 88mm",
+    "weight": "0.85 Kg",
+    "quantity": "15 pcs",
+    "nwGw": "13.5/14 kgs"
+  },
+  {
+    "id": 26,
+    "category": {
+      "id": 10,
+      "name": "Chash Box"
+    },
+    "name": "YFC-25",
+    "pageName": "cashBox",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(32).jpeg",
+    "size": "250 X 200 X 88mm",
+    "weight": "1.3 Kgs",
+    "quantity": "10 pcs",
+    "nwGw": "13.5/14 kgs"
+  },
+  {
+    "id": 26,
+    "category": {
+      "id": 10,
+      "name": "Chash Box"
+    },
+    "name": "YFC-30",
+    "pageName": "cashBox",
+    "type": "",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(34).jpeg",
+    "size": "300 X 220 X 88mm",
+    "weight": "1.6 Kgs",
+    "quantity": "10 pcs",
+    "nwGw": "16.5/17 kgs"
+  },
+  {
+    "id": 27,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 12 Kgs"
+    },
+    "name": "28BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(40).jpeg",
+    "size": "280 X 375 X 280mm"
+  },
+  {
+    "id": 28,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 16.5 Kgs"
+    },
+    "name": "38BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(41).jpeg",
+    "size": "380 X 375 X 320mm"
+  },
+  {
+    "id": 29,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 46 Kgs"
+    },
+    "name": "53BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(42).jpeg",
+    "size": "530 X 450 X 360mm"
+  },
+  {
+    "id": 30,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 21.5 Kgs"
+    },
+    "name": "42BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(43).jpeg",
+    "size": "420 X 375 X 320mm"
+  },
+  {
+    "id": 31,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 50 Kgs"
+    },
+    "name": "63BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(44).jpeg",
+    "size": "630 X 450 X 380mm"
+  },
+  {
+    "id": 32,
+    "category": {
+      "id": 11,
+      "name": "Burgalry Safes 56 Kgs"
+    },
+    "name": "73BN",
+    "pageName": "bN-Series",
+    "type": "Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/BN%20Series/img%20(45).jpeg",
+    "size": "730 X 450 X 400mm"
+  },
+  {
+    "id": 33,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 46 Kgs"
+    },
+    "name": "53CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(37).jpeg",
+    "size": "530 X 450 X 360mm"
+  },
+  {
+    "id": 34,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 50 Kgs"
+    },
+    "name": "63CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(38).jpeg",
+    "size": "630 X 450 X 380mm"
+  },
+  {
+    "id": 35,
+    "category": {
+      "id": 12,
+      "name": "Fingerprint Burgalry Safes 56 Kgs"
+    },
+    "name": "73CQ",
+    "pageName": "fingerprint",
+    "type": "Fingerprint Burgalry Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/fingerprint%20Office%20safe/img%20(39).jpeg",
+    "size": "730 X 450 X 400mm"
+  },
+  {
+    "id": 35,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "20K-20",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(27).jpeg",
+    "size": "H200 X W160 X D80mm"
+  },
+  {
+    "id": 36,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "25K-48",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(28).jpeg",
+    "size": "H250 X W180 X D80mm"
+  },
+  {
+    "id": 37,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "30K-93",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(29).jpeg",
+    "size": "H300 X W240 X D80mm"
+  },
+  {
+    "id": 38,
+    "category": {
+      "id": 12,
+      "name": "Key Safes"
+    },
+    "name": "30K-45",
+    "pageName": "key",
+    "type": "Key Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Office%20safes/key%20safe/img%20(30).jpeg",
+    "size": "H300 X W240 X D80mm"
+  },
+  {
+    "id": 38,
+    "category": {
+      "id": 12,
+      "name": "Electronic Safes"
+    },
+    "name": "350ALG",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(22).jpeg",
+    "size": "H350 X W500 X D430mm"
+  },
+  {
+    "id": 39,
+    "category": {
+      "id": 12,
+      "name": "Electronic Safes"
+    },
+    "name": "500ALG",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(23).jpeg",
+    "size": "H500 X W350 X D430mm"
+  },
+  {
+    "id": 39,
+    "category": {
+      "id": 12,
+      "name": "US UL Stand Listed Fireproof Safes"
+    },
+    "name": "900ALD",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(25).jpeg",
+    "size": "H920 X W600 X D570mm"
+  },
+  {
+    "id": 40,
+    "category": {
+      "id": 12,
+      "name": ""
+    },
+    "name": "",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20(26).jpeg"
+  },
+  {
+    "id": 40,
+    "category": {
+      "id": 12,
+      "name": "Promotion Fireproof Safe"
+    },
+    "name": "418ALD",
+    "pageName": "chinese",
+    "type": "Electronic Safes",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Chinese%20Fireproof/img%20Trending.jpeg",
+    "size": "H418 X W438 X D428mm"
+  }
+]

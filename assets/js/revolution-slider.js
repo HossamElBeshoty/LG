@@ -1,7 +1,7 @@
 function galleryfunction() {
   (function ($) {
     'use strict';
-//slider-2
+    //slider-2
     $("#rev_slider_251_115").show().revolution({
       sliderType: "standard",
       sliderLayout: "fullscreen",
@@ -86,6 +86,5 @@ function galleryfunction() {
         disableFocusListener: false,
       }
     });
-
   })(jQuery);
 }

@@ -1,0 +1,381 @@
+[
+  {
+    "id": 1,
+    "pageName": "colored",
+    "category": "23CLR",
+    "details": [
+      {
+        "id": 1,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/23CLR/6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "pageName": "colored",
+    "category": "25CLR",
+    "details": [
+      {
+        "id": 1,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Colored/25CLR/7.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "pageName": "korean",
+    "category": "Combination",
+    "details": [
+      {
+        "id": 1,
+        "name": "SD-104",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4078.PNG"
+      },
+      {
+        "id": 2,
+        "name": "SD-105",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4080.PNG"
+      },
+      {
+        "id": 3,
+        "name": "SD-106",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4081.PNG"
+      },
+      {
+        "id": 4,
+        "name": "SD-680",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Combination%20(بكره)/IMG_4082.PNG"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "pageName": "korean",
+    "category": "Digital",
+    "details": [
+      {
+        "id": 1,
+        "name": "ESD-101",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4066.PNG"
+      },
+      {
+        "id": 2,
+        "name": "ESD-101T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4067.PNG"
+      },
+      {
+        "id": 3,
+        "name": "ESD-103",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4068.PNG"
+      },
+      {
+        "id": 4,
+        "name": "ESD-103T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4069.PNG"
+      },
+      {
+        "id": 5,
+        "name": "ESD-104",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4070.PNG"
+      },
+      {
+        "id": 6,
+        "name": "ESD-104A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4071.PNG"
+      },
+      {
+        "id": 7,
+        "name": "ESD-105",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4072.PNG"
+      },
+      {
+        "id": 8,
+        "name": "ESD-680",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4073.PNG"
+      },
+      {
+        "id": 9,
+        "name": "ESD-106A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4086.PNG"
+      },
+      {
+        "id": 10,
+        "name": "ESD-106",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4087.PNG"
+      },
+      {
+        "id": 11,
+        "name": "ESD-108",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4088.PNG"
+      },
+      {
+        "id": 12,
+        "name": "ESD-109",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4089.PNG"
+      },
+      {
+        "id": 13,
+        "name": "ESD-102T",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_8440.jpg"
+      },
+      {
+        "id": 14,
+        "name": "ESD-102",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_8441.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "pageName": "korean",
+    "category": "Dual Key",
+    "details": [
+      {
+        "id": 1,
+        "name": "ESD-104A",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/IMG_4071.PNG"
+      },
+      {
+        "id": 2,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD101K.JPG"
+      },
+      {
+        "id": 3,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD101TK.JPG"
+      },
+      {
+        "id": 4,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD102K.JPG"
+      },
+      {
+        "id": 5,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD102TK.JPG"
+      },
+      {
+        "id": 6,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD103K.JPG"
+      },
+      {
+        "id": 7,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD103TK.JPG"
+      },
+      {
+        "id": 8,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD104AKSIZE.JPG"
+      },
+      {
+        "id": 9,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD104K.JPG"
+      },
+      {
+        "id": 10,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD105K.JPG"
+      },
+      {
+        "id": 11,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD106AK.JPG"
+      },
+      {
+        "id": 12,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD106K.JPG"
+      },
+      {
+        "id": 13,
+        "name": "",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/SD680K.JPG"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "pageName": "vietnam",
+    "category": "Digital",
+    "details": [
+      {
+        "id": 1,
+        "name": "LG-32E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "LG-60E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/4.jpg"
+      },
+      {
+        "id": 3,
+        "name": "LG-100E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/6.jpg"
+      },
+      {
+        "id": 4,
+        "name": "LG-37E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/8.jpg"
+      },
+      {
+        "id": 5,
+        "name": "LG-67E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/10.jpg"
+      },
+      {
+        "id": 6,
+        "name": "LG-120E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/18.jpg"
+      },
+      {
+        "id": 7,
+        "name": "LG-88E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/23.jpg"
+      },
+      {
+        "id": 8,
+        "name": "LG-50E1",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/Trending%20(2).jpg"
+      },
+      {
+        "id": 9,
+        "name": "LG-77E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/Trending.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "pageName": "vietnam",
+    "category": "Dual Keys",
+    "details": [
+      {
+        "id": 1,
+        "name": "LG-32k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "LG-60k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/3.jpg"
+      },
+      {
+        "id": 3,
+        "name": "LG-100k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/5.jpg"
+      },
+      {
+        "id": 4,
+        "name": "LG-37k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/7.jpg"
+      },
+      {
+        "id": 5,
+        "name": "LG-67k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/9.jpg"
+      },
+      {
+        "id": 6 ,
+        "name": "LG-110k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/11.jpg"
+      },
+      {
+        "id": 7 ,
+        "name": "LG-45k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/13.jpg"
+      },
+      {
+        "id": 8 ,
+        "name": "LG-45k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/14.jpg"
+      },
+      {
+        "id": 9 ,
+        "name": "LG-77k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/15.jpg"
+      },
+      {
+        "id": 10 ,
+        "name": "LG-120k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/17.jpg"
+      },
+      {
+        "id": 11 ,
+        "name": "LG-50k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/20.jpg"
+      },
+      {
+        "id": 12 ,
+        "name": "LG-88k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/22.jpg"
+      },
+      {
+        "id": 13 ,
+        "name": "LG-130k",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/24.jpg"
+      }
+    ]
+  }
+]

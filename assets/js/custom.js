@@ -33,7 +33,7 @@
 //
 //        });
 //  });
-function owlCarousel() {
+function owlCarousel(rtl) {
   var owlslider = jQuery("div.owl-carousel");
   owlslider.each(function () {
     var $this = $(this),
@@ -49,7 +49,7 @@ function owlCarousel() {
       $(this).owlCarousel({
         loop: $loop,
         items: $items,
-        rtl: false,
+        rtl: rtl,
         responsive: {
           0: {
             items: $this.data('xx-items') ? $this.data('xx-items') : 1
@@ -109,19 +109,53 @@ function owlCarousel() {
   });
 }
 
+function carouselForMoneyCounting() {
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: 'slide',
+      controlNav: 'thumbnails',
+      // tslint:disable-next-line:only-arrow-functions
+      start: function(slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+}
 
 function isotopeProduct() {
-  $('.product-item').isotope({
-    itemSelector: '.item',
-    layoutMode: 'fitRows'
-  });
-  $('.product-menu-tabs ul li').click(function () {
-    $('.product-menu-tabs ul li').removeClass('active');
-    $(this).addClass('active');
-    var selector = $(this).attr('data-filter');
-    $('.product-item').isotope({
-      filter: selector
+  // $('.product-item').isotope({
+  //   itemSelector: '.item',
+  //   layoutMode: 'fitRows'
+  // });
+  // $('.product-menu-tabs ul li').click(function () {
+  //   $('.product-menu-tabs ul li').removeClass('active');
+  //   $(this).addClass('active');
+  //   var selector = $(this).attr('data-filter');
+  //   $('.product-item').isotope({
+  //     filter: selector
+  //   });
+  //   return false
+  // });
+
+
+
+
+  const grid = $('.money-counting-item');
+
+    // grid.isotope({
+    //   itemSelector: '.item',
+    //   layoutMode: 'fitRows',
+    // });
+    $('.tab-content ul li').click(function() {
+      $('.tab-content ul li').removeClass('activeIsotope');
+      $(this).addClass('activeIsotope');
+      const selector = $(this).attr('data-filter');
+      grid.isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows',
+        filter: selector
+      });
+      return false;
     });
-    return false
-  });
+
 }
