@@ -28,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AngularMaterialModule} from './Modules/angular-material.module';
 import { RouteCardComponent } from './Widgets/route-card/route-card.component';
 import { MoneyCountingDetailsComponent } from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
+import { PreloaderComponent } from './Components/preloader/preloader.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -53,7 +54,8 @@ export function createTranslateLoader(http: HttpClient) {
     ProductsDetailsComponent,
     ProductsFilterDetailsComponent,
     RouteCardComponent,
-    MoneyCountingDetailsComponent
+    MoneyCountingDetailsComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,
