@@ -31,6 +31,7 @@ import { MoneyCountingDetailsComponent } from './Pages/products-page/money-count
 import { PreloaderComponent } from './Components/preloader/preloader.component';
 import { CatalogPageComponent } from './Pages/catalog-page/catalog-page.component';
 import { NotFoundPageComponent } from './Pages/not-found-page/not-found-page.component';
+import { DownloadCardComponent } from './Widgets/download-card/download-card.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -59,7 +60,8 @@ export function createTranslateLoader(http: HttpClient) {
     MoneyCountingDetailsComponent,
     PreloaderComponent,
     CatalogPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    DownloadCardComponent
   ],
   imports: [
     BrowserModule,
