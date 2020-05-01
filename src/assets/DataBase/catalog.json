@@ -1,23 +1,16 @@
 [
   {
     "id": 1,
-    "catalogName": "Asd 1",
-    "imagePath": "assets/images/Products/300.jpg",
-    "downloadPath": "asd1",
-    "description": "asd1"
+    "catalogName": "Banking Equipment",
+    "imagePath": "assets/Data/Images/catalogue%20pdf%20(1).png",
+    "downloadPath": "assets/Data/catalogue.pdf",
+    "description": "BANKNOTE COUNTING AND SORTING"
   },
   {
     "id": 2,
-    "catalogName": "Asd 3",
-    "imagePath": "assets/images/Products/300.jpg",
-    "downloadPath": "asd1",
-    "description": "asd1"
-  },
-  {
-    "id": 3,
-    "catalogName": "Asd 4",
-    "imagePath": "assets/images/Products/300.jpg",
-    "downloadPath": "asd1",
-    "description": "asd1"
+    "catalogName": "Protection With Satisfaction",
+    "imagePath": "assets/Data/Images/catalogue 2 pdf.png",
+    "downloadPath": "assets/Data/catalogue%202.pdf",
+    "description": "Certificates and Test reports"
   }
 ]

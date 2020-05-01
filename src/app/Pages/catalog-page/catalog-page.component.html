@@ -12,9 +12,10 @@
 </section>
 <section class="section-ptb-100">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4 mb-30">
-        <app-download-card></app-download-card>
+    <div class="row justify-content-around">
+      <div class="col-12 col-md-4 mb-30" *ngFor="let data of catalogData">
+        <app-download-card [catalogName]="data.catalogName" [imagePath]="data.imagePath"
+                           [description]="data.description" [downloadPath]="data.downloadPath"></app-download-card>
       </div>
     </div>
   </div>
