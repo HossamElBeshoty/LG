@@ -14,6 +14,7 @@ import {ProductsDetailsComponent} from './Components/products-details/products-d
 import {ProductsFilterDetailsComponent} from './Components/products-filter-details/products-filter-details.component';
 import {MoneyCountingDetailsComponent} from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
 import {CatalogPageComponent} from './Pages/catalog-page/catalog-page.component';
+import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -30,6 +31,8 @@ const routes: Routes = [
   {path: 'faq', component: FaqsPageComponent},
   {path: 'catalog', component: CatalogPageComponent},
   {path: 'contactUs', component: ContactUsPageComponent},
+  {path: 'not-found', component: NotFoundPageComponent},
+  {path: '**', redirectTo: 'not-found'},
 ];
 
 @NgModule({

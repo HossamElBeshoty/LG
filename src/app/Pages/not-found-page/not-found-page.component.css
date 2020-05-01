@@ -1,0 +1,46 @@
+.error_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(-225deg, #1A1A1A, #343434);
+}
+
+.error_section_subtitle {
+  color: #ED1C24;
+  text-transform: uppercase;
+  letter-spacing: 4pt;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: -5em;
+}
+
+.error_section .error_title {
+  --x-shadow: 0;
+  --y-shadow: 0;
+  --x: 50%;
+  --y: 50%;
+  font-size: 15rem;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 2rem;
+}
+
+.error_section .error_title:hover {
+  transition: all 0.2s ease;
+  text-shadow: var(--x-shadow) var(--y-shadow) 10px #ED1C24;
+}
+
+.error_section .error_title p {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-image: radial-gradient(circle closest-side, rgba(237, 28, 36, 0.05), transparent);
+  background-position: var(--x) var(--y);
+  background-repeat: no-repeat;
+  text-shadow: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease;
+}

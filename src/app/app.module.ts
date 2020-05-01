@@ -30,6 +30,7 @@ import { RouteCardComponent } from './Widgets/route-card/route-card.component';
 import { MoneyCountingDetailsComponent } from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
 import { PreloaderComponent } from './Components/preloader/preloader.component';
 import { CatalogPageComponent } from './Pages/catalog-page/catalog-page.component';
+import { NotFoundPageComponent } from './Pages/not-found-page/not-found-page.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -57,7 +58,8 @@ export function createTranslateLoader(http: HttpClient) {
     RouteCardComponent,
     MoneyCountingDetailsComponent,
     PreloaderComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
