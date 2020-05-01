@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-download-card',
@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./download-card.component.css']
 })
 export class DownloadCardComponent implements OnInit {
+  @Input() imagePath: string;
+  @Input() catalogName: string;
+  @Input() downloadPath: string;
+  @Input() description: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

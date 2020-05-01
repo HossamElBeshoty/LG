@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "catalogName": "Asd 1",
+    "imagePath": "assets/images/Products/300.jpg",
+    "downloadPath": "asd1",
+    "description": "asd1"
+  },
+  {
+    "id": 2,
+    "catalogName": "Asd 3",
+    "imagePath": "assets/images/Products/300.jpg",
+    "downloadPath": "asd1",
+    "description": "asd1"
+  },
+  {
+    "id": 3,
+    "catalogName": "Asd 4",
+    "imagePath": "assets/images/Products/300.jpg",
+    "downloadPath": "asd1",
+    "description": "asd1"
+  }
+]
