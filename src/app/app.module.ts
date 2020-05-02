@@ -33,7 +33,7 @@ import {CatalogPageComponent} from './Pages/catalog-page/catalog-page.component'
 import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.component';
 import {DownloadCardComponent} from './Widgets/download-card/download-card.component';
 import {MoneyCountingCardComponent} from './Widgets/money-counting-card/money-counting-card.component';
-import {FurniturePageComponent} from './Pages/furniture-page/furniture-page.component';
+import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
 import {PrimeNgModule} from './Modules/prime-ng.module';
 
 export function createTranslateLoader(http: HttpClient) {

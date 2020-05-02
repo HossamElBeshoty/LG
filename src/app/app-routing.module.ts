@@ -15,7 +15,7 @@ import {ProductsFilterDetailsComponent} from './Components/products-filter-detai
 import {MoneyCountingDetailsComponent} from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
 import {CatalogPageComponent} from './Pages/catalog-page/catalog-page.component';
 import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.component';
-import {FurniturePageComponent} from './Pages/furniture-page/furniture-page.component';
+import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
