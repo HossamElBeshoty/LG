@@ -11,12 +11,16 @@
     </div>
   </div>
 </section>
+
 <section class="section-ptb-30 shop-grid">
   <div class="container">
+    <br>
+    <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
+    <br>
     <div class="row">
       <div class="col-md-4 col-12 mb-30" *ngIf="homeData">
         <app-card-image-carousel
-        [cardImageCarouselData]="homeData">
+          [cardImageCarouselData]="homeData">
         </app-card-image-carousel>
       </div>
       <div class="col-md-4 col-12 mb-30" *ngIf="officeData">

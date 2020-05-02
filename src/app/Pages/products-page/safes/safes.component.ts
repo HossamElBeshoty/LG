@@ -1,5 +1,6 @@
 import {Component, OnInit, AfterViewInit} from '@angular/core';
 import {ICardImageCarouselData} from '../../../Widgets/card-image-carousel/card-image-carousel.component';
+import {MenuItem} from 'primeng/api';
 
 declare function isotopeProduct(): any;
 
@@ -9,6 +10,8 @@ declare function isotopeProduct(): any;
   styleUrls: ['./safes.component.css']
 })
 export class SafesComponent implements OnInit, AfterViewInit {
+  breadCrumb: MenuItem[];
+  homeBreadCrumb: MenuItem;
   homeData: ICardImageCarouselData;
   officeData: ICardImageCarouselData;
   fireproofData: ICardImageCarouselData;
@@ -68,6 +71,11 @@ export class SafesComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    this.breadCrumb = [
+      {label: 'Products', routerLink: '/products'},
+      {label: 'Safes Products', routerLink: '', styleClass: 'activeBreadCrumb'},
+    ];
+    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
   }
 
   ngAfterViewInit(): void {

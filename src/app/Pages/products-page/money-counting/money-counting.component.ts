@@ -1,21 +1,31 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  data from '../../../../assets/DataBase/moneyCounting.json';
+import {MenuItem} from 'primeng/api';
 
 declare var $: any;
+
 declare function isotopeProduct(): any;
+
 @Component({
   selector: 'app-money-counting',
   templateUrl: './money-counting.component.html',
   styleUrls: ['./money-counting.component.css']
 })
-export class MoneyCountingComponent implements OnInit , AfterViewInit {
+export class MoneyCountingComponent implements OnInit, AfterViewInit {
   products = (data as any).default;
+  breadCrumb: MenuItem[];
+  homeBreadCrumb: MenuItem;
 
   constructor() {
   }
 
   ngOnInit(): void {
+    this.breadCrumb = [
+      {label: 'Products', routerLink: '/products'},
+      {label: 'Bill Counting Machine', routerLink: '', styleClass: 'activeBreadCrumb'},
+    ];
+    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
     console.log(this.products);
     // tslint:disable-next-line:only-arrow-functions
     $(function() {
@@ -97,6 +107,7 @@ export class MoneyCountingComponent implements OnInit , AfterViewInit {
     });
 
   }
+
   ngAfterViewInit(): void {
     // const grid = $('.money-counting-item');
     // if (grid.length) {
