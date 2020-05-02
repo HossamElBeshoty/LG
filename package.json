@@ -27,6 +27,8 @@
     "angular-cli-ghpages": "^0.6.2",
     "isotope-layout": "^3.0.6",
     "ngx-progressive-image-loader": "^4.0.0",
+    "primeicons": "^2.0.0",
+    "primeng": "^9.0.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
