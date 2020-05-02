@@ -35,6 +35,7 @@ import {DownloadCardComponent} from './Widgets/download-card/download-card.compo
 import {MoneyCountingCardComponent} from './Widgets/money-counting-card/money-counting-card.component';
 import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
 import {PrimeNgModule} from './Modules/prime-ng.module';
+import { MathcesCategoryPipe } from './Pipes/filter.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -68,7 +69,8 @@ export function createTranslateLoader(http: HttpClient) {
     NotFoundPageComponent,
     DownloadCardComponent,
     MoneyCountingCardComponent,
-    FurniturePageComponent
+    FurniturePageComponent,
+    MathcesCategoryPipe
   ],
   imports: [
     BrowserModule,

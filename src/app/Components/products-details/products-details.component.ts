@@ -20,7 +20,7 @@ export class ProductsDetailsComponent implements OnInit {
   pageName: string;
   digitalData: [];
   categories: any;
-
+  public filterData: any = {};
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }
 
@@ -34,9 +34,12 @@ export class ProductsDetailsComponent implements OnInit {
 
   getData() {
     this.digitalData = this.data.filter(c => c.pageName === this.pageName);
+    console.log(this.digitalData);
+    this.digitalData.sort((a: any, b: any) => a.id - b.id);
     const allCategory: any = (this.digitalData.map((a: { category: [] }) => a.category));
     this.categories = [...new Set(allCategory.map(item => item.name))];
     console.log(this.categories);
+
     // BreadCrumb
     this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
     console.log(this.breadCrumbArray.breadCrumbName);
