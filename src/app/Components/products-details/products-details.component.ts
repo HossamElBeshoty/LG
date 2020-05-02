@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  digitalData from '../../../assets/DataBase/digitalData.json';
-import { ActivatedRoute } from '@angular/router';
+// tslint:disable-next-line:import-spacing
+import *  as  breadcrumb from '../../../assets/DataBase/breadcrumb.json';
+import {ActivatedRoute} from '@angular/router';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-products-details',
@@ -9,13 +12,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./products-details.component.css']
 })
 export class ProductsDetailsComponent implements OnInit {
+  breadCrumb: MenuItem[];
+  homeBreadCrumb: MenuItem;
+  breadCrumbData = (breadcrumb as any).default;
+  breadCrumbArray: any;
   data = (digitalData as any).default;
   pageName: string;
   digitalData: [];
-  coloredData: [];
-  motorizedData: [];
-  cashBoxData: [];
-  bookSafeData: [];
   categories: any;
 
   constructor(private activatedRoute: ActivatedRoute) {
@@ -30,34 +33,19 @@ export class ProductsDetailsComponent implements OnInit {
   }
 
   getData() {
-    // console.log(this.products.map(c => c.name));
-    // switch (this.pageName) {
-    //   case 'digital':
-    //     this.digitalData = this.data.filter(c => c.pageName === this.pageName);
-    //     console.log('It is a digital.', this.digitalData);
-    //     break;
-    //   case 'colored':
-    //     this.coloredData = this.data.filter(c => c.pageName === this.pageName);
-    //     console.log('It is a colored.');
-    //     break;
-    //   case 'motorized':
-    //     console.log('It is a motorized.');
-    //     break;
-    //   case 'cashBox':
-    //     console.log('It is a cashBox.');
-    //     break;
-    //   case 'bookSafe':
-    //     console.log('It is a bookSafe.');
-    //     break;
-    //   default:
-    //     console.log('No such day exists!');
-    //     break;
-    // }
     this.digitalData = this.data.filter(c => c.pageName === this.pageName);
     const allCategory: any = (this.digitalData.map((a: { category: [] }) => a.category));
     this.categories = [...new Set(allCategory.map(item => item.name))];
     console.log(this.categories);
-
+    // BreadCrumb
+    this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
+    console.log(this.breadCrumbArray.breadCrumbName);
+    this.breadCrumb = [
+      {label: 'Products', routerLink: '/products'},
+      {label: 'Safes Products', routerLink: '/products/safes'},
+      {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+    ];
+    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
   }
 
 

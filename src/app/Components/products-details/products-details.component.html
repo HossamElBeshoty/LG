@@ -4,7 +4,8 @@
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">{{'Safes Products' | translate}}</span></h1>
+          <h1 class="heading theme-color"><span class="theme-color">{{breadCrumbArray.breadCrumbName}} Products</span>
+          </h1>
         </div>
       </div>
     </div>
@@ -12,6 +13,8 @@
 </section>
 <section class="section-ptb-30 shop-grid">
   <div class="container">
+    <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
+    <br>
     <div class="shorter">
       <div class="row">
         <div class="col-lg-12 col-md-12">

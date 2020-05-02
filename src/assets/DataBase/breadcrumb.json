@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "breadCrumbName": "Digital Safes",
+    "pageName": "digital"
+  },
+  {
+    "id": 2,
+    "breadCrumbName": "Motorized Safes",
+    "pageName": "motorized"
+  },
+  {
+    "id": 3,
+    "breadCrumbName": "Cash Box Safes",
+    "pageName": "cashBox"
+  },
+  {
+    "id": 4,
+    "breadCrumbName": "Book Safes",
+    "pageName": "bookSafe"
+  },
+  {
+    "id": 5,
+    "breadCrumbName": "BN-Series Safes",
+    "pageName": "bN-Series"
+  },
+  {
+    "id": 7,
+    "breadCrumbName": "Fingerprint Safes",
+    "pageName": "fingerprint"
+  },
+  {
+    "id": 8,
+    "breadCrumbName": "Key Safes",
+    "pageName": "key"
+  },
+  {
+    "id": 9,
+    "breadCrumbName": "Chinese Safes",
+    "pageName": "chinese"
+  },
+  {
+    "id": 10,
+    "breadCrumbName": "Colored Safes",
+    "pageName": "colored"
+  },
+  {
+    "id": 11,
+    "breadCrumbName": "Korean Safes",
+    "pageName": "korean"
+  },
+  {
+    "id": 12,
+    "breadCrumbName": "Vietnam Safes",
+    "pageName": "vietnam"
+  }
+]
