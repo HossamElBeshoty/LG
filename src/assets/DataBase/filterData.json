@@ -294,6 +294,16 @@
         "id": 9,
         "name": "LG77E4",
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/Trending.jpg"
+      } ,
+      {
+        "id": 10,
+        "name": "LG150E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/24.jpg"
+      } ,
+      {
+        "id": 0,
+        "name": "LG170E4",
+        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Digital/25.jpg"
       }
     ]
   },
@@ -328,11 +338,6 @@
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/9.jpg"
       },
       {
-        "id": 6,
-        "name": "LG110k",
-        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/11.jpg"
-      },
-      {
         "id": 7,
         "name": "LG45k",
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/13.jpg"
@@ -348,11 +353,6 @@
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/15.jpg"
       },
       {
-        "id": 10,
-        "name": "LG120k",
-        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/17.jpg"
-      },
-      {
         "id": 11,
         "name": "LG50k",
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/20.jpg"
@@ -361,11 +361,6 @@
         "id": 12,
         "name": "LG88k",
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/22.jpg"
-      },
-      {
-        "id": 13,
-        "name": "LG130k",
-        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Vietnam%20Fireproof/Dual%20Keys/24.jpg"
       }
     ]
   }
