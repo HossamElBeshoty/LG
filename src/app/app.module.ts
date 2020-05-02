@@ -33,6 +33,7 @@ import { CatalogPageComponent } from './Pages/catalog-page/catalog-page.componen
 import { NotFoundPageComponent } from './Pages/not-found-page/not-found-page.component';
 import { DownloadCardComponent } from './Widgets/download-card/download-card.component';
 import { MoneyCountingCardComponent } from './Widgets/money-counting-card/money-counting-card.component';
+import { FurniturePageComponent } from './Pages/furniture-page/furniture-page.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -63,7 +64,8 @@ export function createTranslateLoader(http: HttpClient) {
     CatalogPageComponent,
     NotFoundPageComponent,
     DownloadCardComponent,
-    MoneyCountingCardComponent
+    MoneyCountingCardComponent,
+    FurniturePageComponent
   ],
   imports: [
     BrowserModule,
