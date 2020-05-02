@@ -4,7 +4,7 @@ function galleryfunction() {
     //slider-2
     $("#rev_slider_251_115").show().revolution({
       sliderType: "standard",
-      sliderLayout: "fullscreen",
+      sliderLayout: "auto",
       scrollbarDrag: "true",
       dottedOverlay: "none",
       navigation: {
