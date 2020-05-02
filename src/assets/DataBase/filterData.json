@@ -135,11 +135,7 @@
         "name": "ESD104",
         "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4070.PNG"
       },
-      {
-        "id": 6,
-        "name": "ESD104A",
-        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Digital%20(Code%20Starts%20with%20ESD)/IMG_4071.PNG"
-      },
+
       {
         "id": 7,
         "name": "ESD105",
@@ -187,11 +183,6 @@
     "pageName": "korean",
     "category": "Dual Key",
     "details": [
-      {
-        "id": 1,
-        "name": "ESD104A",
-        "imgPath": "assets/images/Products/Safes3/safes/safes/fireproof%20safe/Korean%20Fireproof/Dual%20Key%20(Code%20Ends%20with%20K)/IMG_4071.PNG"
-      },
       {
         "id": 2,
         "name": "",
