@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  filterData from '../../../assets/DataBase/filterData.json';
 import {ActivatedRoute} from '@angular/router';
@@ -32,6 +32,7 @@ export class ProductsFilterDetailsComponent implements OnInit {
 
   getFilterData() {
     this.filterData = this.data.filter(c => c.pageName === this.pageName);
+    // this.filterData.sort((a: any, b: any) => a.details-b.details?-1:0);
     console.log(this.filterData);
     // BreadCrumb
     this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
