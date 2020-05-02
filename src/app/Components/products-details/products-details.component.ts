@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import *  as  digitalData from '../../../assets/DataBase/digitalData.json';
 // tslint:disable-next-line:import-spacing
 import *  as  breadcrumb from '../../../assets/DataBase/breadcrumb.json';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {MenuItem} from 'primeng/api';
 
 @Component({
@@ -21,7 +21,7 @@ export class ProductsDetailsComponent implements OnInit {
   digitalData: [];
   categories: any;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -40,11 +40,20 @@ export class ProductsDetailsComponent implements OnInit {
     // BreadCrumb
     this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
     console.log(this.breadCrumbArray.breadCrumbName);
-    this.breadCrumb = [
-      {label: 'Products', routerLink: '/products'},
-      {label: 'Safes Products', routerLink: '/products/safes'},
-      {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
-    ];
+    if (this.router.url.includes('furniture')) {
+      this.breadCrumb = [
+        {label: 'Products', routerLink: '/products'},
+        {label: 'Furniture Products', routerLink: '/products/furniture'},
+        {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+      ];
+    } else {
+      this.breadCrumb = [
+        {label: 'Products', routerLink: '/products'},
+        {label: 'Safes Products', routerLink: '/products/safes'},
+        {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+      ];
+    }
+
     this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
   }
 

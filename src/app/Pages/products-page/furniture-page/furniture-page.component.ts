@@ -62,7 +62,7 @@ export class FurniturePageComponent implements OnInit {
         {routerName: 'Tablets', routerPath: 'tablets'},
         {routerName: 'Frames', routerPath: 'frames'},
         {routerName: 'Clocks', routerPath: 'clocks'},
-        {routerName: 'Vases', routerPath: 'cases'},
+        {routerName: 'Vases', routerPath: 'vases'},
         {routerName: 'Antiques', routerPath: 'antiques'},
         {routerName: 'Crystal', routerPath: 'crystal'},
         {routerName: 'Mirrors', routerPath: 'mirrors'},
