@@ -39,7 +39,7 @@
     "id": 5,
     "imagePath": "assets/images/Products/Counting Machine/lg800/1.jpg",
     "codeName": "LG800",
-    "isotopeClasses": "frontLanding manualValue detection",
+    "isotopeClasses": "topLanding manualValue detection",
     "productCategory": "Top Landing , Manual Value , Detection",
     "dimensions": "279 x 250 x 247 mm",
     "feature": "Automatic start, stop and clear"
@@ -48,7 +48,7 @@
     "id": 6,
     "imagePath": "assets/images/Products/Counting Machine/lg770/1.jpg",
     "codeName": "LG770",
-    "isotopeClasses": "frontLanding manualValue detection",
+    "isotopeClasses": "backLanding manualValue detection",
     "productCategory": "Top Landing , Manual Value , Detection",
     "dimensions": "300 x 263 x 206 mm",
     "feature": "Automatic half-note, chain-note, double-note detection"
@@ -57,8 +57,8 @@
     "id": 7,
     "imagePath": "assets/images/Products/Counting Machine/lg790/1.jpg",
     "codeName": "LG790",
-    "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": "Front Landing , Manual Value , Detection",
+    "isotopeClasses": "backLanding manualValue detection",
+    "productCategory": "Back Landing , Manual Value , Detection",
     "dimensions": "300 x 260 x 180 mm",
     "feature": "Mix value counting denomination sort function"
   },
@@ -66,8 +66,8 @@
     "id": 8,
     "imagePath": "assets/images/Products/Counting Machine/lg740/1.jpg",
     "codeName": "LG740",
-    "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": "Front Landing , Manual Value , Detection",
+    "isotopeClasses": "backLanding manualValue detection",
+    "productCategory": "Back Landing , Manual Value , Detection",
     "dimensions": "290 x 255 x 165 mm",
     "feature": "LCD color change to red when detect fake note"
   },
@@ -75,8 +75,8 @@
     "id": 9,
     "imagePath": "assets/images/Products/Counting Machine/lg780/1.jpg",
     "codeName": "LG780",
-    "isotopeClasses": "topLanding manualValue detection",
-    "productCategory": "Top Landing , Manual Value , Detection",
+    "isotopeClasses": "backLanding manualValue detection",
+    "productCategory": "Back Landing , Manual Value , Detection",
     "dimensions": "300 x 263 x 206 mm",
     "feature": "Software can be updated through RS - 232 port and USB port"
   },
@@ -84,8 +84,8 @@
     "id": 10,
     "imagePath": "assets/images/Products/Counting Machine/lg760/1.jpg",
     "codeName": "LG760",
-    "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": "Front Landing , Manual Value , Detection",
+    "isotopeClasses": "backLanding manualValue detection",
+    "productCategory": "Back Landing , Manual Value , Detection",
     "dimensions": "292 x 248 x 175 mm",
     "feature": "With batch, add and seif-examination function"
   },
@@ -93,8 +93,8 @@
     "id": 11,
     "imagePath": "assets/images/Products/Counting Machine/lg750/1.jpg",
     "codeName": "LG750",
-    "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": "Front Landing , Manual Value , Detection",
+    "isotopeClasses": "backLanding manualValue detection",
+    "productCategory": "Back Landing , Manual Value , Detection",
     "dimensions": "292 x 248 x 175 mm",
     "feature": "With total value calculating function"
   },
@@ -102,8 +102,8 @@
     "id": 12,
     "imagePath": "assets/images/Products/Counting Machine/lg306/1.jpg",
     "codeName": "LG306",
-    "isotopeClasses": "frontLanding",
-    "productCategory": "Front Landing",
+    "isotopeClasses": "backLanding",
+    "productCategory": "Back Landing",
     "dimensions": "300 x 288 x 200 mm",
     "feature": "With UV, MG, MT, IR, DD, detection while counting"
   }
