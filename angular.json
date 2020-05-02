@@ -149,5 +149,8 @@
       }
     }
   },
-  "defaultProject": "LG-WebSite"
+  "defaultProject": "LG-WebSite",
+  "cli": {
+    "analytics": "0d656d80-71d8-4c1d-ac01-62a2273f86f9"
+  }
 }
