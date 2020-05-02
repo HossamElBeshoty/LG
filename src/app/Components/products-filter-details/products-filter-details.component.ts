@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  filterData from '../../../assets/DataBase/filterData.json';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
+import {MenuItem} from 'primeng/api';
+import * as breadcrumb from '../../../assets/DataBase/breadcrumb.json';
 
 @Component({
   selector: 'app-products-filter-details',
@@ -12,6 +14,10 @@ export class ProductsFilterDetailsComponent implements OnInit {
   data = (filterData as any).default;
   pageName: string;
   filterData: [];
+  breadCrumb: MenuItem[];
+  homeBreadCrumb: MenuItem;
+  breadCrumbData = (breadcrumb as any).default;
+  breadCrumbArray: any;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
@@ -28,5 +34,14 @@ export class ProductsFilterDetailsComponent implements OnInit {
     this.filterData = this.data.filter(c => c.pageName === this.pageName);
     // this.filterData.sort((a: any, b: any) => a.details-b.details?-1:0);
     console.log(this.filterData);
+    // BreadCrumb
+    this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
+    console.log(this.breadCrumbArray.breadCrumbName);
+    this.breadCrumb = [
+      {label: 'Products', routerLink: '/products'},
+      {label: 'Safes Products', routerLink: '/products/safes'},
+      {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+    ];
+    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
   }
 }

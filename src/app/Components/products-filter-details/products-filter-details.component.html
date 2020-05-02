@@ -4,12 +4,18 @@
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">{{'Safes Products' | translate}}</span></h1>
+          <h1 class="heading theme-color"><span class="theme-color">{{breadCrumbArray.breadCrumbName}} Products</span>
+          </h1>
         </div>
       </div>
     </div>
   </div>
 </section>
+<div class="container">
+  <br>
+  <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
+  <br>
+</div>
 <mat-tab-group mat-align-tabs="center">
   <mat-tab *ngFor="let data of filterData" label="{{data.category}}">
     <div class="container mt-15">

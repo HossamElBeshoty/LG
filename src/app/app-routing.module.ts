@@ -25,6 +25,7 @@ const routes: Routes = [
   {path: 'products/safes', component: SafesComponent},
   {path: 'products/furniture', component: FurniturePageComponent},
   {path: 'products/safes/:name', component: ProductsDetailsComponent},
+  {path: 'products/furniture/:name', component: ProductsDetailsComponent},
   {path: 'products/safes/:name/filter', component: ProductsFilterDetailsComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},
