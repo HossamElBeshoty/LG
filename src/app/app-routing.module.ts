@@ -13,6 +13,9 @@ import {ContactUsPageComponent} from './Pages/contact-us-page/contact-us-page.co
 import {ProductsDetailsComponent} from './Components/products-details/products-details.component';
 import {ProductsFilterDetailsComponent} from './Components/products-filter-details/products-filter-details.component';
 import {MoneyCountingDetailsComponent} from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
+import {CatalogPageComponent} from './Pages/catalog-page/catalog-page.component';
+import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.component';
+import {FurniturePageComponent} from './Pages/furniture-page/furniture-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -20,6 +23,7 @@ const routes: Routes = [
   {path: 'certificate', component: CertificatePageComponent},
   {path: 'products', component: ProductsPageComponent},
   {path: 'products/safes', component: SafesComponent},
+  {path: 'products/furniture', component: FurniturePageComponent},
   {path: 'products/safes/:name', component: ProductsDetailsComponent},
   {path: 'products/safes/:name/filter', component: ProductsFilterDetailsComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
@@ -27,7 +31,10 @@ const routes: Routes = [
   {path: 'products/moneyCounting', component: MoneyCountingComponent},
   {path: 'products/moneyCounting/:id', component: MoneyCountingDetailsComponent},
   {path: 'faq', component: FaqsPageComponent},
+  {path: 'catalog', component: CatalogPageComponent},
   {path: 'contactUs', component: ContactUsPageComponent},
+  {path: 'not-found', component: NotFoundPageComponent},
+  {path: '**', redirectTo: 'not-found'},
 ];
 
 @NgModule({

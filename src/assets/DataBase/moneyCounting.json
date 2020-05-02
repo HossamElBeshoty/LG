@@ -4,83 +4,107 @@
     "imagePath": "assets/images/Products/Counting Machine/lg820/1.jpg",
     "codeName": "LG820",
     "isotopeClasses": "topLanding sorting mixedValue dualPocket detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Sorting , Mixed Value , Dual Pocket , Detection",
+    "dimensions": "370 x 420 x 375 mm",
+    "feature": "Non-stop counting with reject pocket"
   },
   {
     "id": 2,
     "imagePath": "assets/images/Products/Counting Machine/lg810/1.jpg",
     "codeName": "LG810",
     "isotopeClasses": "topLanding sorting mixedValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Sorting , Mixed Value , Detection",
+    "dimensions": " 360 x 230 x 240 mm",
+    "feature": "Multi language interface"
   },
   {
     "id": 3,
     "imagePath": "assets/images/Products/Counting Machine/lg830/1.jpg",
     "codeName": "LG830",
     "isotopeClasses": "topLanding sorting mixedValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Sorting , Mixed Value , Detection",
+    "dimensions": " 360 x 230 x 240 mm",
+    "feature": "Serial numbers reading"
   },
   {
     "id": 4,
     "imagePath": "assets/images/Products/Counting Machine/lg446/1.jpg",
     "codeName": "LG446",
     "isotopeClasses": "topLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Sorting , Detection",
+    "dimensions": "260 x 230 x 240 mm",
+    "feature": "Serial numbers reading"
   },
   {
     "id": 5,
     "imagePath": "assets/images/Products/Counting Machine/lg800/1.jpg",
     "codeName": "LG800",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Manual Value , Detection",
+    "dimensions": "279 x 250 x 247 mm",
+    "feature": "Automatic start, stop and clear"
   },
   {
     "id": 6,
     "imagePath": "assets/images/Products/Counting Machine/lg770/1.jpg",
     "codeName": "LG770",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Manual Value , Detection",
+    "dimensions": "300 x 263 x 206 mm",
+    "feature": "Automatic half-note, chain-note, double-note detection"
   },
   {
     "id": 7,
     "imagePath": "assets/images/Products/Counting Machine/lg790/1.jpg",
     "codeName": "LG790",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Front Landing , Manual Value , Detection",
+    "dimensions": "300 x 260 x 180 mm",
+    "feature": "Mix value counting denomination sort function"
   },
   {
     "id": 8,
     "imagePath": "assets/images/Products/Counting Machine/lg740/1.jpg",
     "codeName": "LG740",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Front Landing , Manual Value , Detection",
+    "dimensions": "290 x 255 x 165 mm",
+    "feature": "LCD color change to red when detect fake note"
   },
   {
     "id": 9,
     "imagePath": "assets/images/Products/Counting Machine/lg780/1.jpg",
     "codeName": "LG780",
     "isotopeClasses": "topLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Top Landing , Manual Value , Detection",
+    "dimensions": "300 x 263 x 206 mm",
+    "feature": "Software can be updated through RS - 232 port and USB port"
   },
   {
     "id": 10,
     "imagePath": "assets/images/Products/Counting Machine/lg760/1.jpg",
     "codeName": "LG760",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Front Landing , Manual Value , Detection",
+    "dimensions": "292 x 248 x 175 mm",
+    "feature": "With batch, add and seif-examination function"
   },
   {
     "id": 11,
     "imagePath": "assets/images/Products/Counting Machine/lg750/1.jpg",
     "codeName": "LG750",
     "isotopeClasses": "frontLanding manualValue detection",
-    "productCategory": ""
+    "productCategory": "Front Landing , Manual Value , Detection",
+    "dimensions": "292 x 248 x 175 mm",
+    "feature": "With total value calculating function"
   },
   {
     "id": 12,
     "imagePath": "assets/images/Products/Counting Machine/lg306/1.jpg",
     "codeName": "LG306",
     "isotopeClasses": "frontLanding",
-    "productCategory": ""
+    "productCategory": "Front Landing",
+    "dimensions": "300 x 288 x 200 mm",
+    "feature": "With UV, MG, MT, IR, DD, detection while counting"
   }
 ]

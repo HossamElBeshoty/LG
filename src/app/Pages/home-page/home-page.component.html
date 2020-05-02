@@ -155,43 +155,14 @@
   </div>
 </section>
 
-<!-- <section class="section-pb-100 sm-pb-50 sm-pt-50 pro-show-slide">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="4" data-md-items="4"
-             data-sm-items="3" data-xs-items="2" data-xx-items="1">
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-          <div class="item">
-            <app-card-two></app-card-two>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section-pb-100 sm-pb-50 sm-pt-50">
   <div class="container-fluid">
     <div class="row no-gutters">
       <div class="col-md-4 col-12">
-        <a href="#" class="promo-bx-link">
+        <a routerLink="/products/moneyCounting" class="promo-bx-link">
           <div class="promo-bx bg-overlay-black-20"
-               style="background-image: url(assets/images/HomePage/money_counting.jpg);">
+               style="background: url(assets/images/HomePage/money_counting.jpg) no-repeat center;">
             <p class="cross">Collection 2020</p>
             <div class="promo-tx">
               <p>245 Products</p>
@@ -201,24 +172,25 @@
         </a>
       </div>
       <div class="col-md-4 col-12">
-        <a href="#" class="promo-bx-link">
-          <div class="promo-bx bg-overlay-black-20" style="background-image: url(assets/images/HomePage/office.jpg);">
+        <a routerLink="//products/safes" class="promo-bx-link">
+          <div class="promo-bx bg-overlay-black-20"
+               style="background: url(assets/images/Products/Safes3/img33.jpeg)  no-repeat center;">
             <p class="cross">Collection 2020</p>
             <div class="promo-tx">
               <p>345 Products</p>
-              <h2>Office</h2>
+              <h2>Safes</h2>
             </div>
           </div>
         </a>
       </div>
       <div class="col-md-4 col-12">
-        <a href="#" class="promo-bx-link">
+        <a routerLink="/products/furniture" class="promo-bx-link">
           <div class="promo-bx bg-overlay-black-20"
-               style="background-image: url(assets/images/HomePage/Antiques.jpg);">
+               style="background: url(assets/images/HomePage/Antiques.jpg)  no-repeat center;">
             <p class="cross">Collection 2020</p>
             <div class="promo-tx">
               <p>455 Products</p>
-              <h2>Antiques</h2>
+              <h2>Furniture</h2>
             </div>
           </div>
         </a>
@@ -240,7 +212,7 @@
         </div>
         <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis auctor, tellus ac
           lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna. Suspendisse potenti. </p>
-        <a class="cs-button mt-30" routerLink="/products">{{'View' | translate}} &nbsp; <i
+        <a class="cs-button mt-30" routerLink="/catalog">{{'View' | translate}} &nbsp; <i
           class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
@@ -277,7 +249,6 @@
             <app-card [image]="'assets/images/Products/Counting Machine/lg810/1.jpg'"
                       [collectionName]="''" [name]="''"></app-card>
           </div>
-
         </div>
       </div>
     </div>
@@ -318,25 +289,25 @@
       <div class="col-md-7 col-12">
         <div class="row no-gutter">
           <div class="col-6">
-            <a href="#" class="insta-img">
+            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
               <img src="assets/images/HomePage/72773172_2349264775122098_6931725797224873984_o.jpg" class="img-fluid"
                    alt="">
             </a>
           </div>
           <div class="col-6">
-            <a href="#" class="insta-img">
+            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
               <img src="assets/images/HomePage/73178209_2349263475122228_3965188458493771776_o.jpg" class="img-fluid"
                    alt="">
             </a>
           </div>
           <div class="col-6">
-            <a href="#" class="insta-img">
+            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
               <img src="assets/images/HomePage/73528699_2349264435122132_6985418227069222912_o.jpg" class="img-fluid"
                    alt="">
             </a>
           </div>
           <div class="col-6">
-            <a href="#" class="insta-img">
+            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
               <img src="assets/images/HomePage/75349137_2349262995122276_521888257890320384_o.jpg" class="img-fluid"
                    alt="">
             </a>
@@ -347,13 +318,14 @@
       </div>
       <div class="col-md-4 col-12 sm-mt-50">
         <div class="section-heading mb-30">
-          <h6 class="sub-heading fs-24"><i class="fa fa-instagram"></i></h6>
+          <h6 class="sub-heading fs-24"><i class="fa fa-facebook-square"></i></h6>
           <h1 class="heading">Show Your <br>Story</h1>
         </div>
         <h4>Share your happiness.</h4>
         <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis auctor, tellus ac
           lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna.</p>
-        <a class="cs-button mt-30" href="#">Our Instagram &nbsp; <i class="fa fa-long-arrow-right"></i></a>
+        <a class="cs-button mt-30" href="https://www.facebook.com/LotfyGroup/" target="_blank">Our Facebook &nbsp; <i
+          class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -369,14 +341,16 @@
             class="mb-20 ">   {{'Lotfy Group is the trusted importing and exporting company for trading home accessories, furniture, lighting, and especially office equipment such as safe boxes and bill counters.Since launching in 1979, Lotfy Group has been facilitating commodities to the valued clients of individuals, corporates, and wholesalers.Lotfy Group selects its inventory from many countries from around the world, offering various collections for its customers.Its main countries of imports are China, Vietnam, South Korea, Malaysia, and Turkey.' | translate}}</p>
         </div>
         <h4 class="py-2"><i class="ti-mobile theme-color"></i>&nbsp; {{'+(002) 012 - 760 - 61063' | translate}}</h4>
+        <h4 class="py-2"><i class="fa fa-weixin theme-color"></i>&nbsp; {{'+(002) 012 - 706 - 0298' | translate}}</h4>
         <h4 class="py-2"><i class="ti-email theme-color"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</h4>
         <h4 class="py-2"><i
           class="ti-map-alt theme-color"></i>&nbsp; {{'5 Taha Hussein, New Nuzha , Cairo Governorate' | translate}}</h4>
         <div class="social-icons color clearfix sm-mb-30">
           <ul>
-            <!--            <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>-->
             <li class="social-facebook"><a href="https://www.facebook.com/LotfyGroup/" target="_blank"><i
               class="fa fa-facebook"></i></a></li>
+            <li class="social-rss"><a style="background-color: #00E676" href="https://wa.me/00201276061063"><i
+              class="fa fa-whatsapp"></i></a></li>
             <!--            <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>-->
             <!--            <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo"></i></a></li>-->
             <!--            <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>-->

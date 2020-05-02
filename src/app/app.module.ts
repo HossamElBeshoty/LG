@@ -29,6 +29,11 @@ import {AngularMaterialModule} from './Modules/angular-material.module';
 import { RouteCardComponent } from './Widgets/route-card/route-card.component';
 import { MoneyCountingDetailsComponent } from './Pages/products-page/money-counting/money-counting-details/money-counting-details.component';
 import { PreloaderComponent } from './Components/preloader/preloader.component';
+import { CatalogPageComponent } from './Pages/catalog-page/catalog-page.component';
+import { NotFoundPageComponent } from './Pages/not-found-page/not-found-page.component';
+import { DownloadCardComponent } from './Widgets/download-card/download-card.component';
+import { MoneyCountingCardComponent } from './Widgets/money-counting-card/money-counting-card.component';
+import { FurniturePageComponent } from './Pages/furniture-page/furniture-page.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -55,7 +60,12 @@ export function createTranslateLoader(http: HttpClient) {
     ProductsFilterDetailsComponent,
     RouteCardComponent,
     MoneyCountingDetailsComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    CatalogPageComponent,
+    NotFoundPageComponent,
+    DownloadCardComponent,
+    MoneyCountingCardComponent,
+    FurniturePageComponent
   ],
   imports: [
     BrowserModule,

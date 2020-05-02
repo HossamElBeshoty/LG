@@ -15,7 +15,7 @@
   left: 0;
   width: 50%;
   height: 100%;
-  background: #ED1B24;
+  background: #cccccc;
   transition: 1s;
 }
 
@@ -29,7 +29,7 @@
   right: 0;
   width: 50%;
   height: 100%;
-  background: #17469E;
+  background: #cccccc;
   transition: 1s;
 }
 
@@ -76,7 +76,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  background: #17469E;
+  background: #ED1C24;
   z-index: 1;
   border-radius: 50%;
   margin: -15px;

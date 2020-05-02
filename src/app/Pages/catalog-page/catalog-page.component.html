@@ -1,0 +1,22 @@
+<section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
+         style="background-image: url(assets/images/bg-img.jpg);">
+  <div class="container">
+    <div class="row dark-bg">
+      <div class="col-12">
+        <div class="section-heading mt-80 text-center">
+          <h1 class="heading theme-color"><span class="theme-color">{{'Catalog' | translate}}</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-ptb-100">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-12 col-md-4 mb-30" *ngFor="let data of catalogData">
+        <app-download-card [catalogName]="data.catalogName" [imagePath]="data.imagePath"
+                           [description]="data.description" [downloadPath]="data.downloadPath"></app-download-card>
+      </div>
+    </div>
+  </div>
+</section>

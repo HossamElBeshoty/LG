@@ -1,0 +1,22 @@
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3">
+      <img src="{{imagePath}}" class="card-img" alt="{{codeName}}">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h4 class="card-title theme-color">
+          {{codeName}}
+        </h4>
+        <ul class="list-group">
+          <li class="list-group-item"><span style="color: #17469E">Dimensions:</span> {{dimensions}}</li>
+          <li class="list-group-item"><span style="color: #17469E">Feature:</span> {{feature}}</li>
+          <li class="list-group-item"><span style="color: #17469E">Categories:</span> {{productCategory}}</li>
+        </ul>
+        <h4 class="card-title float-right mt-10">
+          <a routerLink="/products/moneyCounting/{{route}}" class="btn btn-primary">Have A Look</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
