@@ -20,7 +20,7 @@
         <div class="col-lg-12 col-md-12">
           <div class="row" *ngFor="let item of categories" >
             <div *ngFor="let digital of digitalData |  matchesCategory:item" class="col-md-3 col-12 mb-30">
-              <app-card [name]="digital.name" [image]="digital.imgPath"
+              <app-card [name]="digital.name" [image]="digital.imgPath" [imageRatio]="breadCrumbArray.imageRatio"
                         [collectionName]="digital.category.name" [size]="digital.size" [weight]="digital.weight"
                         [nwGw]="digital.nwGw" [quantity]="digital.quantity"></app-card>
             </div>

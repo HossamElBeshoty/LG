@@ -12,6 +12,7 @@ export class CardComponent implements OnInit {
   @Input() weight: string;
   @Input() quantity: string;
   @Input() nwGw: string;
+  @Input() imageRatio: number;
   constructor() { }
   ngOnInit(): void {
   }

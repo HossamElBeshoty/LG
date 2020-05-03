@@ -2,57 +2,68 @@
   {
     "id": 1,
     "breadCrumbName": "Digital Safes",
-    "pageName": "digital"
+    "pageName": "digital",
+    "imageRatio": 1.1
   },
   {
     "id": 2,
     "breadCrumbName": "Motorized Safes",
-    "pageName": "motorized"
+    "pageName": "motorized",
+    "imageRatio": 1.064
   },
   {
     "id": 3,
     "breadCrumbName": "Cash Box Safes",
-    "pageName": "cashBox"
+    "pageName": "cashBox",
+    "imageRatio": 0.952
   },
   {
     "id": 4,
     "breadCrumbName": "Book Safes",
-    "pageName": "bookSafe"
+    "pageName": "bookSafe",
+    "imageRatio": 0.96
   },
   {
     "id": 5,
     "breadCrumbName": "BN-Series Safes",
-    "pageName": "bN-Series"
+    "pageName": "bN-Series",
+    "imageRatio": 0.75
   },
   {
     "id": 7,
     "breadCrumbName": "Fingerprint Safes",
-    "pageName": "fingerprint"
+    "pageName": "fingerprint",
+    "imageRatio": 0.652
   },
   {
     "id": 8,
     "breadCrumbName": "Key Safes",
-    "pageName": "key"
+    "pageName": "key",
+    "imageRatio": 1.05
   },
   {
     "id": 9,
     "breadCrumbName": "Chinese Safes",
-    "pageName": "chinese"
+    "pageName": "chinese",
+    "imageRatio": 1.056
   },
   {
     "id": 10,
     "breadCrumbName": "Colored Safes",
-    "pageName": "colored"
+    "pageName": "colored",
+    "imageRatio": 1.56
   },
   {
     "id": 11,
     "breadCrumbName": "Korean Safes",
-    "pageName": "korean"
+    "pageName": "korean",
+    "imageRatio": 1
   },
   {
     "id": 12,
     "breadCrumbName": "Vietnam Safes",
-    "pageName": "vietnam"
+    "pageName": "vietnam",
+    "imageRatio": 0.7568
   },
   {
     "id": 13,
