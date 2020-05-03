@@ -92,11 +92,8 @@ export function createTranslateLoader(http: HttpClient) {
       // css filter
       filter: 'blur(3px) drop-shadow(0 0 0.75rem crimson)',
       // image width / height ratio for image holder
-      imageRatio: 4 / 3,
+      imageRatio: 16 / 9,
       // loading image in placeholder. Can be URL or base64
-      placeholderImageSrc:
-      // tslint:disable-next-line:max-line-length
-        ''
     } as IImageLoaderOptions),
     BrowserAnimationsModule
   ],

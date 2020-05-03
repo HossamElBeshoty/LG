@@ -84,3 +84,28 @@ body .ui-breadcrumb ul li .ui-menuitem-link {
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
+
+.ngx-image-placeholder {
+  display:block;
+  width:100%;
+  position:relative;
+  height:0;
+  overflow:hidden;
+ }
+ .ngx-image-placeholder .placeholder-loading-image {
+  width:100%;
+  height:100%;
+  transform:scale(.5);
+  opacity:1
+ }
+ .ngx-image-placeholder img {
+  position:absolute;
+  opacity:0;
+  top:0;
+  left:0;
+  width:100%;
+  transition:opacity 1s linear
+ }
+ .ngx-image-placeholder img.loaded {
+  opacity:1
+ }

@@ -1,12 +1,13 @@
 <div class="product-box">
   <div class="product-image">
-    <!--      <ngx-progressive-image-loader-->
-    <!--        filter="blur(3px) drop-shadow(0 0 0.75rem crimson)" [imageRatio]="3/2">-->
-    <!--        <img [src]="image" style="max-height: 500px" alt="{{name}}" ngxProgressiveImage class="img-fluid">-->
-    <!--      </ngx-progressive-image-loader>-->
-    <div class="frameImg">
+         <ngx-progressive-image-loader filter="blur(3px) drop-shadow(0 0 0.75rem crimson)">
+           <div class="frameImg">
+            <img [src]="image" style="max-height: 500px"  [imageRatio]="550 /500" alt="{{name}}" ngxProgressiveImage class="img-fluid img-thumbnail">
+           </div>
+         </ngx-progressive-image-loader>
+    <!-- <div class="frameImg">
       <img [src]="image" style="max-height: 500px" alt="{{name}}" class="img-fluid img-thumbnail">
-    </div>
+    </div> -->
     <!--    <div class="sale-flash offer">50% Off*</div>-->
   </div>
   <div class="product-descb">
