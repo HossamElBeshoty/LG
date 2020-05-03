@@ -1,22 +1,18 @@
-<div class="card bg-red text-white">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="card text-white">
+  <div id="{{cardImageCarouselData.name}}" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/Products/Counting Machine/lg750/1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/Products/Counting Machine/lg750/2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/Products/Counting Machine/lg750/3.jpg" class="d-block w-100" alt="...">
+      <div *ngFor="let Data of cardImageCarouselData.images ,let i=index" [ngClass]="i==0 ?'active':'inactive' "
+           class="carousel-item">
+        <img style="height: 300px" [src]="Data" class="d-block w-100" alt="{{cardImageCarouselData.name}}">
       </div>
     </div>
   </div>
   <div class="card-img-overlay">
     <h3 class="card-title theme-color">
-      <a href="#">
-        Card title
+      <a routerLink="./{{cardImageCarouselData.routerPath}}">
+        {{cardImageCarouselData.name}}
       </a>
+      <img src="assets/images/brand/logo-kora.png" width="50" height="50" class="img-fluid float-right" alt="Logo">
     </h3>
   </div>
 </div>

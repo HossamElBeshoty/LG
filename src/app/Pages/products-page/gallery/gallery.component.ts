@@ -1,20 +1,19 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
-import {ICardImageCarouselData} from '../../../Widgets/card-image-carousel/card-image-carousel.component';
 import {ICategoryCardImageCarouselData} from '../../../Widgets/category-carousel-card/category-carousel-card.component';
 
 @Component({
-  selector: 'app-furniture-page',
-  templateUrl: './furniture-page.component.html',
-  styleUrls: ['./furniture-page.component.css']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
-export class FurniturePageComponent implements OnInit {
+export class GalleryComponent implements OnInit {
   breadCrumb: MenuItem[];
   homeBreadCrumb: MenuItem;
-  furnitureData: ICategoryCardImageCarouselData[];
+  galleryData: ICategoryCardImageCarouselData[];
 
   constructor() {
-    this.furnitureData = [
+    this.galleryData = [
       {
         id: 1,
         images: [
@@ -23,8 +22,8 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'Bed Room',
-        routerPath: 'bed-room'
+        name: 'Tablets',
+        routerPath: 'tablets'
       },
       {
         id: 2,
@@ -34,8 +33,8 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'Dining Room',
-        routerPath: 'dining-room'
+        name: 'Frames',
+        routerPath: 'frames'
       },
       {
         id: 3,
@@ -45,8 +44,8 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'Shoe Cabinet',
-        routerPath: 'shoe-cabinet'
+        name: 'Clocks',
+        routerPath: 'clocks'
       },
       {
         id: 4,
@@ -56,8 +55,8 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'TV Tables',
-        routerPath: 'tv-tables'
+        name: 'Vases',
+        routerPath: 'vases'
       },
       {
         id: 5,
@@ -67,8 +66,8 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'Furniture Tables',
-        routerPath: 'furniture-tables'
+        name: 'Antiques',
+        routerPath: 'antiques'
       },
       {
         id: 6,
@@ -78,17 +77,27 @@ export class FurniturePageComponent implements OnInit {
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
           'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
         ],
-        name: 'Other',
-        routerPath: 'other'
+        name: 'Crystal',
+        routerPath: 'crystal'
+      },
+      {
+        id: 7,
+        images: [
+          'assets/images/Products/Safes3/safes/safes/Home%20safe/Book%20Safe/img%20(33).jpeg',
+          'assets/images/Products/Safes3/safes/safes/Home%20safe/Cash%20box/img%20(31).jpeg',
+          'assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/img%20(20).jpeg',
+          'assets/images/Products/Safes3/safes/safes/Home%20safe/Motorized/img%20(17).jpeg',
+        ],
+        name: 'Mirrors',
+        routerPath: 'mirrors'
       }];
   }
 
   ngOnInit(): void {
     this.breadCrumb = [
       {label: 'Products', routerLink: '/products'},
-      {label: 'Furniture Products', routerLink: '', styleClass: 'activeBreadCrumb'},
+      {label: 'Gallery Products', routerLink: '', styleClass: 'activeBreadCrumb'},
     ];
     this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
   }
-
 }

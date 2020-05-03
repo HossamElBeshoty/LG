@@ -21,6 +21,7 @@ export class ProductsDetailsComponent implements OnInit {
   digitalData: [];
   categories: any;
   public filterData: any = {};
+
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }
 
@@ -47,6 +48,18 @@ export class ProductsDetailsComponent implements OnInit {
       this.breadCrumb = [
         {label: 'Products', routerLink: '/products'},
         {label: 'Furniture Products', routerLink: '/products/furniture'},
+        {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+      ];
+    } else if (this.router.url.includes('lighting')) {
+      this.breadCrumb = [
+        {label: 'Products', routerLink: '/products'},
+        {label: 'Lighting Products', routerLink: '/products/lighting'},
+        {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
+      ];
+    } else if (this.router.url.includes('gallery')) {
+      this.breadCrumb = [
+        {label: 'Products', routerLink: '/products'},
+        {label: 'Gallery Products', routerLink: '/products/gallery'},
         {label: this.breadCrumbArray.breadCrumbName, routerLink: '', styleClass: 'activeBreadCrumb'}
       ];
     } else {

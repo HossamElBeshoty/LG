@@ -16,6 +16,8 @@ import {MoneyCountingDetailsComponent} from './Pages/products-page/money-countin
 import {CatalogPageComponent} from './Pages/catalog-page/catalog-page.component';
 import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.component';
 import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
+import {LightingComponent} from './Pages/products-page/lighting/lighting.component';
+import {GalleryComponent} from './Pages/products-page/gallery/gallery.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -24,8 +26,12 @@ const routes: Routes = [
   {path: 'products', component: ProductsPageComponent},
   {path: 'products/safes', component: SafesComponent},
   {path: 'products/furniture', component: FurniturePageComponent},
+  {path: 'products/lighting', component: LightingComponent},
+  {path: 'products/gallery', component: GalleryComponent},
   {path: 'products/safes/:name', component: ProductsDetailsComponent},
   {path: 'products/furniture/:name', component: ProductsDetailsComponent},
+  {path: 'products/lighting/:name', component: ProductsDetailsComponent},
+  {path: 'products/gallery/:name', component: ProductsDetailsComponent},
   {path: 'products/safes/:name/filter', component: ProductsFilterDetailsComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},

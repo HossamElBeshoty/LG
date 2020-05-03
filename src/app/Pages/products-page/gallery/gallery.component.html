@@ -4,7 +4,7 @@
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">Furniture</span>
+          <h1 class="heading theme-color"><span class="theme-color">Gallery</span>
           </h1>
         </div>
       </div>
@@ -16,8 +16,8 @@
     <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
     <br>
     <div class="row">
-      <div *ngFor="let furnitureDetails of furnitureData" class="col-md-4 col-12 mb-30">
-        <app-category-carousel-card [cardImageCarouselData]="furnitureDetails"></app-category-carousel-card>
+      <div *ngFor="let galleryDetails of galleryData" class="col-md-4 col-12 mb-30">
+        <app-category-carousel-card [cardImageCarouselData]="galleryDetails"></app-category-carousel-card>
       </div>
     </div>
   </div>
