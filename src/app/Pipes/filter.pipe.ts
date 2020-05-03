@@ -6,6 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class MathcesCategoryPipe implements PipeTransform {
     transform(items: Array<any>, category: string): Array<any> {
 
-        return items.filter(item => item.category.name === category);
+        return items.filter(item => item.category.id === category);
     }
 }

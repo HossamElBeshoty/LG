@@ -37,7 +37,7 @@ export class ProductsDetailsComponent implements OnInit {
     console.log(this.digitalData);
     this.digitalData.sort((a: any, b: any) => a.id - b.id);
     const allCategory: any = (this.digitalData.map((a: { category: [] }) => a.category));
-    this.categories = [...new Set(allCategory.map(item => item.name))];
+    this.categories = [...new Set(allCategory.map(item => item.id))];
     console.log(this.categories);
 
     // BreadCrumb
