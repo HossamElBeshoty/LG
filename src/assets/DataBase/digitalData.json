@@ -56,14 +56,14 @@
     "name": "50EA",
     "pageName": "digital",
     "type": "Electronic Safe",
-    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EA%201/img%20(6).jpeg",
+    "imgPath": "assets/images/Products/Safes3/safes/safes/Home%20safe/Digital/EA%201/img%20(8).jpeg",
     "size": "H250 X W350 X D250mm"
   },
   {
     "id": 6,
     "category": {
       "id": 3,
-      "name": "EK 1"
+      "name": "EK 2"
     },
     "name": "20EK",
     "pageName": "digital",
@@ -72,10 +72,10 @@
     "size": "H200 X W310 X D200mm"
   },
   {
-    "id": 7,
+    "id": 8,
     "category": {
       "id": 3,
-      "name": "EK 1"
+      "name": "EK 2"
     },
     "name": "30EK",
     "pageName": "digital",
@@ -84,10 +84,10 @@
     "size": "H300 X W380 X D300mm"
   },
   {
-    "id": 8,
+    "id": 9,
     "category": {
       "id": 3,
-      "name": "EK 1"
+      "name": "EK 2"
     },
     "name": "50EK",
     "pageName": "digital",
@@ -96,10 +96,10 @@
     "size": "H500 X W350 X D310mm"
   },
   {
-    "id": 9,
+    "id": 7,
     "category": {
       "id": 3,
-      "name": "EK 1"
+      "name": "EK 2"
     },
     "name": "25EK",
     "pageName": "digital",
@@ -144,7 +144,7 @@
     "size": "H200 X W310 X D200mm"
   },
   {
-    "id": 13,
+    "id": 14,
     "category": {
       "id": 5,
       "name": "NEK 3"
@@ -156,7 +156,7 @@
     "size": "H300 X W380 X D300mm"
   },
   {
-    "id": 14,
+    "id": 13,
     "category": {
       "id": 5,
       "name": "NEK 3"
