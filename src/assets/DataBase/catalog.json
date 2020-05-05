@@ -1,16 +1,15 @@
 [
   {
     "id": 1,
-    "catalogName": "Banking Equipment",
+    "catalogName": "LG Bill Counters Catalogue 2020",
     "imagePath": "assets/Data/Images/catalogue%20pdf%20(1).png",
-    "downloadPath": "assets/Data/catalogue.pdf",
-    "description": "BANKNOTE COUNTING AND SORTING"
+    "downloadPath": "assets/Data/catalogue.pdf"
   },
   {
     "id": 2,
-    "catalogName": "Protection With Satisfaction",
+    "catalogName": "LG Korean Safe Box 2019",
     "imagePath": "assets/Data/Images/catalogue 2 pdf.png",
     "downloadPath": "assets/Data/catalogue%202.pdf",
-    "description": "Certificates and Test reports"
+    "description": "Fireproof And Anti-Burglary Safe Box"
   }
 ]
