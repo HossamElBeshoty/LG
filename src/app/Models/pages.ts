@@ -1,4 +1,7 @@
+import {ISections} from './sections';
+
 export interface IPages {
-  Id: number;
-  Name: string;
+  id: number;
+  name: string;
+  sections: ISections[];
 }

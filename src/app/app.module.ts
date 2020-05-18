@@ -35,10 +35,11 @@ import {DownloadCardComponent} from './Widgets/download-card/download-card.compo
 import {MoneyCountingCardComponent} from './Widgets/money-counting-card/money-counting-card.component';
 import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
 import {PrimeNgModule} from './Modules/prime-ng.module';
-import { MathcesCategoryPipe } from './Pipes/filter.pipe';
-import { CategoryCarouselCardComponent } from './Widgets/category-carousel-card/category-carousel-card.component';
-import { LightingComponent } from './Pages/products-page/lighting/lighting.component';
-import { GalleryComponent } from './Pages/products-page/gallery/gallery.component';
+import {MathcesCategoryPipe} from './Pipes/filter.pipe';
+import {CategoryCarouselCardComponent} from './Widgets/category-carousel-card/category-carousel-card.component';
+import {LightingComponent} from './Pages/products-page/lighting/lighting.component';
+import {GalleryComponent} from './Pages/products-page/gallery/gallery.component';
+import {SafePipe} from './Pipes/SafePipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -74,6 +75,7 @@ export function createTranslateLoader(http: HttpClient) {
     MoneyCountingCardComponent,
     FurniturePageComponent,
     MathcesCategoryPipe,
+    SafePipe,
     CategoryCarouselCardComponent,
     LightingComponent,
     GalleryComponent

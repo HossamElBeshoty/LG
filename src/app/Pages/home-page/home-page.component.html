@@ -1,112 +1,122 @@
 <section class="">
-  <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
-    <div id="rev_slider_251_115" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-      <ul>
-        <!-- SLIDE 1 -->
-        <li data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"
-            data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" class="rev_gradient">
+  <!--  <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container">-->
+  <!--    <div id="rev_slider_251_115" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">-->
+  <!--      <ul>-->
+  <!--        &lt;!&ndash; SLIDE 1 &ndash;&gt;-->
+  <!--        <li *ngFor="let x of headerSection?.sectionMedia; let i = index" [attr.data-index]="'rs-0' + i"-->
+  <!--            [attr.data-transition]="'fade'" [attr.data-slotamount]="'default'" [attr.data-easein]="'Power3.easeInOut'"-->
+  <!--            [attr.data-easeout]="'Power3.easeInOut'" [attr.data-masterspeed]="2000" [attr.data-fsmasterspeed]="1500" class="rev_gradient">-->
 
-          <!-- MAIN IMAGE -->
-          <img src="assets/images/slider-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-               data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-          <!-- LAYER NR. 1 -->
-          <!-- <div  class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
-               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"
-               data-splitin="none" data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>
-          </div>
-          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"
-               data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Yourself </h2>
-          </div>
-          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"
-               data-splitin="none" data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>
-          </div> -->
-        </li>
+  <!--          &lt;!&ndash; MAIN IMAGE &ndash;&gt;-->
+  <!--          <img [src]="imgApiPath + x.path" alt="" [attr.data-bgposition]="'center center'" [attr.data-bgfit]="'cover'"-->
+  <!--               [attr.data-bgrepeat]="'no-repeat'" class="rev-slidebg" [attr.data-bgparallax]="10" [attr.data-no-retina]>-->
+  <!--          &lt;!&ndash; LAYER NR. 1 &ndash;&gt;-->
+  <!--          &lt;!&ndash; <div  class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
+  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
+  <!--               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"-->
+  <!--               data-width="['none','none','none','none']" data-type="text"-->
+  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
+  <!--               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"-->
+  <!--               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"-->
+  <!--               data-splitin="none" data-splitout="none">-->
+  <!--            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>-->
+  <!--          </div>-->
+  <!--          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
+  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
+  <!--               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"-->
+  <!--               data-width="['none','none','none','none']" data-type="text"-->
+  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
+  <!--               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"-->
+  <!--               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"-->
+  <!--               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"-->
+  <!--               data-splitout="none">-->
+  <!--            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Yourself </h2>-->
+  <!--          </div>-->
+  <!--          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
+  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
+  <!--               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"-->
+  <!--               data-width="['none','none','none','none']" data-type="text"-->
+  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
+  <!--               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"-->
+  <!--               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"-->
+  <!--               data-splitin="none" data-splitout="none">-->
+  <!--            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>-->
+  <!--          </div> &ndash;&gt;-->
+  <!--        </li>-->
 
-        <!-- SLIDE 2  -->
-        <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"
-            data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500">
+  <!--&lt;!&ndash;        &lt;!&ndash; SLIDE 2  &ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;        <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"&ndash;&gt;-->
+  <!--&lt;!&ndash;            data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500">&ndash;&gt;-->
 
-          <!-- MAIN IMAGE -->
-          <img src="assets/images/slider-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-               data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
-          <!-- LAYER NR. 1 -->
-          <!-- <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
-               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"
-               data-splitin="none" data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>
-          </div>
-          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"
-               data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Youeself </h2>
-          </div>
-          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"
-               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"
-               data-splitin="none" data-splitout="none">
-            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>
-          </div>
-          <div class="tp-caption tp-resizeme whitecolor" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['70','70','70','70']" data-whitespace="nowrap" data-responsive_offset="on"
-               data-width="['none','none','none','none']" data-type="text"
-               data-textalign="['center','center','center','center']" data-fontsize="['24','24','20','20']"
-               data-transform_idle="o:1;"
-               data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
-               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-               data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"
-               data-splitout="none">
-            <p style="line-height: 36px; font-weight: 400; font-size: 30px; color: #ffffff;">Up to <span
-              class="theme-color">25% Off</span></p>
-          </div>
-          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
-               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-               data-voffset="['160','160','160','160']" data-width="200" data-height="none" data-whitespace="normal"
-               data-type="button" data-actions='' data-responsive_offset="on"
-               data-textAlign="['center','center','center','center']" data-margintop="[0,0,0,0]"
-               data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
-               data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;"}]'
-               style=" box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-            <a routerLink="/products" class="cs-button">Shop Now</a>
-          </div> -->
-        </li>
-      </ul>
+  <!--&lt;!&ndash;          &lt;!&ndash; MAIN IMAGE &ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;          <img src="assets/images/slider-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>&ndash;&gt;-->
+  <!--&lt;!&ndash;          &lt;!&ndash; LAYER NR. 1 &ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;          &lt;!&ndash; <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-splitin="none" data-splitout="none">&ndash;&gt;-->
+  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>&ndash;&gt;-->
+  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-splitout="none">&ndash;&gt;-->
+  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Youeself </h2>&ndash;&gt;-->
+  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-splitin="none" data-splitout="none">&ndash;&gt;-->
+  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>&ndash;&gt;-->
+  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme whitecolor" data-x="['center','center','center','center']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-voffset="['70','70','70','70']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-fontsize="['24','24','20','20']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_idle="o:1;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-splitout="none">&ndash;&gt;-->
+  <!--&lt;!&ndash;            <p style="line-height: 36px; font-weight: 400; font-size: 30px; color: #ffffff;">Up to <span&ndash;&gt;-->
+  <!--&lt;!&ndash;              class="theme-color">25% Off</span></p>&ndash;&gt;-->
+  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
+  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-voffset="['160','160','160','160']" data-width="200" data-height="none" data-whitespace="normal"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-type="button" data-actions='' data-responsive_offset="on"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-textAlign="['center','center','center','center']" data-margintop="[0,0,0,0]"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"&ndash;&gt;-->
+  <!--&lt;!&ndash;               data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;"}]'&ndash;&gt;-->
+  <!--&lt;!&ndash;               style=" box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">&ndash;&gt;-->
+  <!--&lt;!&ndash;            <a routerLink="/products" class="cs-button">Shop Now</a>&ndash;&gt;-->
+  <!--&lt;!&ndash;          </div> &ndash;&gt;&ndash;&gt;-->
+  <!--&lt;!&ndash;        </li>&ndash;&gt;-->
+  <!--      </ul>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let x of headerSection?.sectionMedia; let i = index" [ngClass]="i==0 ?'active':'inactive' "
+           class="carousel-item">
+        <img [src]="imgApiPath + x.path" class="d-block w-100" alt="...">
+      </div>
     </div>
   </div>
 </section>
@@ -121,16 +131,16 @@
       </div>
       <div class="col-md-4 col-12 sm-mb-50">
         <div class="section-heading mb-30 mt-20">
-          <h6 class="sub-heading">{{'Lotfy Group' | translate}}</h6>
-          <h1 class="heading">Make <br>Yourself Safe</h1>
+          <h6 class="sub-heading">{{collectionVideoSection?.subTitle}}</h6>
+          <h1 class="heading">{{collectionVideoSection?.title}}</h1>
         </div>
-        <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis auctor, tellus ac
-          lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna. Suspendisse potenti. </p>
+        <p>{{collectionVideoSection?.details}}</p>
         <a class="cs-button icon-color mt-30" data-toggle="modal" data-target="#exampleModalCenter"><i
           class="fa fa-play"></i> Collection Video</a>
       </div>
       <div class="col-md-8 col-12">
-        <img src="assets/images/about.png" class="img-fluid" alt="">
+        <img [src]="imgApiPath + collectionVideoSection?.sectionMedia[1]?.path" class="img-fluid"
+             alt="{{collectionVideoSection?.title}}">
       </div>
     </div>
   </div>
@@ -143,7 +153,8 @@
         </div>
         <div class="modal-body">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nytQSmUxsCE"
+            <iframe class="embed-responsive-item"
+                    [src]=" 'https://www.youtube.com/embed/' +  getYouTubeId(collectionVideoSection?.sectionMedia[0].path)  | safe"
                     allowfullscreen></iframe>
           </div>
         </div>
@@ -161,36 +172,36 @@
     <div class="row no-gutters">
       <div class="col-md-4 col-12">
         <a routerLink="/products/moneyCounting" class="promo-bx-link">
-          <div class="promo-bx bg-overlay-black-20"
-               style="background: url(assets/images/HomePage/money_counting.jpg) no-repeat center;">
-            <p class="cross">Collection 2020</p>
+          <div class="promo-bx bg-overlay-black-20">
+            <img [src]="imgApiPath + trendCollectionSection1?.sectionMedia[0].path"
+                 style="display: block;margin-left: auto;margin-right: auto;" alt="">
+            <p class="cross">{{trendCollectionSection1?.subTitle}}</p>
             <div class="promo-tx">
-              <!--              <p>245 Products</p>-->
-              <h2>Bill Counters</h2>
+              <h2>{{trendCollectionSection1?.title}}</h2>
             </div>
           </div>
         </a>
       </div>
       <div class="col-md-4 col-12">
         <a routerLink="//products/safes" class="promo-bx-link">
-          <div class="promo-bx bg-overlay-black-20"
-               style="background: url(assets/images/HomePage/safe.jpg)  no-repeat center;">
-            <p class="cross">Collection 2020</p>
+          <div class="promo-bx bg-overlay-black-20">
+            <img [src]="imgApiPath + trendCollectionSection2?.sectionMedia[0].path"
+                 style="display: block;margin-left: auto;margin-right: auto;" alt="">
+            <p class="cross">{{trendCollectionSection2?.subTitle}}</p>
             <div class="promo-tx">
-              <!--              <p>345 Products</p>-->
-              <h2>Safes</h2>
+              <h2>{{trendCollectionSection2?.title}}</h2>
             </div>
           </div>
         </a>
       </div>
       <div class="col-md-4 col-12">
         <a routerLink="/products/furniture" class="promo-bx-link">
-          <div class="promo-bx bg-overlay-black-20"
-               style="background: url(assets/images/HomePage/Antiques.jpg)  no-repeat center;">
-            <p class="cross">Collection 2020</p>
+          <div class="promo-bx bg-overlay-black-20">
+            <img [src]="imgApiPath + trendCollectionSection3?.sectionMedia[0].path"
+                 style="display: block;margin-left: auto;margin-right: auto;" alt="">
+            <p class="cross">{{trendCollectionSection3?.subTitle}}</p>
             <div class="promo-tx">
-              <!--              <p>455 Products</p>-->
-              <h2>Furniture</h2>
+              <h2>{{trendCollectionSection3?.title}}</h2>
             </div>
           </div>
         </a>
@@ -203,15 +214,15 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 col-12">
-        <img src="assets/images/HomePage/frame.jpg" class="img-fluid" alt="">
+        <img [src]="imgApiPath + catalogueSection?.sectionMedia[0].path" class="img-fluid"
+             alt="{{catalogueSection?.title}}">
       </div>
       <div class="col-md-4 col-12 sm-mt-50">
         <div class="section-heading mb-30">
-          <h6 class="sub-heading">{{'Lotfy Group' | translate}}</h6>
-          <h1 class="heading">{{'Catalog 2020' | translate}}</h1>
+          <h6 class="sub-heading">{{catalogueSection?.subTitle}}</h6>
+          <h1 class="heading">{{catalogueSection?.title}}</h1>
         </div>
-        <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis auctor, tellus ac
-          lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna. Suspendisse potenti. </p>
+        <p>{{catalogueSection?.details}}</p>
         <a class="cs-button mt-30" routerLink="/catalog">{{'View' | translate}} &nbsp; <i
           class="fa fa-long-arrow-right"></i></a>
       </div>
@@ -263,12 +274,10 @@
           <div class="col-md-5 col-12"></div>
           <div class="col-md-7 col-12 sm-mb-50">
             <div class="section-heading mb-30">
-              <h6 class="sub-heading">{{'Lotfy Group' | translate}}</h6>
-              <h1 class="heading">{{'Lotfy Planner' | translate}}</h1>
+              <h6 class="sub-heading">{{plannerSection?.subTitle}}</h6>
+              <h1 class="heading">{{plannerSection?.title}}</h1>
             </div>
-            <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis
-              auctor, tellus ac lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna. Suspendisse
-              potenti. </p>
+            <p>{{plannerSection?.details}}</p>
             <a class="cs-button mt-30" routerLink="/products">
               {{'Start Planning' | translate}} &nbsp;
               <i class="fa fa-long-arrow-right"></i>
@@ -277,7 +286,8 @@
         </div>
       </div>
       <div class="col-md-7 col-12">
-        <img src="assets/images/HomePage/10828026_798047960243795_5637052896399403363_o.png" class="img-fluid" alt="">
+        <img [src]="imgApiPath + plannerSection?.sectionMedia[0].path" class="img-fluid"
+             alt="{{plannerSection?.title}}">
       </div>
     </div>
   </div>
@@ -288,27 +298,9 @@
     <div class="row align-items-center">
       <div class="col-md-7 col-12">
         <div class="row no-gutter">
-          <div class="col-6">
-            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
-              <img src="assets/images/HomePage/72773172_2349264775122098_6931725797224873984_o.jpg" class="img-fluid"
-                   alt="">
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
-              <img src="assets/images/HomePage/73178209_2349263475122228_3965188458493771776_o.jpg" class="img-fluid"
-                   alt="">
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
-              <img src="assets/images/HomePage/73528699_2349264435122132_6985418227069222912_o.jpg" class="img-fluid"
-                   alt="">
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="https://www.facebook.com/LotfyGroup/" target="_blank" class="insta-img">
-              <img src="assets/images/HomePage/75349137_2349262995122276_521888257890320384_o.jpg" class="img-fluid"
+          <div class="col-6" *ngFor="let facebookDetails of faceBookSection?.sectionMedia">
+            <a href="{{facebookDetails.routePath}}" target="_blank" class="insta-img">
+              <img [src]="imgApiPath + facebookDetails.path" class="img-fluid"
                    alt="">
             </a>
           </div>
@@ -319,11 +311,10 @@
       <div class="col-md-4 col-12 sm-mt-50">
         <div class="section-heading mb-30">
           <h6 class="sub-heading fs-24"><i class="fa fa-facebook-square"></i></h6>
-          <h1 class="heading">Show Your <br>Story</h1>
+          <h1 class="heading">{{faceBookSection?.title}}</h1>
         </div>
-        <h4>Share your happiness.</h4>
-        <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. Duis auctor, tellus ac
-          lobortis mollis, magna dui convallis felis, eget porta ipsum nibh sed urna.</p>
+        <h4>{{faceBookSection?.subTitle}}</h4>
+        <p>{{faceBookSection?.details}}</p>
         <a class="cs-button mt-30" href="https://www.facebook.com/LotfyGroup/" target="_blank">Our Facebook &nbsp; <i
           class="fa fa-long-arrow-right"></i></a>
       </div>
@@ -336,9 +327,8 @@
     <div class="row align-items-center">
       <div class="col-xl-6 col-12">
         <div class="section-heading">
-          <h1 class="heading mb-30">{{'Contact Us' | translate}}</h1>
-          <p
-            class="mb-20 ">   {{'Lotfy Group is the trusted importing and exporting company for trading home accessories, furniture, lighting, and especially office equipment such as safe boxes and bill counters.Since launching in 1979, Lotfy Group has been facilitating commodities to the valued clients of individuals, corporates, and wholesalers.Lotfy Group selects its inventory from many countries from around the world, offering various collections for its customers.Its main countries of imports are China, Vietnam, South Korea, Malaysia, and Turkey.' | translate}}</p>
+          <h1 class="heading mb-30">{{contactUsSection.title}}</h1>
+          <p class="mb-20 ">{{contactUsSection.details}}</p>
         </div>
         <h4 class="py-2"><i class="ti-mobile theme-color"></i>&nbsp; {{'+2 012 - 760 - 61063' | translate}}</h4>
         <h4 class="py-2"><i class="fa fa-weixin theme-color"></i>&nbsp; {{'+2 0128 - 706 - 0298' | translate}}</h4>

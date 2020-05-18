@@ -1,4 +1,4 @@
-import {ISectionsMedia} from "./sections-media";
+import {ISectionsMedia} from './sections-media';
 
 export interface ISections {
   id: number;
