@@ -19,8 +19,8 @@
     <div class="row">
       <div class="col-12">
         <div class="section-heading text-center mb-20">
-          <h6 class="sub-heading">{{'We Will contact you within 48 hours.' | translate}}</h6>
-          <h1 class="heading">{{'Write to us' | translate}}</h1>
+          <h6 class="sub-heading">{{contactUsSection?.subTitle}}</h6>
+          <h1 class="heading">{{contactUsSection?.title}}</h1>
         </div>
       </div>
     </div>
@@ -68,9 +68,7 @@
             <h6 class="sub-heading">{{'We will be with you.' | translate}}</h6>
             <h1 class="heading">{{'Contact Us' | translate}}</h1>
           </div>
-          <p class="mb-50">Vestibulum malesuada ligula non risus pretium tempor. Suspendisse ornare congue efficitur.
-            Sed ac mi bibendum, egestas quam et, ornare eros. Ut ut molestie lorem. Etiam fringilla quis sem iaculis
-            congue. Praesent in nulla sed mi fringilla blandit eget in mauris. Donec </p>
+          <p class="mb-50">{{contactUsSection.details}}</p>
           <p><i class="ti-mobile"></i>&nbsp; {{'+(002) 012 - 760 - 61063' | translate}}</p>
           <p><i class="fa fa-weixin"></i>&nbsp; {{'+(002) 012 - 706 - 0298' | translate}}</p>
           <p><i class="ti-email"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</p>

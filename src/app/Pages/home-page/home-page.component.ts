@@ -80,7 +80,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     }, error => {
     }, () => {
       this.contactUsSection = this.contactUsPage.sections.find(c => c.id === 11);
-      console.log(this.contactUsSection);
     });
   }
 
