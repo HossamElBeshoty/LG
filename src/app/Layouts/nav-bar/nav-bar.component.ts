@@ -1,6 +1,7 @@
 import {Component, OnInit, AfterViewInit, Inject} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import {TranslateService} from '@ngx-translate/core';
+import {LangService} from '../../Services/lang.service';
 
 declare function navfunction(): any;
 
@@ -14,7 +15,7 @@ declare var $: any;
 export class NavBarComponent implements OnInit, AfterViewInit {
   language: string = localStorage.getItem('language');
 
-  constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService) {
+  constructor(@Inject(DOCUMENT) private document, private translateService: TranslateService, private langService: LangService) {
   }
 
   ngOnInit(): void {
@@ -42,5 +43,6 @@ export class NavBarComponent implements OnInit, AfterViewInit {
       localStorage.setItem('language', 'en');
       this.language = 'en';
     }
+    this.langService.setLang(this.language);
   }
 }

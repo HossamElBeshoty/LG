@@ -4,6 +4,7 @@ import {IPages} from '../../Models/pages';
 import {PageService} from '../../Services/page.service';
 import {ISections} from '../../Models/sections';
 import {environment} from '../../../environments/environment';
+import {LangService} from '../../Services/lang.service';
 
 @Component({
   selector: 'app-about-us-page',
@@ -12,19 +13,21 @@ import {environment} from '../../../environments/environment';
 })
 export class AboutUsPageComponent implements OnInit {
   language: string = localStorage.getItem('language');
-  breadCrumb: MenuItem[];
-  homeBreadCrumb: MenuItem;
   aboutUsPage: IPages;
   aboutUsSection: ISections;
   imgApiPath = environment.imageEndPoint;
-  constructor( public pageService: PageService) {
+  lang: string;
+
+  constructor(public pageService: PageService, private langService: LangService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {
-    this.breadCrumb = [
-      {label: 'About Us', routerLink: '', styleClass: 'activeBreadCrumb'},
-    ];
-    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
     this.getAboutUsPage();
   }
 
@@ -34,7 +37,6 @@ export class AboutUsPageComponent implements OnInit {
     }, error => {
     }, () => {
       this.aboutUsSection = this.aboutUsPage.sections.find(c => c.id === 6);
-      console.log(this.aboutUsSection);
     });
   }
 }

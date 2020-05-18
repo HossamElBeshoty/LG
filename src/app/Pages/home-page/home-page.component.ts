@@ -4,6 +4,7 @@ import {PageService} from '../../Services/page.service';
 import {IPages} from '../../Models/pages';
 import {ISections} from '../../Models/sections';
 import {environment} from '../../../environments/environment';
+import {LangService} from '../../Services/lang.service';
 
 declare function galleryfunction(): any;
 
@@ -27,8 +28,15 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   plannerSection: ISections;
   faceBookSection: ISections;
   contactUsSection: ISections;
+  lang: string;
 
-  constructor(@Inject(DOCUMENT) private document, public pageService: PageService) {
+  constructor(@Inject(DOCUMENT) private document, public pageService: PageService, private langService: LangService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {

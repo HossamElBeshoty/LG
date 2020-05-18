@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LG-WebSite';
-  language = localStorage.getItem('language');
+
+  constructor() {
+    if (!localStorage.getItem('language')) {
+      localStorage.setItem('language', 'en');
+    }
+  }
 
   onActivate(event) {
     window.scroll(0, 0);

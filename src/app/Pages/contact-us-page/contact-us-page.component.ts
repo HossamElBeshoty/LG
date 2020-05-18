@@ -3,6 +3,7 @@ import {MenuItem} from 'primeng/api';
 import {IPages} from '../../Models/pages';
 import {PageService} from '../../Services/page.service';
 import {ISections} from '../../Models/sections';
+import {LangService} from '../../Services/lang.service';
 
 @Component({
   selector: 'app-contact-us-page',
@@ -10,19 +11,20 @@ import {ISections} from '../../Models/sections';
   styleUrls: ['./contact-us-page.component.css']
 })
 export class ContactUsPageComponent implements OnInit {
-  breadCrumb: MenuItem[];
-  homeBreadCrumb: MenuItem;
   contactUsPage: IPages;
   contactUsSection: ISections;
+  lang: string;
 
-  constructor(public pageService: PageService) {
+  constructor(public pageService: PageService, private langService: LangService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {
-    this.breadCrumb = [
-      {label: 'Contact Us', routerLink: '', styleClass: 'activeBreadCrumb'},
-    ];
-    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
     this.getContactUs();
   }
 

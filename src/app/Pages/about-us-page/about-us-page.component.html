@@ -13,8 +13,6 @@
 
 <section class="section-pb-100 sm-pb-50 sm-pt-50">
   <div class="container">
-    <br>
-    <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
     <div class="row">
       <div class="col-12">
         <div class="position-relative img-lamp-out">
@@ -23,11 +21,11 @@
       </div>
       <div class="col-12 sm-mb-50">
         <div class="section-heading text-center mb-30 mt-20">
-          <h1 class="heading">{{aboutUsSection?.title}}</h1>
+          <h1 class="heading">{{lang === 'en' ? aboutUsSection?.title : aboutUsSection?.titleAr}}</h1>
         </div>
       </div>
       <div class="col-md-6 col-12 sm-mb-50">
-        <p [innerHTML]="aboutUsSection?.details"></p>
+        <p [innerHTML]="lang === 'en' ? aboutUsSection?.details:aboutUsSection?.detailsAr"></p>
       </div>
       <div class="col-md-6 col-12 sm-mb-50">
         <img [src]="imgApiPath + aboutUsSection?.sectionMedia[0].path" class="img-thumbnail" alt="">
