@@ -1,7 +1,7 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 // tslint:disable-next-line:import-spacing
 import *  as  data from '../../../../assets/DataBase/moneyCounting.json';
-import {MenuItem} from 'primeng/api';
+import { MenuItem } from 'primeng/api';
 
 declare var $: any;
 
@@ -16,20 +16,20 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
   products = (data as any).default;
   breadCrumb: MenuItem[];
   homeBreadCrumb: MenuItem;
-
+  asd = 'topLanding';
   constructor() {
   }
 
   ngOnInit(): void {
     this.breadCrumb = [
-      {label: 'Products', routerLink: '/products'},
-      {label: 'Bill Counting Machine', routerLink: '', styleClass: 'activeBreadCrumb'},
+      { label: 'Products', routerLink: '/products' },
+      { label: 'Bill Counting Machine', routerLink: '', styleClass: 'activeBreadCrumb' },
     ];
-    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
+    this.homeBreadCrumb = { icon: 'pi pi-home', routerLink: '/' };
     console.log(this.products);
     // tslint:disable-next-line:only-arrow-functions
-    $(function() {
-      $('.tab-wrapper.v1 .item .tab-btn a').click(function(e) {
+    $(function () {
+      $('.tab-wrapper.v1 .item .tab-btn a').click(function (e) {
         e.preventDefault();
         // tslint:disable-next-line:variable-name
         const _item = $(this).closest('.item');
@@ -44,7 +44,7 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
             .find('.tab-content')
             .stop()
             // tslint:disable-next-line:only-arrow-functions
-            .slideUp(400, function() {
+            .slideUp(400, function () {
               _item.removeClass('selected');
             });
 
@@ -54,7 +54,7 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
             .find('.tab-content')
             .stop()
             // tslint:disable-next-line:only-arrow-functions
-            .slideUp(400, function() {
+            .slideUp(400, function () {
               _all.removeClass('selected');
             });
 
@@ -63,13 +63,13 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
             .find('.tab-content')
             .stop()
             // tslint:disable-next-line:only-arrow-functions
-            .slideDown(400, function() {
+            .slideDown(400, function () {
               _item.addClass('selected');
             });
         }
       });
 
-      $('.tab-wrapper.v2 .tab-btn a').click(function(e) {
+      $('.tab-wrapper.v2 .tab-btn a').click(function (e) {
         e.preventDefault();
 
         // tslint:disable-next-line:variable-name
@@ -89,7 +89,7 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
           _all.removeClass(_hasClass).find('em').removeClass('mdi-minus').addClass('mdi-plus');
           _this.addClass(_hasClass).find('em').removeClass('mdi-plus').addClass('mdi-minus');
 
-          _content.each(function() {
+          _content.each(function () {
             // tslint:disable-next-line:variable-name
             const _value = $(this).data('value');
 
@@ -97,7 +97,7 @@ export class MoneyCountingComponent implements OnInit, AfterViewInit {
 
             if (_value === _category) {
               $(this).stop()
-                .fadeIn('slow', function() {
+                .fadeIn('slow', function () {
                   $(this).addClass(_hasClass);
                 });
             }

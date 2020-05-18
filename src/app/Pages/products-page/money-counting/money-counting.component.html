@@ -1,11 +1,10 @@
-<section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
-         style="background-image: url(assets/images/bg-img.jpg);">
+<section class="section-ptb-30" data-jarallax='{"speed": 0.4}' style="background-image: url(assets/images/bg-img.jpg);">
   <div class="container">
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
           <h1 class="heading theme-color"><span
-            class="theme-color">{{'Bill Counting Machine Products' | translate}}</span></h1>
+              class="theme-color">{{'Bill Counting Machine Products' | translate}}</span></h1>
         </div>
       </div>
     </div>
@@ -32,7 +31,7 @@
                 <div class="tab-content">
                   <ul>
                     <li class="activeIsotope" data-filter="*">All</li>
-                    <li data-filter=".topLanding">Top Loading</li>
+                    <li [attr.data-filter]="'.' + asd">Top Loading</li>
                     <li data-filter=".sorting">Sorting</li>
                     <li data-filter=".backLanding">Back Loading</li>
                     <li data-filter=".mixedValue">Mixed Value</li>
@@ -50,9 +49,8 @@
           <div class="row money-counting-item">
             <div *ngFor="let prod of products" class="item {{prod.isotopeClasses}} col-12">
               <app-money-counting-card [imagePath]="prod.imagePath" [codeName]="prod.codeName" [route]="prod.id"
-                                       [dimensions]="prod.dimensions" [feature]="prod.feature"
-
-                                       [productCategory]="prod.productCategory"></app-money-counting-card>
+                [dimensions]="prod.dimensions" [feature]="prod.feature" [productCategory]="prod.productCategory">
+              </app-money-counting-card>
               <!--              <app-route-card [route]="prod.id"-->
               <!--                              [imgPath]="prod.imagePath"-->
               <!--                              [productCode]="prod.codeName"-->
@@ -64,5 +62,3 @@
     </div>
   </div>
 </section>
-
-
