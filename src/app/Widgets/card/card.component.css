@@ -1,9 +1,3 @@
-.frameImg {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  /* min-height: 400px; */
-}
 
 .product-price span {
   color: #17459E;

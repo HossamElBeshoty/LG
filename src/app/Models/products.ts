@@ -1,16 +1,19 @@
+import {IProductImages} from './product-images';
+
 export interface IProducts {
-  Id: number;
-  CategoryId: number;
-  Name: string;
-  NameAr: string;
-  Code: string;
-  Tag: string;
-  Specs: string;
-  SpecsAr: string;
-  Feature: string;
-  FeatureAr: string;
-  IsHomePage: boolean;
-  IsProductPage: boolean;
-  IsCategoryPage: boolean;
-  IsHidden: boolean;
+  id: number;
+  categoryId: number;
+  name: string;
+  nameAr: string;
+  code: string;
+  tag: string;
+  specs: string;
+  specsAr: string;
+  feature: string;
+  featureAr: string;
+  isHomePage: boolean;
+  isProductPage: boolean;
+  isCategoryPage: boolean;
+  isHidden: boolean;
+  productImages: IProductImages[];
 }

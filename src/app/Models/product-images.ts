@@ -1,6 +1,6 @@
 export interface IProductImages {
-  Id: number;
-  ProductId: number;
-  Path: string;
-  ImageAlt: string;
+  id: number;
+  productId: number;
+  path: string;
+  imageAlt: string;
 }

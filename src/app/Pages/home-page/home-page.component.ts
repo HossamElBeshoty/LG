@@ -5,6 +5,8 @@ import {IPages} from '../../Models/pages';
 import {ISections} from '../../Models/sections';
 import {environment} from '../../../environments/environment';
 import {LangService} from '../../Services/lang.service';
+import {ProductService} from '../../Services/product.service';
+import {IProducts} from '../../Models/products';
 
 declare function galleryfunction(): any;
 
@@ -18,6 +20,7 @@ declare function owlCarousel(rtl): any;
 export class HomePageComponent implements OnInit, AfterViewInit {
   homePage: IPages;
   contactUsPage: IPages;
+  products: IProducts[];
   imgApiPath = environment.imageEndPoint;
   headerSection: ISections;
   collectionVideoSection: ISections;
@@ -28,9 +31,13 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   plannerSection: ISections;
   faceBookSection: ISections;
   contactUsSection: ISections;
+  trendingItemsSection: ISections;
   lang: string;
 
-  constructor(@Inject(DOCUMENT) private document, public pageService: PageService, private langService: LangService) {
+  constructor(@Inject(DOCUMENT) private document,
+              public pageService: PageService,
+              private langService: LangService,
+              public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
@@ -42,17 +49,10 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.getPage();
     this.getContactUs();
+    this.getTrendProducts();
   }
 
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      galleryfunction();
-      if (localStorage.getItem('language') === 'ar') {
-        owlCarousel(true);
-      } else {
-        owlCarousel(false);
-      }
-    }, 0);
     // if (localStorage.getItem('language') === 'ar') {
     //   setTimeout(() => {
     //     const list = this.document.getElementsByClassName('tp-parallax-wrap');
@@ -79,6 +79,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
       this.catalogueSection = this.homePage.sections.find(c => c.id === 4);
       this.plannerSection = this.homePage.sections.find(c => c.id === 5);
       this.faceBookSection = this.homePage.sections.find(c => c.id === 7);
+      this.trendingItemsSection = this.homePage.sections.find(c => c.id === 10);
     });
   }
 
@@ -88,6 +89,23 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     }, error => {
     }, () => {
       this.contactUsSection = this.contactUsPage.sections.find(c => c.id === 11);
+    });
+  }
+
+  getTrendProducts() {
+    this.productService.getHomePageTrendingItems().subscribe(res => {
+      this.products = res as IProducts[];
+      console.log(this.products);
+    }, error => {
+    }, () => {
+      setTimeout(() => {
+        galleryfunction();
+        if (localStorage.getItem('language') === 'ar') {
+          owlCarousel(true);
+        } else {
+          owlCarousel(false);
+        }
+      }, 0);
     });
   }
 

@@ -38,7 +38,7 @@ function owlCarousel(rtl) {
   owlslider.each(function () {
     var $this = $(this),
       $items = ($this.data('items')) ? $this.data('items') : 1,
-      $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
+      $loop = ($this.attr('data-loop')) ? $this.data('loop') : false,
       $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
       $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
       $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,

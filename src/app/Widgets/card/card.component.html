@@ -1,45 +1,45 @@
-<div class="product-box">
-  <div class="product-image">
-    <ngx-progressive-image-loader>
-      <div class="frameImg">
-        <img [src]="image" [imageRatio]="imageRatio" alt="{{name}}" ngxProgressiveImage
-             class="img-fluid img-thumbnail">
-      </div>
-    </ngx-progressive-image-loader>
-    <!-- <div class="frameImg">
-      <img [src]="image" style="max-height: 500px" alt="{{name}}" class="img-fluid img-thumbnail">
-    </div> -->
-    <!--    <div class="sale-flash offer">50% Off*</div>-->
-  </div>
-  <div class="product-descb">
-    <div class="product-title">
-      <h4 *ngIf="name">
-        {{name}}
-      </h4>
-      <p *ngIf="collectionName">
-        {{collectionName}}
-      </p>
-    </div>
-    <div *ngIf="size" class="product-price">
-      <span>Size:</span> {{size}}
-    </div>
-    <div *ngIf="weight" class="product-price">
-      <span>Weight:</span> {{weight}}
-    </div>
-    <div *ngIf="quantity" class="product-price">
-      <span>Qty/Ctn:</span> {{quantity}}
-    </div>
-    <div *ngIf="nwGw" class="product-price">
-      <span>NW/GW:</span> {{nwGw}}
-    </div>
-  </div>
-  <!--  <div class="product-overlay">-->
-  <!--    <a href="#" class="add-to-cart">-->
-  <!--      <span> Add to Bag</span>-->
-  <!--      <i class="fa fa-shopping-bag"></i>-->
-  <!--    </a>-->
-  <!--  </div>-->
-</div>
+<!--<div class="product-box">-->
+<!--  <div class="product-image">-->
+<!--    <ngx-progressive-image-loader>-->
+<!--      <div class="frameImg">-->
+<!--        <img [src]="image" [imageRatio]="imageRatio" alt="{{name}}" ngxProgressiveImage-->
+<!--             class="img-fluid img-thumbnail">-->
+<!--      </div>-->
+<!--    </ngx-progressive-image-loader>-->
+<!--    &lt;!&ndash; <div class="frameImg">-->
+<!--      <img [src]="image" style="max-height: 500px" alt="{{name}}" class="img-fluid img-thumbnail">-->
+<!--    </div> &ndash;&gt;-->
+<!--    &lt;!&ndash;    <div class="sale-flash offer">50% Off*</div>&ndash;&gt;-->
+<!--  </div>-->
+<!--  <div class="product-descb">-->
+<!--    <div class="product-title">-->
+<!--      <h4 *ngIf="name">-->
+<!--        {{name}}-->
+<!--      </h4>-->
+<!--      <p *ngIf="collectionName">-->
+<!--        {{collectionName}}-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div *ngIf="size" class="product-price">-->
+<!--      <span>Size:</span> {{size}}-->
+<!--    </div>-->
+<!--    <div *ngIf="weight" class="product-price">-->
+<!--      <span>Weight:</span> {{weight}}-->
+<!--    </div>-->
+<!--    <div *ngIf="quantity" class="product-price">-->
+<!--      <span>Qty/Ctn:</span> {{quantity}}-->
+<!--    </div>-->
+<!--    <div *ngIf="nwGw" class="product-price">-->
+<!--      <span>NW/GW:</span> {{nwGw}}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash;  <div class="product-overlay">&ndash;&gt;-->
+<!--  &lt;!&ndash;    <a href="#" class="add-to-cart">&ndash;&gt;-->
+<!--  &lt;!&ndash;      <span> Add to Bag</span>&ndash;&gt;-->
+<!--  &lt;!&ndash;      <i class="fa fa-shopping-bag"></i>&ndash;&gt;-->
+<!--  &lt;!&ndash;    </a>&ndash;&gt;-->
+<!--  &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--</div>-->
 <!--<div class="boxing">-->
 <!--  <div class="frameImg">-->
 <!--    <img class="img-responsive" [src]="image" alt="{{name}}">-->
@@ -55,3 +55,16 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
+
+<div class="card text-white">
+  <ngx-progressive-image-loader>
+    <div class="frameImg">
+      <img [src]="image" [imageRatio]="imageRatio" alt="{{name}}" ngxProgressiveImage
+           class="img-fluid img-thumbnail">
+    </div>
+  </ngx-progressive-image-loader>
+  <div class="card-img-overlay">
+    <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right" alt="Logo">
+    <h3 class="card-title theme-color">{{name}}</h3>
+  </div>
+</div>

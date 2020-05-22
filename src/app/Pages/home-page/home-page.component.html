@@ -251,30 +251,18 @@
     <div class="row">
       <div class="col-md-3 col-12">
         <div class="section-heading mb-30 mt-100 sm-mt-0">
-          <h6 class="sub-heading">{{'Lotfy Group' | translate}}</h6>
-          <h1 class="heading">{{'Trending' | translate}} <br>{{'Items' | translate}}</h1>
+          <h6
+            class="sub-heading">{{lang === 'en' ? trendingItemsSection?.subTitle : trendingItemsSection?.subTitleAr}}</h6>
+          <h1 class="heading">{{lang === 'en' ? trendingItemsSection?.title : trendingItemsSection?.titleAr}}</h1>
         </div>
-        <p>Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. </p>
+        <p>{{lang === 'en' ? trendingItemsSection?.details : trendingItemsSection?.detailsAr}}</p>
       </div>
       <div class="col-md-9 col-12">
         <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
              data-sm-items="2" data-xs-items="1" data-xx-items="1">
-
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes3/safes/safes/Home safe/Digital/EK 2/img (1).jpeg'"
-                      [collectionName]="''" [name]="''"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes3/safes/safes/Home safe/Digital/EK 2/img (5).jpeg'"
-                      [collectionName]="''" [name]="''"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Counting Machine/lg830/1.jpg'"
-                      [collectionName]="''" [name]="''"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Counting Machine/lg810/1.jpg'"
-                      [collectionName]="''" [name]="''"></app-card>
+          <div *ngFor="let productData of products" class="item">
+            <app-card [image]="imgApiPath + productData.productImages[0]?.path" [imageRatio]="1.3"
+                      [collectionName]="productData.name" [name]="productData.code"></app-card>
           </div>
         </div>
       </div>
