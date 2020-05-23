@@ -1,28 +1,44 @@
-import {Component, OnInit, AfterViewInit} from '@angular/core';
-import {MenuItem} from 'primeng/api';
+import {Component, OnInit} from '@angular/core';
+import {CategoryService} from '../../Services/category.service';
+import {LangService} from '../../Services/lang.service';
+import {ICategory} from '../../Models/category';
 
-declare function owlCarousel(): any;
+declare function owlCarousel(rtl): any;
 
 @Component({
   selector: 'app-products-page',
   templateUrl: './products-page.component.html',
   styleUrls: ['./products-page.component.css']
 })
-export class ProductsPageComponent implements OnInit, AfterViewInit {
-  breadCrumb: MenuItem[];
-  homeBreadCrumb: MenuItem;
+export class ProductsPageComponent implements OnInit {
+  lang: string;
+  categories: ICategory[];
 
-  constructor() {
+  constructor(private langService: LangService, public categoryService: CategoryService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {
-    this.breadCrumb = [
-      {label: 'Products', routerLink: '', styleClass: 'activeBreadCrumb'},
-    ];
-    this.homeBreadCrumb = {icon: 'pi pi-home', routerLink: '/'};
+    this.getCategories();
   }
 
-  ngAfterViewInit(): void {
-    owlCarousel();
+  getCategories() {
+    this.categoryService.getProductPageCategoryCategories().subscribe(res => {
+      this.categories = res as ICategory[];
+    }, error => {
+    }, () => {
+      setTimeout(() => {
+        if (localStorage.getItem('language') === 'ar') {
+          owlCarousel(true);
+        } else {
+          owlCarousel(false);
+        }
+      }, 0);
+    });
   }
 }

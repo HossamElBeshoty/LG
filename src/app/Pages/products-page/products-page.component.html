@@ -12,19 +12,18 @@
 </section>
 
 
-<section class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
+<section *ngFor="let category of categories" class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
   <div class="container">
-    <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
-    <br>
     <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">Safe Products</h1>
+      <h1 class="heading theme-color">{{lang === 'en' ? category.label : category.nameAr}}</h1>
     </div>
     <div class="row">
       <div class="col-md-3 col-12">
-        <div class="section-heading mb-30 mt-100 sm-mt-0">
-          <h1 class="heading">Trending <br>Items</h1>
+        <div class="section-heading mb-30 sm-mt-0">
+          <h1 class="heading">{{lang === 'en' ? category.title : category.titleAr}}</h1>
         </div>
-        <p class="pr-50">Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. </p>
+        <p class="pr-50">{{lang === 'en' ? category.details : category.detailsAr}}</p>
+
       </div>
       <div class="col-md-9 col-12">
         <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
@@ -58,148 +57,10 @@
                       [collectionName]="'Laptop Safe'" [name]="'25-RG'"></app-card>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
-  <div class="container">
-    <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">Cabinets Products</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-12">
-        <div class="section-heading mb-30 mt-100 sm-mt-0">
-          <h1 class="heading">Trending <br>Items</h1>
-        </div>
-        <p class="pr-50">Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. </p>
-      </div>
-      <div class="col-md-9 col-12">
-        <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
-             data-sm-items="2" data-xs-items="1" data-xx-items="1">
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/burglarySafe/img%20(41).jpeg'"
-                      [collectionName]="'Burglary Safe'" [name]="'38BN'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/cashBoxSafe/img%20(34).jpeg'"
-                      [collectionName]="'Cash Box Safe'" [name]="'YFC-30'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/electronicSafe/img%20(16).jpeg'"
-                      [collectionName]="'Electronic Safe'" [name]="'50-ALC'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fingerprintBurglarySafe/img%20(39).jpeg'"
-                      [collectionName]="'Fingerprint Burglary Safe'" [name]="'73CQ'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fireproofSafe/img%20(25).jpeg'"
-                      [collectionName]="'Fireproof Safe'" [name]="'920ALD'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/keySafe/img%20(30).jpeg'"
-                      [collectionName]="'Key Safe'" [name]="'30k-45'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/laptopSafe/img%20(19).jpeg'"
-                      [collectionName]="'Laptop Safe'" [name]="'25-RG'"></app-card>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
-  <div class="container">
-    <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">Vault Doors Products</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-12">
-        <div class="section-heading mb-30 mt-100 sm-mt-0">
-          <h1 class="heading">Trending <br>Items</h1>
-        </div>
-        <p class="pr-50">Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. </p>
-      </div>
-      <div class="col-md-9 col-12">
-        <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
-             data-sm-items="2" data-xs-items="1" data-xx-items="1">
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/burglarySafe/img%20(41).jpeg'"
-                      [collectionName]="'Burglary Safe'" [name]="'38BN'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/cashBoxSafe/img%20(34).jpeg'"
-                      [collectionName]="'Cash Box Safe'" [name]="'YFC-30'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/electronicSafe/img%20(16).jpeg'"
-                      [collectionName]="'Electronic Safe'" [name]="'50-ALC'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fingerprintBurglarySafe/img%20(39).jpeg'"
-                      [collectionName]="'Fingerprint Burglary Safe'" [name]="'73CQ'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fireproofSafe/img%20(25).jpeg'"
-                      [collectionName]="'Fireproof Safe'" [name]="'920ALD'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/keySafe/img%20(30).jpeg'"
-                      [collectionName]="'Key Safe'" [name]="'30k-45'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/laptopSafe/img%20(19).jpeg'"
-                      [collectionName]="'Laptop Safe'" [name]="'25-RG'"></app-card>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
-  <div class="container">
-    <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">Money Counting Machine Products</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-12">
-        <div class="section-heading mb-30 mt-100 sm-mt-0">
-          <h1 class="heading">Trending <br>Items</h1>
-        </div>
-        <p class="pr-50">Sed bibendum enim sed mattis dictum. Donec in neque non sem lacinia tincidunt. </p>
-      </div>
-      <div class="col-md-9 col-12">
-        <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
-             data-sm-items="2" data-xs-items="1" data-xx-items="1">
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/burglarySafe/img%20(41).jpeg'"
-                      [collectionName]="'Burglary Safe'" [name]="'38BN'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/cashBoxSafe/img%20(34).jpeg'"
-                      [collectionName]="'Cash Box Safe'" [name]="'YFC-30'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/electronicSafe/img%20(16).jpeg'"
-                      [collectionName]="'Electronic Safe'" [name]="'50-ALC'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fingerprintBurglarySafe/img%20(39).jpeg'"
-                      [collectionName]="'Fingerprint Burglary Safe'" [name]="'73CQ'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/fireproofSafe/img%20(25).jpeg'"
-                      [collectionName]="'Fireproof Safe'" [name]="'920ALD'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/keySafe/img%20(30).jpeg'"
-                      [collectionName]="'Key Safe'" [name]="'30k-45'"></app-card>
-          </div>
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/laptopSafe/img%20(19).jpeg'"
-                      [collectionName]="'Laptop Safe'" [name]="'25-RG'"></app-card>
+        <div class="row">
+          <div class="col-12">
+            <a class="cs-button float-right mt-30" routerLink="../products/{{category.data}}">See More &nbsp; <i
+              class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>

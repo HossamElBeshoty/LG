@@ -11,4 +11,5 @@ export interface ICategory {
   isHidden: boolean;
   expandedIcon: string;
   collapsedIcon: string;
+  children: ICategory[];
 }
