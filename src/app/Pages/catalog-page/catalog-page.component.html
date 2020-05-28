@@ -13,9 +13,10 @@
 <section class="section-ptb-100">
   <div class="container">
     <div class="row justify-content-around">
-      <div class="col-12 col-md-4 mb-30" *ngFor="let data of catalogData">
-        <app-download-card [catalogName]="data.catalogName" [imagePath]="data.imagePath"
-                           [description]="data.description" [downloadPath]="data.downloadPath"></app-download-card>
+      <div class="col-12 col-md-4 mb-30" *ngFor="let data of catalogues">
+        <app-download-card [catalogName]="lang === 'en' ? data.name : data.nameAr"
+                           [imagePath]="imgApiPath +data.imagePath"
+                           [downloadPath]="imgApiPath + data.filePath"></app-download-card>
       </div>
     </div>
   </div>
