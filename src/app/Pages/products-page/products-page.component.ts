@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CategoryService} from '../../Services/category.service';
 import {LangService} from '../../Services/lang.service';
 import {ICategory} from '../../Models/category';
+import {ProductService} from "../../Services/product.service";
 
 declare function owlCarousel(rtl): any;
 
@@ -14,7 +15,7 @@ export class ProductsPageComponent implements OnInit {
   lang: string;
   categories: ICategory[];
 
-  constructor(private langService: LangService, public categoryService: CategoryService) {
+  constructor(private langService: LangService, public categoryService: CategoryService, public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
@@ -32,6 +33,7 @@ export class ProductsPageComponent implements OnInit {
       this.categories = res as ICategory[];
     }, error => {
     }, () => {
+      this.getCategoryProducts();
       setTimeout(() => {
         if (localStorage.getItem('language') === 'ar') {
           owlCarousel(true);
@@ -40,5 +42,11 @@ export class ProductsPageComponent implements OnInit {
         }
       }, 0);
     });
+  }
+
+  getCategoryProducts() {
+    this.productService.getOurProductPageCarousel().subscribe(res => {
+      console.log(res)
+    })
   }
 }

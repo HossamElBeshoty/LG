@@ -40,6 +40,7 @@ import {CategoryCarouselCardComponent} from './Widgets/category-carousel-card/ca
 import {LightingComponent} from './Pages/products-page/lighting/lighting.component';
 import {GalleryComponent} from './Pages/products-page/gallery/gallery.component';
 import {SafePipe} from './Pipes/SafePipe';
+import { ProductCategoryComponent } from './Pages/products-page/product-category/product-category.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -78,7 +79,8 @@ export function createTranslateLoader(http: HttpClient) {
     SafePipe,
     CategoryCarouselCardComponent,
     LightingComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProductCategoryComponent
   ],
   imports: [
     BrowserModule,

@@ -12,4 +12,8 @@ export class ProductService {
   getHomePageTrendingItems() {
     return this.dataService.get('Product/GetIsHomePage');
   }
+
+  getOurProductPageCarousel() {
+    return this.dataService.get('/Product/GetOurProduct');
+  }
 }

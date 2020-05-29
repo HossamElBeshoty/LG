@@ -18,6 +18,7 @@ import {NotFoundPageComponent} from './Pages/not-found-page/not-found-page.compo
 import {FurniturePageComponent} from './Pages/products-page/furniture-page/furniture-page.component';
 import {LightingComponent} from './Pages/products-page/lighting/lighting.component';
 import {GalleryComponent} from './Pages/products-page/gallery/gallery.component';
+import {ProductCategoryComponent} from "./Pages/products-page/product-category/product-category.component";
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: 'products/lighting/:name', component: ProductsDetailsComponent},
   {path: 'products/gallery/:name', component: ProductsDetailsComponent},
   {path: 'products/safes/:name/filter', component: ProductsFilterDetailsComponent},
+  {path: 'products/:id', component: ProductCategoryComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},
   {path: 'products/moneyCounting', component: MoneyCountingComponent},
