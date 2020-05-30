@@ -20,7 +20,7 @@ export class ProductCategoryComponent implements OnInit {
   homeBreadCrumb: MenuItem;
   imgApiPath = environment.imageEndPoint;
 
-  constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, private langService: LangService,) {
+  constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, private langService: LangService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
