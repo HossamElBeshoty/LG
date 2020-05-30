@@ -1,3 +1,4 @@
+<app-preloader [loader]="preloader"></app-preloader>
 <section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
          style="background-image: url(assets/images/bg-img.jpg);">
   <div class="container">
@@ -12,30 +13,30 @@
 </section>
 
 
-<section *ngFor="let category of categories" class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
+<section *ngFor="let product of ourProducts" class="section-ptb-100 sm-pb-50 sm-pt-50 bg-light shop-grid trend-pro">
   <div class="container">
     <div class="section-heading text-center mb-30 mt-20">
-      <h1 class="heading theme-color">{{lang === 'en' ? category.label : category.nameAr}}</h1>
+      <h1 class="heading theme-color">{{lang === 'en' ? product.label : product.nameAr}}</h1>
     </div>
     <div class="row">
       <div class="col-md-3 col-12">
         <div class="section-heading mb-30 sm-mt-0">
-          <h1 class="heading">{{lang === 'en' ? category.title : category.titleAr}}</h1>
+          <h1 class="heading">{{lang === 'en' ? product.title : product.titleAr}}</h1>
         </div>
-        <p class="pr-50">{{lang === 'en' ? category.details : category.detailsAr}}</p>
+        <p class="pr-50">{{lang === 'en' ? product.details : product.detailsAr}}</p>
 
       </div>
       <div class="col-md-9 col-12">
         <div class="owl-carousel owl-theme" data-nav-dots="false" data-nav-arrow="true" data-items="3" data-md-items="3"
              data-sm-items="2" data-xs-items="1" data-xx-items="1">
-          <div class="item">
-            <app-card [image]="'assets/images/Products/Safes/safes/burglarySafe/img%20(41).jpeg'"
-                      [collectionName]="'Burglary Safe'" [name]="'38BN'"></app-card>
+          <div class="item" *ngFor="let isProduct of product.product">
+            <app-card [image]="imgApiPath + isProduct.productImages[0].path"
+                      [name]="isProduct.code"></app-card>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <a class="cs-button float-right mt-30" routerLink="../products/{{category.data}}">See More &nbsp; <i
+            <a class="cs-button float-right mt-30" routerLink="../products/{{product.data}}">See More &nbsp; <i
               class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>

@@ -16,4 +16,8 @@ export class ProductService {
   getOurProductPageCarousel() {
     return this.dataService.get('/Product/GetOurProduct');
   }
+
+  getAllCategoryProducts(id: number) {
+    return this.dataService.get('/Product/GetOurCategory/' + id);
+  }
 }

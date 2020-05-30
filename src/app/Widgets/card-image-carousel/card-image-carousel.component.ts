@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {environment} from "../../../environments/environment";
+import {IProductImages} from "../../Models/product-images";
 
 @Component({
   selector: 'app-card-image-carousel',
@@ -6,28 +8,13 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./card-image-carousel.component.css']
 })
 export class CardImageCarouselComponent implements OnInit {
-  // @Input() id: number;
-  // @Input() images: string[];
-  // @Input() name: string;
-  // @Input() paragraph: string;
-  @Input() cardImageCarouselData: ICardImageCarouselData;
-
+  @Input() label: string;
+  @Input() details: string;
+  @Input() images: string[];
+  imgApiPath = environment.imageEndPoint;
   constructor() {
   }
 
   ngOnInit(): void {
   }
-}
-
-export interface ICardImageCarouselData {
-  id: number;
-  images: string[];
-  name: string;
-  paragraph: string;
-  route: ICardImageCarouselRoute[];
-}
-
-export interface ICardImageCarouselRoute {
-  routerName: string;
-  routerPath: string;
 }

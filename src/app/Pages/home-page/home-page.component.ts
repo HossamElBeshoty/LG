@@ -19,6 +19,7 @@ declare function owlCarousel(rtl): any;
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
   homePage: IPages;
+  preloader: boolean;
   contactUsPage: IPages;
   products: IProducts[];
   imgApiPath = environment.imageEndPoint;
@@ -47,6 +48,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    this.preloader = true;
     this.getPage();
     this.getContactUs();
     this.getTrendProducts();
@@ -80,6 +82,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
       this.plannerSection = this.homePage.sections.find(c => c.id === 5);
       this.faceBookSection = this.homePage.sections.find(c => c.id === 7);
       this.trendingItemsSection = this.homePage.sections.find(c => c.id === 10);
+      this.preloader = false;
     });
   }
 

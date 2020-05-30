@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {CategoryService} from '../../Services/category.service';
 import {LangService} from '../../Services/lang.service';
-import {ICategory} from '../../Models/category';
 import {ProductService} from "../../Services/product.service";
+import {IOurProducts} from "../../Models/our-products";
+import {environment} from "../../../environments/environment";
 
 declare function owlCarousel(rtl): any;
 
@@ -13,9 +13,11 @@ declare function owlCarousel(rtl): any;
 })
 export class ProductsPageComponent implements OnInit {
   lang: string;
-  categories: ICategory[];
+  ourProducts: IOurProducts[];
+  preloader: boolean;
+  imgApiPath = environment.imageEndPoint;
 
-  constructor(private langService: LangService, public categoryService: CategoryService, public productService: ProductService) {
+  constructor(private langService: LangService, public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
@@ -25,28 +27,24 @@ export class ProductsPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getCategories();
-  }
-
-  getCategories() {
-    this.categoryService.getProductPageCategoryCategories().subscribe(res => {
-      this.categories = res as ICategory[];
-    }, error => {
-    }, () => {
-      this.getCategoryProducts();
-      setTimeout(() => {
-        if (localStorage.getItem('language') === 'ar') {
-          owlCarousel(true);
-        } else {
-          owlCarousel(false);
-        }
-      }, 0);
-    });
+    this.getCategoryProducts();
   }
 
   getCategoryProducts() {
     this.productService.getOurProductPageCarousel().subscribe(res => {
-      console.log(res)
-    })
+        this.ourProducts = res as IOurProducts[]
+        console.log(this.ourProducts)
+      }, error => {
+      }, () => {
+        setTimeout(() => {
+          if (localStorage.getItem('language') === 'ar') {
+            owlCarousel(true);
+          } else {
+            owlCarousel(false);
+          }
+        }, 0);
+        this.preloader = false;
+      }
+    )
   }
 }

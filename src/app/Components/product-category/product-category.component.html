@@ -1,0 +1,57 @@
+<!---page Title --->
+<app-preloader [loader]="preloader"></app-preloader>
+<section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
+         style="background-image: url(../../../assets/images/bg-img.jpg);">
+  <div class="container">
+    <div class="row dark-bg">
+      <div class="col-12">
+        <div class="section-heading mt-80 text-center">
+          <h1 class="heading theme-color">
+            <span class="theme-color">
+              {{lang === 'en' ? categoryProduct?.label : categoryProduct?.nameAr}}
+            </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-ptb-30 shop-grid">
+  <div class="container">
+    <p-breadcrumb [model]="breadCrumb" [home]="homeBreadCrumb"></p-breadcrumb>
+    <br>
+    <div class="row" *ngIf="categoryProduct?.allChildren">
+      <div class="col-md-4" *ngFor="let product of categoryProduct?.allChildren; let index = index">
+        <div class="card">
+          <div id="{{product.label}}" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let Data of categoryProduct.product[index].productImages ,let i=index"
+                   [ngClass]="i==0 ?'active':'inactive' "
+                   class="carousel-item">
+                <ngx-progressive-image-loader>
+                  <img [src]="imgApiPath +  Data.path" class="d-block w-100" [imageRatio]="1" ngxProgressiveImage
+                       alt="{{product.label}}">
+                </ngx-progressive-image-loader>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#{{product.label}}" role="button" data-slide="prev">
+              <span><i style="color: #1A4387" class="fa fa-angle-left fa-4x" aria-hidden="true"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#{{product.label}}" role="button" data-slide="next">
+              <span><i style="color: #1A4387" class="fa fa-angle-right fa-4x" aria-hidden="true"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body text-center">
+            <h3 class="theme-color">{{lang === 'en' ? product.label : product.nameAr}}</h3>
+            <p class="card-text">{{lang === 'en' ? product.details : product.detailsAr}}</p>
+            <a *ngFor="let x of categoryProduct.allChildren[index].children" routerLink="./{{x.data}}"
+               class="btn m-2 btn-primary">{{lang === 'en' ? x.label : x.nameAr}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
