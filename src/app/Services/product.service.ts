@@ -22,6 +22,6 @@ export class ProductService {
   }
 
   getAllProducts(id: number) {
-    return this.dataService.get('/Product/GetByCategoryId/' + id)
+    return this.dataService.get('Product/GetByCategoryId/' + id)
   }
 }

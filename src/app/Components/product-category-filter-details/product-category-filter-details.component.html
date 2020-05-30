@@ -1,3 +1,4 @@
+<app-preloader [loader]="preloader"></app-preloader>
 <section class="section-ptb-30" data-jarallax='{"speed": 0.4}'
          style="background-image: url(../../../assets/images/bg-img.jpg);">
   <div class="container">
@@ -17,28 +18,18 @@
 
 <div class="container">
   <mat-tab-group mat-align-tabs="center">
-    <mat-tab *ngFor="let fl of firstChild" [label]="lang === 'en' ? fl.label : fl.nameAr">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <mat-tab *ngFor="let fl of firstChild">
+      <ng-template mat-tab-label>
+        <span (click)="getAllCategoryDetailsProducts(fl.data)">{{lang === 'en' ? fl.label : fl.nameAr}}</span>
+      </ng-template>
+
+      <div class="container mt-15">
+        <div class="row">
+          <div *ngFor="let x of products" class="col-md-3 col-12 mb-30">
+            <app-card [image]="imgApiPath + x.productImages[0].path" [name]="x.code"></app-card>
+          </div>
+        </div>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>
