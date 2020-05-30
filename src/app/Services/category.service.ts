@@ -16,4 +16,8 @@ export class CategoryService {
   getFirstChild(id: number) {
     return this.dataService.get('Category/GetFirstLevel/' + id)
   }
+
+  getCategoryTag(id: number) {
+    return this.dataService.get('CategoryTag/GetByCategoryId/' + id);
+  }
 }

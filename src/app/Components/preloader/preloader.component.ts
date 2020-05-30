@@ -22,7 +22,6 @@ export class PreloaderComponent implements OnInit , OnChanges{
 
   ngOnInit(): void {
     // tslint:disable-next-line:only-arrow-functions
-    console.log(this.loader)
     if (this.loader == false) {
       $('.preloader').addClass('complete');
       $('.preloader').css('z-index', '0');

@@ -43,6 +43,8 @@ import {SafePipe} from './Pipes/SafePipe';
 import {ProductCategoryComponent} from './Components/product-category/product-category.component';
 import {ProductCategoryDetailsComponent} from './Components/product-category-details/product-category-details.component';
 import {ProductCategoryFilterDetailsComponent} from './Components/product-category-filter-details/product-category-filter-details.component';
+import {ProductFilterByTagComponent} from './Components/product-filter-by-tag/product-filter-by-tag.component';
+import { SingleProductComponent } from './Components/single-product/single-product.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -84,7 +86,9 @@ export function createTranslateLoader(http: HttpClient) {
     GalleryComponent,
     ProductCategoryComponent,
     ProductCategoryDetailsComponent,
-    ProductCategoryFilterDetailsComponent
+    ProductCategoryFilterDetailsComponent,
+    ProductFilterByTagComponent,
+    SingleProductComponent
   ],
   imports: [
     BrowserModule,

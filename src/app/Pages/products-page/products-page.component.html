@@ -36,8 +36,11 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <a class="cs-button float-right mt-30" routerLink="../products/{{product.data}}">See More &nbsp; <i
-              class="fa fa-long-arrow-right"></i></a>
+            <a class="cs-button float-right mt-30"
+               [routerLink]="product.hasProduct !== true ? ['../products/' + product.data] : ['../products/' + product.data + '/filter']"
+            >See
+              More &nbsp; <i
+                class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>
       </div>

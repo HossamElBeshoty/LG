@@ -3,6 +3,7 @@ import {LangService} from '../../Services/lang.service';
 import {ProductService} from "../../Services/product.service";
 import {IOurProducts} from "../../Models/our-products";
 import {environment} from "../../../environments/environment";
+import {Route, Router} from "@angular/router";
 
 declare function owlCarousel(rtl): any;
 
@@ -17,7 +18,7 @@ export class ProductsPageComponent implements OnInit {
   preloader: boolean;
   imgApiPath = environment.imageEndPoint;
 
-  constructor(private langService: LangService, public productService: ProductService) {
+  constructor(private langService: LangService, public productService: ProductService, public router: Router) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
