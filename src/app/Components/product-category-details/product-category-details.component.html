@@ -14,3 +14,15 @@
     </div>
   </div>
 </section>
+
+<section class="section-ptb-30 shop-grid">
+  <div class="container">
+    <div class="shorter">
+      <div class="row">
+        <div *ngFor="let prod of products;" class="col-md-3 col-12 mb-30">
+          <app-card [name]="prod.code" [image]="imgApiPath + prod.productImages[0]?.path"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

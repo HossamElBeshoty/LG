@@ -40,7 +40,9 @@ import {CategoryCarouselCardComponent} from './Widgets/category-carousel-card/ca
 import {LightingComponent} from './Pages/products-page/lighting/lighting.component';
 import {GalleryComponent} from './Pages/products-page/gallery/gallery.component';
 import {SafePipe} from './Pipes/SafePipe';
-import { ProductCategoryComponent } from './Components/product-category/product-category.component';
+import {ProductCategoryComponent} from './Components/product-category/product-category.component';
+import {ProductCategoryDetailsComponent} from './Components/product-category-details/product-category-details.component';
+import {ProductCategoryFilterDetailsComponent} from './Components/product-category-filter-details/product-category-filter-details.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -80,7 +82,9 @@ export function createTranslateLoader(http: HttpClient) {
     CategoryCarouselCardComponent,
     LightingComponent,
     GalleryComponent,
-    ProductCategoryComponent
+    ProductCategoryComponent,
+    ProductCategoryDetailsComponent,
+    ProductCategoryFilterDetailsComponent
   ],
   imports: [
     BrowserModule,

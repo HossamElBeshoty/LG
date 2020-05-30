@@ -20,4 +20,8 @@ export class ProductService {
   getAllCategoryProducts(id: number) {
     return this.dataService.get('/Product/GetOurCategory/' + id);
   }
+
+  getAllProducts(id: number) {
+    return this.dataService.get('/Product/GetByCategoryId/' + id)
+  }
 }
