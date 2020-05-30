@@ -43,7 +43,7 @@ export class ProductCategoryComponent implements OnInit {
     this.productService.getAllCategoryProducts(this.categoryID).subscribe((res: { category: any }) => {
       this.categoryProduct = res.category as ICategoryProducts;
       // console.log(this.categoryProduct);
-      console.log(this.categoryProduct.allChildren[0].children);
+      console.log(this.categoryProduct.allChildren);
     }, error => {
     }, () => {
       this.breadCrumb = [

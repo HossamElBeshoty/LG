@@ -47,7 +47,8 @@
           <div class="card-body text-center">
             <h3 class="theme-color">{{lang === 'en' ? product.label : product.nameAr}}</h3>
             <p class="card-text">{{lang === 'en' ? product.details : product.detailsAr}}</p>
-            <a *ngFor="let x of categoryProduct.allChildren[index].children" routerLink="./{{x.data}}"
+            <a *ngFor="let x of categoryProduct.allChildren[index].children"
+               routerLink="./{{x.hasProduct === true? x.data : x.data + '/filter'}}"
                class="btn m-2 btn-primary">{{lang === 'en' ? x.label : x.nameAr}}</a>
           </div>
         </div>
