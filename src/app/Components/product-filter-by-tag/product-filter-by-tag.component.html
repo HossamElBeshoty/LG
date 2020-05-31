@@ -31,8 +31,9 @@
                 </div>
                 <div class="tab-content">
                   <ul>
-                    <li class="activeIsotope" data-filter="*">All</li>
-                    <li *ngFor="let tags of categoryTags" [attr.data-filter]="'.' + tags.id">{{tags.tagName}}</li>
+                    <li class="activeIsotope" data-filter="*">{{'All' | translate}}</li>
+                    <li *ngFor="let tags of categoryTags"
+                        [attr.data-filter]="'.' + tags.id">{{lang === 'en' ? tags.tagName : tags.tagNameAr}}</li>
                   </ul>
                 </div>
               </div>

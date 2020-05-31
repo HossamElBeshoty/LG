@@ -5,6 +5,7 @@ import {ActivatedRoute} from "@angular/router";
 import {ProductService} from "../../Services/product.service";
 import {CategoryService} from "../../Services/category.service";
 import {ICategoryTags} from "../../Models/category-tags";
+import {LangService} from "../../Services/lang.service";
 
 declare var $: any;
 
@@ -14,6 +15,7 @@ declare var $: any;
   styleUrls: ['./product-filter-by-tag.component.css']
 })
 export class ProductFilterByTagComponent implements OnInit {
+  lang: string;
   productID: number;
   products: IProducts[];
   imgApiPath = environment.imageEndPoint;
@@ -22,7 +24,13 @@ export class ProductFilterByTagComponent implements OnInit {
   categoryTags: ICategoryTags[];
   preloader: boolean;
 
-  constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, public categoryService: CategoryService) {
+  constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, public categoryService: CategoryService, private langService: LangService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {
