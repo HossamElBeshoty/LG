@@ -24,6 +24,11 @@ export class NavBarComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     navfunction();
+
+    $('li a').on('click', function(e) {
+      $('#theMenu').toggleClass("open-responsive open-dropdown"); //you can list several class names
+      e.preventDefault();
+    });
   }
 
   changeLanguage(lang?: string) {
