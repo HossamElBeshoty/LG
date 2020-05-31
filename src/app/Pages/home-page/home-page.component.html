@@ -1,117 +1,5 @@
 <app-preloader [loader]="preloader"></app-preloader>
 <section class="">
-  <!--  <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container">-->
-  <!--    <div id="rev_slider_251_115" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">-->
-  <!--      <ul>-->
-  <!--        &lt;!&ndash; SLIDE 1 &ndash;&gt;-->
-  <!--        <li *ngFor="let x of headerSection?.sectionMedia; let i = index" [attr.data-index]="'rs-0' + i"-->
-  <!--            [attr.data-transition]="'fade'" [attr.data-slotamount]="'default'" [attr.data-easein]="'Power3.easeInOut'"-->
-  <!--            [attr.data-easeout]="'Power3.easeInOut'" [attr.data-masterspeed]="2000" [attr.data-fsmasterspeed]="1500" class="rev_gradient">-->
-
-  <!--          &lt;!&ndash; MAIN IMAGE &ndash;&gt;-->
-  <!--          <img [src]="imgApiPath + x.path" alt="" [attr.data-bgposition]="'center center'" [attr.data-bgfit]="'cover'"-->
-  <!--               [attr.data-bgrepeat]="'no-repeat'" class="rev-slidebg" [attr.data-bgparallax]="10" [attr.data-no-retina]>-->
-  <!--          &lt;!&ndash; LAYER NR. 1 &ndash;&gt;-->
-  <!--          &lt;!&ndash; <div  class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
-  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
-  <!--               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"-->
-  <!--               data-width="['none','none','none','none']" data-type="text"-->
-  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
-  <!--               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"-->
-  <!--               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"-->
-  <!--               data-splitin="none" data-splitout="none">-->
-  <!--            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>-->
-  <!--          </div>-->
-  <!--          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
-  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
-  <!--               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"-->
-  <!--               data-width="['none','none','none','none']" data-type="text"-->
-  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
-  <!--               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"-->
-  <!--               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"-->
-  <!--               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"-->
-  <!--               data-splitout="none">-->
-  <!--            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Yourself </h2>-->
-  <!--          </div>-->
-  <!--          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"-->
-  <!--               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
-  <!--               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"-->
-  <!--               data-width="['none','none','none','none']" data-type="text"-->
-  <!--               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"-->
-  <!--               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"-->
-  <!--               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"-->
-  <!--               data-splitin="none" data-splitout="none">-->
-  <!--            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>-->
-  <!--          </div> &ndash;&gt;-->
-  <!--        </li>-->
-
-  <!--&lt;!&ndash;        &lt;!&ndash; SLIDE 2  &ndash;&gt;&ndash;&gt;-->
-  <!--&lt;!&ndash;        <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut"&ndash;&gt;-->
-  <!--&lt;!&ndash;            data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500">&ndash;&gt;-->
-
-  <!--&lt;!&ndash;          &lt;!&ndash; MAIN IMAGE &ndash;&gt;&ndash;&gt;-->
-  <!--&lt;!&ndash;          <img src="assets/images/slider-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>&ndash;&gt;-->
-  <!--&lt;!&ndash;          &lt;!&ndash; LAYER NR. 1 &ndash;&gt;&ndash;&gt;-->
-  <!--&lt;!&ndash;          &lt;!&ndash; <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-voffset="['-140','-140','-140','-140']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-splitin="none" data-splitout="none">&ndash;&gt;-->
-  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 100; font-size: 50px; color: #ffffff;">Make </h2>&ndash;&gt;-->
-  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
-  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-voffset="['-70','-70','-70','-70']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200" data-splitin="none"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-splitout="none">&ndash;&gt;-->
-  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 700; font-size: 50px; color: #ffffff;">Youeself </h2>&ndash;&gt;-->
-  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
-  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-transform_idle="o:1;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1000"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-splitin="none" data-splitout="none">&ndash;&gt;-->
-  <!--&lt;!&ndash;            <h2 style="line-height: 54px; font-weight: 400; font-size: 50px; color: #ffffff;">Safe</h2>&ndash;&gt;-->
-  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
-  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme whitecolor" data-x="['center','center','center','center']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-voffset="['70','70','70','70']" data-whitespace="nowrap" data-responsive_offset="on"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-width="['none','none','none','none']" data-type="text"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-textalign="['center','center','center','center']" data-fontsize="['24','24','20','20']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_idle="o:1;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1500" data-splitin="none"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-splitout="none">&ndash;&gt;-->
-  <!--&lt;!&ndash;            <p style="line-height: 36px; font-weight: 400; font-size: 30px; color: #ffffff;">Up to <span&ndash;&gt;-->
-  <!--&lt;!&ndash;              class="theme-color">25% Off</span></p>&ndash;&gt;-->
-  <!--&lt;!&ndash;          </div>&ndash;&gt;-->
-  <!--&lt;!&ndash;          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-voffset="['160','160','160','160']" data-width="200" data-height="none" data-whitespace="normal"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-type="button" data-actions='' data-responsive_offset="on"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-textAlign="['center','center','center','center']" data-margintop="[0,0,0,0]"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"&ndash;&gt;-->
-  <!--&lt;!&ndash;               data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;"}]'&ndash;&gt;-->
-  <!--&lt;!&ndash;               style=" box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">&ndash;&gt;-->
-  <!--&lt;!&ndash;            <a routerLink="/products" class="cs-button">Shop Now</a>&ndash;&gt;-->
-  <!--&lt;!&ndash;          </div> &ndash;&gt;&ndash;&gt;-->
-  <!--&lt;!&ndash;        </li>&ndash;&gt;-->
-  <!--      </ul>-->
-  <!--    </div>-->
-  <!--  </div>-->
-
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li *ngFor="let x of headerSection?.sectionMedia; let i = index" data-target="#carouselExampleIndicators"
@@ -153,7 +41,7 @@
           class="fa fa-play"></i> Collection Video</a>
       </div>
       <div class="col-md-8 col-12">
-        <img [src]="imgApiPath + collectionVideoSection?.sectionMedia[1]?.path" class="img-fluid"
+        <img *ngIf="collectionVideoSection" [src]="imgApiPath + collectionVideoSection?.sectionMedia[1].path" class="img-fluid"
              alt="{{collectionVideoSection?.title}}">
       </div>
     </div>
@@ -187,7 +75,7 @@
       <div class="col-md-4 col-12">
         <a routerLink="/products/moneyCounting" class="promo-bx-link">
           <div class="promo-bx bg-overlay-black-20">
-            <img [src]="imgApiPath + trendCollectionSection1?.sectionMedia[0].path"
+            <img *ngIf="trendCollectionSection1" [src]="imgApiPath + trendCollectionSection1?.sectionMedia[0].path"
                  style="display: block;margin-left: auto;margin-right: auto;" alt="">
             <p
               class="cross">{{lang === 'en' ? trendCollectionSection1?.subTitle : trendCollectionSection1?.subTitleAr}}</p>
@@ -200,7 +88,7 @@
       <div class="col-md-4 col-12">
         <a routerLink="/products/safes" class="promo-bx-link">
           <div class="promo-bx bg-overlay-black-20">
-            <img [src]="imgApiPath + trendCollectionSection2?.sectionMedia[0].path"
+            <img *ngIf="trendCollectionSection2" [src]="imgApiPath + trendCollectionSection2?.sectionMedia[0].path"
                  style="display: block;margin-left: auto;margin-right: auto;" alt="">
             <p
               class="cross">{{lang === 'en' ? trendCollectionSection2?.subTitle : trendCollectionSection2?.subTitleAr}}</p>
@@ -213,7 +101,7 @@
       <div class="col-md-4 col-12">
         <a routerLink="/products/furniture" class="promo-bx-link">
           <div class="promo-bx bg-overlay-black-20">
-            <img [src]="imgApiPath + trendCollectionSection3?.sectionMedia[0].path"
+            <img *ngIf="trendCollectionSection3" [src]="imgApiPath + trendCollectionSection3?.sectionMedia[0].path"
                  style="display: block;margin-left: auto;margin-right: auto;" alt="">
             <p
               class="cross">{{lang === 'en' ? trendCollectionSection3?.subTitle : trendCollectionSection3?.subTitleAr}}</p>
@@ -231,7 +119,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 col-12">
-        <img [src]="imgApiPath + catalogueSection?.sectionMedia[0].path" class="img-fluid"
+        <img *ngIf="catalogueSection" [src]="imgApiPath + catalogueSection?.sectionMedia[0].path" class="img-fluid"
              alt="{{catalogueSection?.title}}">
       </div>
       <div class="col-md-4 col-12 sm-mt-50">
@@ -291,7 +179,7 @@
         </div>
       </div>
       <div class="col-md-7 col-12">
-        <img [src]="imgApiPath + plannerSection?.sectionMedia[0].path" class="img-fluid"
+        <img *ngIf="plannerSection" [src]="imgApiPath + plannerSection?.sectionMedia[0].path" class="img-fluid"
              alt="{{plannerSection?.title}}">
       </div>
     </div>
@@ -305,7 +193,7 @@
         <div class="row no-gutter">
           <div class="col-6" *ngFor="let facebookDetails of faceBookSection?.sectionMedia">
             <a href="{{facebookDetails.routePath}}" target="_blank" class="insta-img">
-              <img [src]="imgApiPath + facebookDetails.path" class="img-fluid"
+              <img *ngIf="facebookDetails" [src]="imgApiPath + facebookDetails.path" class="img-fluid"
                    alt="">
             </a>
           </div>
