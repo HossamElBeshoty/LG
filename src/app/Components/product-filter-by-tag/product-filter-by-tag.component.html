@@ -43,7 +43,7 @@
           <div class="row money-counting-item">
             <div *ngFor="let prod of products" class="item {{prod.tag.replace(regex , ' ')}} col-12">
               <app-money-counting-card [imagePath]="imgApiPath + prod.productImages[0].path" [codeName]="prod.code"
-                                       [route]="prod.id"></app-money-counting-card>
+                                       [route]="'../../../product-details/single-product/' + prod.id"></app-money-counting-card>
             </div>
           </div>
         </div>

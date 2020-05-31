@@ -22,6 +22,7 @@ import {ProductCategoryComponent} from "./Components/product-category/product-ca
 import {ProductCategoryDetailsComponent} from "./Components/product-category-details/product-category-details.component";
 import {ProductCategoryFilterDetailsComponent} from "./Components/product-category-filter-details/product-category-filter-details.component";
 import {ProductFilterByTagComponent} from "./Components/product-filter-by-tag/product-filter-by-tag.component";
+import {SingleProductComponent} from "./Components/single-product/single-product.component";
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'products/:categoryID', component: ProductCategoryComponent},
   {path: 'products/:productID/filter', component: ProductFilterByTagComponent},
   {path: 'products/:categoryID/:productID', component: ProductCategoryDetailsComponent},
+  {path: 'product-details/single-product/:productID', component: SingleProductComponent},
   {path: 'products/:categoryID/:productID/filter', component: ProductCategoryFilterDetailsComponent},
   {path: 'products/cabinets', component: CabinetsComponent},
   {path: 'products/vaultsDoors', component: VaultsDoorsComponent},

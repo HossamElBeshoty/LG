@@ -13,7 +13,7 @@ export class MoneyCountingCardComponent implements OnInit {
   @Input() feature: string;
   @Input() specificationName: string;
   @Input() specificationDetails: string;
-  @Input() route: number;
+  @Input() route: string;
 
   constructor() {
   }
