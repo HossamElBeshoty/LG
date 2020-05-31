@@ -108,9 +108,10 @@ export function createTranslateLoader(http: HttpClient) {
       rootMargin: '30px',
       threshold: 0.1,
       // css filter
-      filter: 'blur(3px) drop-shadow(0 0 0.75rem crimson)',
+      filter: 'blur(3px) drop-shadow(0 0 0.75rem #fff)',
       // image width / height ratio for image holder
       imageRatio: 16 / 9,
+      placeholderImageSrc: './assets/images/loader.gif'
       // loading image in placeholder. Can be URL or base64
     } as IImageLoaderOptions),
     BrowserAnimationsModule
