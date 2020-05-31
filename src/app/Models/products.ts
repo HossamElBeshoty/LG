@@ -1,4 +1,5 @@
 import {IProductImages} from './product-images';
+import {ICategory} from "./category";
 
 export interface IProducts {
   id: number;

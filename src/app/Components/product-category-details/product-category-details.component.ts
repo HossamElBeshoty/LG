@@ -4,6 +4,7 @@ import {ProductService} from "../../Services/product.service";
 import {IProducts} from "../../Models/products";
 import {environment} from "../../../environments/environment";
 import {IProductImages} from "../../Models/product-images";
+import {ICategory} from "../../Models/category";
 
 @Component({
   selector: 'app-product-category-details',
@@ -12,7 +13,8 @@ import {IProductImages} from "../../Models/product-images";
 })
 export class ProductCategoryDetailsComponent implements OnInit {
   productID: number;
-  products: IProducts[];
+  products: ICategory;
+
   imgApiPath = environment.imageEndPoint;
   preloader: boolean;
 
@@ -28,7 +30,8 @@ export class ProductCategoryDetailsComponent implements OnInit {
 
   getAllCategoryDetailsProducts() {
     this.productService.getAllProducts(this.productID).subscribe(res => {
-      this.products = res as IProducts[];
+      this.products = res as ICategory;
+      console.log(res)
     }, error => {
     }, () => {
       this.preloader = false;

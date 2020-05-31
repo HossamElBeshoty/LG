@@ -1,3 +1,5 @@
+import {IProducts} from "./products";
+
 export interface ICategory {
   data: number;
   label: string;
@@ -12,4 +14,5 @@ export interface ICategory {
   expandedIcon: string;
   collapsedIcon: string;
   children: ICategory[];
+  product?: IProducts[];
 }

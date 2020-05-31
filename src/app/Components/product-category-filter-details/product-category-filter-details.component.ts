@@ -6,6 +6,7 @@ import {ProductService} from "../../Services/product.service";
 import {LangService} from "../../Services/lang.service";
 import {IProducts} from "../../Models/products";
 import {environment} from "../../../environments/environment";
+import {ICategory} from "../../Models/category";
 
 @Component({
   selector: 'app-product-category-filter-details',
@@ -16,7 +17,7 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
   lang: string;
   productID: number;
   firstChild: IFirstLevel[];
-  products: IProducts[];
+  products: ICategory;
   productIDDetails: [];
   imgApiPath = environment.imageEndPoint;
   preloader: boolean;
@@ -52,7 +53,7 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
 
   getAllCategoryDetailsProducts(id: number) {
     this.productService.getAllProducts(id).subscribe(res => {
-      this.products = res as IProducts[];
+      this.products = res as ICategory;
     });
   }
 }

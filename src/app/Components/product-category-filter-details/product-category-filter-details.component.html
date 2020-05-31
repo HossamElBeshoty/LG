@@ -7,7 +7,7 @@
         <div class="section-heading mt-80 text-center">
           <h1 class="heading theme-color">
             <span class="theme-color">
-           product-category-filter-details works!
+           {{products?.label}}
             </span>
           </h1>
         </div>
@@ -25,7 +25,7 @@
 
       <div class="container mt-15">
         <div class="row">
-          <div *ngFor="let x of products" class="col-md-3 col-12 mb-30">
+          <div *ngFor="let x of products?.product" class="col-md-3 col-12 mb-30">
             <app-card [image]="imgApiPath + x.productImages[0].path" [name]="x.code"></app-card>
           </div>
         </div>

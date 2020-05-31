@@ -7,7 +7,7 @@
         <div class="section-heading mt-80 text-center">
           <h1 class="heading theme-color">
             <span class="theme-color">
-             product-category-details works!
+              {{products?.label}}
             </span>
           </h1>
         </div>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="shorter">
       <div class="row">
-        <div *ngFor="let prod of products;" class="col-md-3 col-12 mb-30">
+        <div *ngFor="let prod of products?.product;" class="col-md-3 col-12 mb-30">
           <app-card [name]="prod.code" [image]="imgApiPath + prod.productImages[0]?.path"></app-card>
         </div>
       </div>
