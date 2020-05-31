@@ -14,7 +14,6 @@ declare var $: any;
   styleUrls: ['./product-filter-by-tag.component.css']
 })
 export class ProductFilterByTagComponent implements OnInit {
-  asd = '1';
   productID: number;
   products: IProducts[];
   imgApiPath = environment.imageEndPoint;

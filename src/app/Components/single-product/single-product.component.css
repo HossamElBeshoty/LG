@@ -1,0 +1,11 @@
+:host ::ng-deep p ul li {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+:host ::ng-deep p ul li strong {
+  color: #ED1B24;
+}
