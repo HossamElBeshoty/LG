@@ -25,7 +25,6 @@ export class ProductsFilterDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.pageName = params.name;
-      console.log('Url Id: ', this.pageName);
     });
     this.getFilterData();
   }

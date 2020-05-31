@@ -33,7 +33,6 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
     this.preloader = true;
     this.activatedRoute.params.subscribe(params => {
       this.productID = params.productID;
-      console.log('Url Id: ', this.productID);
     });
     this.getFirstChildData();
   }
@@ -42,9 +41,6 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
     this.categoryService.getFirstChild(this.productID).subscribe(res => {
       this.firstChild = res as IFirstLevel[];
       this.productIDDetails = this.firstChild.map(c => c.data) as [];
-      console.log(this.firstChild.filter(c => {
-        return c.data
-      }))
     }, error => {
     }, () => {
       for (let x of this.productIDDetails) {
@@ -57,7 +53,6 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
   getAllCategoryDetailsProducts(id: number) {
     this.productService.getAllProducts(id).subscribe(res => {
       this.products = res as IProducts[];
-      console.log(this.products);
     });
   }
 }

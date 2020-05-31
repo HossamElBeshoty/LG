@@ -34,7 +34,6 @@ export class CatalogPageComponent implements OnInit {
   getCatalogue() {
     this.catalogService.getAllCatalogues().subscribe(res => {
       this.catalogues = res as ICatalog[];
-      console.log(this.catalogues);
     })
   }
 }

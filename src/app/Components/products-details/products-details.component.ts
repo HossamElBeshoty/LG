@@ -28,22 +28,18 @@ export class ProductsDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.pageName = params.name;
-      console.log('Url Id: ', this.pageName);
     });
     this.getData();
   }
 
   getData() {
     this.digitalData = this.data.filter(c => c.pageName === this.pageName);
-    console.log(this.digitalData);
     this.digitalData.sort((a: any, b: any) => a.id - b.id);
     const allCategory: any = (this.digitalData.map((a: { category: [] }) => a.category));
     this.categories = [...new Set(allCategory.map(item => item.id))];
-    console.log(this.categories);
 
     // BreadCrumb
     this.breadCrumbArray = this.breadCrumbData.find(c => c.pageName === this.pageName);
-    console.log(this.breadCrumbArray.breadCrumbName);
     if (this.router.url.includes('furniture')) {
       this.breadCrumb = [
         {label: 'Products', routerLink: '/products'},

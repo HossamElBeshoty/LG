@@ -33,7 +33,6 @@ export class ProductCategoryComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.categoryID = params.categoryID;
-      console.log('Url Id: ', this.categoryID);
     });
     this.preloader = true;
     this.getCategoryProducts();
@@ -42,9 +41,7 @@ export class ProductCategoryComponent implements OnInit {
   getCategoryProducts() {
     this.productService.getAllCategoryProducts(this.categoryID).subscribe((res: { category: any }) => {
       this.categoryProduct = res.category as ICategoryProducts;
-      // console.log(this.categoryProduct);
       this.productImages = this.categoryProduct.allChildren.map(c=>c.product.map(c=>c.productImages)) as [];
-      console.log(this.productImages);
     }, error => {
     }, () => {
       this.breadCrumb = [

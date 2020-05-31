@@ -98,7 +98,6 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   getTrendProducts() {
     this.productService.getHomePageTrendingItems().subscribe(res => {
       this.products = res as IProducts[];
-      console.log(this.products);
     }, error => {
     }, () => {
       setTimeout(() => {

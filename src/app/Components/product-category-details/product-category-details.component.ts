@@ -22,7 +22,6 @@ export class ProductCategoryDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.productID = params.productID;
-      console.log('Url Id: ', this.productID);
     });
     this.getAllCategoryDetailsProducts();
   }

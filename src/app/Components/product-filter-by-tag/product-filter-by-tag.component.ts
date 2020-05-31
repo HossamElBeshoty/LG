@@ -113,7 +113,6 @@ export class ProductFilterByTagComponent implements OnInit {
     });
     this.activatedRoute.params.subscribe(params => {
       this.productID = params.productID;
-      console.log('Url Id: ', this.productID);
     });
     this.preloader = true;
     this.getAllCategoryDetailsProducts();
@@ -145,7 +144,6 @@ export class ProductFilterByTagComponent implements OnInit {
   getCategoryTag() {
     this.categoryService.getCategoryTag(this.productID).subscribe(res => {
       this.categoryTags = res as ICategoryTags[];
-      console.log(this.categoryTags);
     }, error => {
     }, () => {
     })
