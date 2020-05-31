@@ -5,6 +5,7 @@ import {ICategoryProducts} from "../../Models/category-products";
 import {LangService} from "../../Services/lang.service";
 import {MenuItem} from "primeng/api";
 import {environment} from "../../../environments/environment";
+import {IProductImages} from "../../Models/product-images";
 
 @Component({
   selector: 'app-product-category',
@@ -19,7 +20,7 @@ export class ProductCategoryComponent implements OnInit {
   breadCrumb: MenuItem[];
   homeBreadCrumb: MenuItem;
   imgApiPath = environment.imageEndPoint;
-
+  productImages: IProductImages[] = [];
   constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, private langService: LangService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
@@ -42,7 +43,8 @@ export class ProductCategoryComponent implements OnInit {
     this.productService.getAllCategoryProducts(this.categoryID).subscribe((res: { category: any }) => {
       this.categoryProduct = res.category as ICategoryProducts;
       // console.log(this.categoryProduct);
-      console.log(this.categoryProduct.allChildren);
+      this.productImages = this.categoryProduct.allChildren.map(c=>c.product.map(c=>c.productImages)) as [];
+      console.log(this.productImages);
     }, error => {
     }, () => {
       this.breadCrumb = [

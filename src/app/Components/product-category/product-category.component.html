@@ -26,11 +26,11 @@
         <div class="card">
           <div id="{{product.label}}" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div *ngFor="let Data of categoryProduct.product[index].productImages ,let i=index"
+              <div *ngFor="let Data of productImages[index] ,let i=index"
                    [ngClass]="i==0 ?'active':'inactive' "
                    class="carousel-item">
                 <ngx-progressive-image-loader>
-                  <img [src]="imgApiPath +  Data.path" class="d-block w-100" [imageRatio]="1" ngxProgressiveImage
+                  <img [src]="imgApiPath +  Data[0].path" class="d-block w-100" [imageRatio]="1" ngxProgressiveImage
                        alt="{{product.label}}">
                 </ngx-progressive-image-loader>
               </div>

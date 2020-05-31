@@ -11,6 +11,6 @@ export interface ICategoryProducts {
   nameAr: string;
   title: string;
   titleAr: string;
-  product: IProducts[];
+
   allChildren: IChildrenProducts[];
 }

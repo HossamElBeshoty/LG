@@ -14,6 +14,7 @@ export class ProductCategoryDetailsComponent implements OnInit {
   productID: number;
   products: IProducts[];
   imgApiPath = environment.imageEndPoint;
+  preloader: boolean;
 
   constructor(private activatedRoute: ActivatedRoute, public productService: ProductService) {
   }
@@ -29,7 +30,9 @@ export class ProductCategoryDetailsComponent implements OnInit {
   getAllCategoryDetailsProducts() {
     this.productService.getAllProducts(this.productID).subscribe(res => {
       this.products = res as IProducts[];
-      console.log(this.products);
+    }, error => {
+    }, () => {
+      this.preloader = false;
     });
   }
 
