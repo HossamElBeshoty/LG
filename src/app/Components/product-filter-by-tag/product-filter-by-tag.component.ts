@@ -8,8 +8,6 @@ import {ICategoryTags} from "../../Models/category-tags";
 
 declare var $: any;
 
-declare function isotopeProduct(): any;
-
 @Component({
   selector: 'app-product-filter-by-tag',
   templateUrl: './product-filter-by-tag.component.html',
@@ -23,6 +21,7 @@ export class ProductFilterByTagComponent implements OnInit {
   tags: string;
   regex = new RegExp(',', 'g');
   categoryTags: ICategoryTags[];
+  preloader: boolean;
 
   constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, public categoryService: CategoryService) {
   }
@@ -109,6 +108,7 @@ export class ProductFilterByTagComponent implements OnInit {
       this.productID = params.productID;
       console.log('Url Id: ', this.productID);
     });
+    this.preloader = true;
     this.getAllCategoryDetailsProducts();
     this.getCategoryTag();
   }
@@ -119,12 +119,7 @@ export class ProductFilterByTagComponent implements OnInit {
     }, error => {
     }, () => {
       const grid = $('.money-counting-item');
-
-      // grid.isotope({
-      //   itemSelector: '.item',
-      //   layoutMode: 'fitRows',
-      // });
-      $('.tab-content ul li').click(function() {
+      $('.tab-content ul li').click(function () {
         $('.tab-content ul li').removeClass('activeIsotope');
         $(this).addClass('activeIsotope');
         const selector = $(this).attr('data-filter');
@@ -136,6 +131,7 @@ export class ProductFilterByTagComponent implements OnInit {
         });
         return false;
       });
+      this.preloader = false;
     });
   }
 
