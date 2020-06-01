@@ -6,6 +6,7 @@ import {ProductService} from "../../Services/product.service";
 import {CategoryService} from "../../Services/category.service";
 import {ICategoryTags} from "../../Models/category-tags";
 import {LangService} from "../../Services/lang.service";
+import {ICategory} from "../../Models/category";
 
 declare var $: any;
 
@@ -23,7 +24,7 @@ export class ProductFilterByTagComponent implements OnInit {
   regex = new RegExp(',', 'g');
   categoryTags: ICategoryTags[];
   preloader: boolean;
-
+  categoryData:ICategory;
   constructor(private activatedRoute: ActivatedRoute, public productService: ProductService, public categoryService: CategoryService, private langService: LangService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
@@ -120,8 +121,9 @@ export class ProductFilterByTagComponent implements OnInit {
   }
 
   getAllCategoryDetailsProducts() {
-    this.productService.getAllProducts(this.productID).subscribe((res: IProducts[]) => {
-      this.products = res as IProducts[];
+    this.productService.getAllProducts(this.productID).subscribe((res: ICategory) => {
+      this.categoryData = res as ICategory;
+      this.products = res.product as IProducts[];
     }, error => {
     }, () => {
       const grid = $('.money-counting-item');
@@ -144,8 +146,6 @@ export class ProductFilterByTagComponent implements OnInit {
   getCategoryTag() {
     this.categoryService.getCategoryTag(this.productID).subscribe(res => {
       this.categoryTags = res as ICategoryTags[];
-    }, error => {
-    }, () => {
     })
   }
 }
