@@ -18,11 +18,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-12">
+
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div *ngFor="let imageDir of product?.productImages ,let i=index" [ngClass]="i==0 ?'active':'inactive'"
                  class="carousel-item">
-              <img src="{{ imgApiPath + imageDir.path}}" class="d-block w-100" alt="{{imageDir.imageAlt}}">
+              <ngx-progressive-image-loader>
+                <img src="{{ imgApiPath + imageDir.path}}" class="d-block w-100" alt="{{imageDir.imageAlt}}"
+                     [imageRatio]="1" ngxProgressiveImage>
+              </ngx-progressive-image-loader>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

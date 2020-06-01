@@ -1,7 +1,9 @@
 <div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-3">
-      <img src="{{imagePath}}" class="card-img" alt="{{codeName}}">
+      <ngx-progressive-image-loader>
+        <img src="{{imagePath}}" class="card-img" alt="{{codeName}}" [imageRatio]="1" ngxProgressiveImage>
+      </ngx-progressive-image-loader>
     </div>
     <div class="col-md-9">
       <div class="card-body">
