@@ -28,7 +28,7 @@
         <p [innerHTML]="lang === 'en' ? aboutUsSection?.details:aboutUsSection?.detailsAr"></p>
       </div>
       <div class="col-md-6 col-12 sm-mb-50">
-        <img [src]="imgApiPath + aboutUsSection?.sectionMedia[0].path" class="img-thumbnail" alt="">
+        <img *ngIf="aboutUsSection" [src]="imgApiPath + aboutUsSection?.sectionMedia[0].path" class="img-thumbnail" alt="">
       </div>
     </div>
   </div>
