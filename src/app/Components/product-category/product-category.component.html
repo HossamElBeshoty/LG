@@ -23,7 +23,7 @@
     <br>
     <div class="row" *ngIf="categoryProduct?.allChildren">
       <div class="col-md-4" *ngFor="let product of categoryProduct?.allChildren; let index = index">
-        <div class="card">
+        <div class="card mb-15">
           <div id="{{product.label}}" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div *ngFor="let Data of productImages[index] ,let i=index"
