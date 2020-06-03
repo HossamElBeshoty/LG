@@ -41,10 +41,10 @@
       </div>
       <div class="col-lg-8 col-md-8 col-sm-12">
         <mat-tab-group mat-align-tabs="center">
-          <mat-tab label="Specifications">
+          <mat-tab label="{{'Specifications' | translate}}">
             <p [innerHTML]="lang === 'en' ? product?.specs : product?.specsAr"></p>
           </mat-tab>
-          <mat-tab label="Features">
+          <mat-tab label="{{'Features' | translate}}">
             <p [innerHTML]="lang === 'en' ? product?.feature: product?.featureAr"></p>
           </mat-tab>
         </mat-tab-group>

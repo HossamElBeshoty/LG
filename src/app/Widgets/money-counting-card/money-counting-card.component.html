@@ -14,8 +14,9 @@
             </h4>
           </div>
           <div class="col-6">
-            <h4 class="card-title float-right">
-              <a routerLink="{{route}}" class="btn btn-primary">See More</a>
+            <h4 class="card-title" [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}">
+              <a routerLink="{{route}}" class="btn btn-primary">{{'See More' | translate}} <i
+                class="fa fa-long-arrow-right"></i></a>
             </h4>
           </div>
         </div>
