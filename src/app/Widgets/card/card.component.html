@@ -59,12 +59,13 @@
 <div class="card text-white">
   <ngx-progressive-image-loader>
 
-      <img [src]="image" [imageRatio]="1" alt="{{name}}" ngxProgressiveImage
-           class="img-fluid img-thumbnail">
+    <img [src]="image" [imageRatio]="1" alt="{{name}}" ngxProgressiveImage
+         class="img-fluid img-thumbnail">
 
   </ngx-progressive-image-loader>
   <div class="card-img-overlay">
-    <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right" alt="Logo">
+    <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right "
+         [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}" alt="Logo">
     <h3 class="card-title theme-color">{{name}}</h3>
   </div>
 </div>

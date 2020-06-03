@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {LangService} from "../../Services/lang.service";
 
 @Component({
   selector: 'app-card',
@@ -14,8 +15,15 @@ export class CardComponent implements OnInit {
   @Input() quantity: string;
   @Input() nwGw: string;
   @Input() imageRatio: number;
+  lang: string;
 
-  constructor() {
+  constructor(private langService: LangService) {
+    this.langService.getLang().subscribe(res => {
+      this.lang = res as string;
+      if (this.lang === null) {
+        this.lang = 'en';
+      }
+    });
   }
 
   ngOnInit(): void {
