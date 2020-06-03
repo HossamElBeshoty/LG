@@ -5,7 +5,7 @@
     <div class="row dark-bg">
       <div class="col-12">
         <div class="section-heading mt-80 text-center">
-          <h1 class="heading theme-color"><span class="theme-color">Our Products. </span></h1>
+          <h1 class="heading theme-color"><span class="theme-color">{{'Our Products' | translate}}</span></h1>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="section-heading mb-30 sm-mt-0">
           <h1 class="heading">{{lang === 'en' ? product.title : product.titleAr}}</h1>
         </div>
-        <p class="pr-50">{{lang === 'en' ? product.details : product.detailsAr}}</p>
+        <p>{{lang === 'en' ? product.details : product.detailsAr}}</p>
 
       </div>
       <div class="col-md-9 col-12">
@@ -36,11 +36,11 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <a class="cs-button float-right mt-30"
+            <a class="cs-button mt-30" [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}"
                [routerLink]="product.hasProduct !== true ? ['../products/' + product.data] : ['../products/' + product.data + '/filter']"
-            >See
-              More &nbsp; <i
-                class="fa fa-long-arrow-right"></i></a>
+            >{{'See More' | translate}} &nbsp;
+              <i class="fa fa-long-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
