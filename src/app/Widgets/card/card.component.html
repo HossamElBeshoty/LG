@@ -56,16 +56,33 @@
 <!--  </div>-->
 <!--</div>-->
 
-<div class="card text-white">
-  <ngx-progressive-image-loader>
+<!--<div class="card text-white">-->
+<!--  <ngx-progressive-image-loader>-->
+<!--    <img [src]="image" [imageRatio]="1" alt="{{name}}" ngxProgressiveImage-->
+<!--         class="img-fluid img-thumbnail">-->
+<!--  </ngx-progressive-image-loader>-->
+<!--  <div class="card-img-overlay">-->
+<!--    <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right "-->
+<!--         [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}" alt="Logo">-->
+<!--    <h3 class="card-title theme-color">{{name}}</h3>-->
+<!--  </div>-->
+<!--</div>-->
 
-    <img [src]="image" [imageRatio]="1" alt="{{name}}" ngxProgressiveImage
-         class="img-fluid img-thumbnail">
-
-  </ngx-progressive-image-loader>
-  <div class="card-img-overlay">
-    <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right "
-         [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}" alt="Logo">
-    <h3 class="card-title theme-color">{{name}}</h3>
+<div class="product-grid6">
+  <div class="product-image6 text-center">
+      <ngx-progressive-image-loader>
+        <img [src]="image" [imageRatio]="1" alt="{{name}}" ngxProgressiveImage
+             class="pic-1">
+      </ngx-progressive-image-loader>
+      <div class="card-img-overlay">
+        <img src="assets/images/brand/logo-kora.png" style="width: 40px; height: 40px" class="float-right "
+             [ngClass]="{'float-right' : lang === 'en' , 'float-left' : lang === 'ar'}" alt="Logo">
+      </div>
+  </div>
+  <div class="product-content bg-light">
+    <h3 class="title text-danger">{{name}}</h3>
+  </div>
+  <div class="social ">
+    Specs
   </div>
 </div>
