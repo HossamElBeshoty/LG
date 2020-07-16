@@ -9,6 +9,7 @@ import {LangService} from "../../Services/lang.service";
 export class CardComponent implements OnInit {
   @Input() image: string;
   @Input() name: string;
+  @Input() specs: string;
   @Input() collectionName: string;
   @Input() size: string;
   @Input() weight: string;
