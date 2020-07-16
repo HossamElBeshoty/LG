@@ -21,7 +21,7 @@
     <div class="shorter">
       <div class="row">
         <div *ngFor="let prod of products?.product;" class="col-md-3 col-12 mb-30">
-          <app-card [name]="prod.code" [image]="imgApiPath + prod.productImages[0]?.path"></app-card>
+          <app-card [name]="prod.code" [image]="imgApiPath + prod.productImages[0]?.path" [specs]="prod.specs"></app-card>
         </div>
       </div>
     </div>

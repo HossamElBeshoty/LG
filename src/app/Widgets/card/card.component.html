@@ -82,10 +82,8 @@
   <div class="product-content bg-light">
     <h3 class="title text-danger">{{name}}</h3>
   </div>
-  <div *ngIf="specs" class="social">
-    {{specs}}
-  </div>
-  <div *ngIf="!specs" class="social">
+  <div *ngIf="specs" class="social-specs" [innerHTML]="specs"></div>
+  <div *ngIf="!specs" class="social-specs">
     {{name}}
   </div>
 </div>
