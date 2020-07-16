@@ -35,7 +35,7 @@
 }
 
 .product-grid6:hover .product-image6 img {
-  transform: scale(1)
+  transform: scale(1.1)
 }
 
 .product-grid6 .product-content {
@@ -80,6 +80,7 @@
 
 .product-grid6 .social {
   background-color: #f8f9fa;
+  color: #17459E;
   width: 100%;
   padding: 0;
   margin: 0;
