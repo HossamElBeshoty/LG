@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 // tslint:disable-next-line:import-spacing
-import *  as  catalogData from '../../../assets/DataBase/catalog.json';
 import {CatalogueService} from "../../Services/catalogue.service";
 import {ICatalog} from "../../Models/catalog";
 import {environment} from "../../../environments/environment";
