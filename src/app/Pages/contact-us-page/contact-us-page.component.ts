@@ -4,6 +4,8 @@ import {IPages} from '../../Models/pages';
 import {PageService} from '../../Services/page.service';
 import {ISections} from '../../Models/sections';
 import {LangService} from '../../Services/lang.service';
+import {IContact} from "../../Models/contact";
+import {ContactsService} from "../../Services/contacts.service";
 
 @Component({
   selector: 'app-contact-us-page',
@@ -14,8 +16,9 @@ export class ContactUsPageComponent implements OnInit {
   contactUsPage: IPages;
   contactUsSection: ISections;
   lang: string;
+  contactList: IContact[];
 
-  constructor(public pageService: PageService, private langService: LangService) {
+  constructor(public pageService: PageService, private langService: LangService, public contactService: ContactsService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
       if (this.lang === null) {
@@ -26,6 +29,7 @@ export class ContactUsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getContactUs();
+    this.getAllContact();
   }
 
   getContactUs() {
@@ -34,6 +38,12 @@ export class ContactUsPageComponent implements OnInit {
     }, error => {
     }, () => {
       this.contactUsSection = this.contactUsPage.sections.find(c => c.id === 11);
+    });
+  }
+
+  getAllContact() {
+    this.contactService.getAllContacts().subscribe(res => {
+      this.contactList = res as IContact[];
     });
   }
 }
