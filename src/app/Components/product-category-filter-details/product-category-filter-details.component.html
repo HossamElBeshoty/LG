@@ -17,11 +17,11 @@
 </section>
 
 <div class="container">
-  <mat-tab-group mat-align-tabs="center">
-    <mat-tab *ngFor="let fl of firstChild">
-      <ng-template mat-tab-label>
-        <span (click)="getAllCategoryDetailsProducts(fl.data)">{{lang === 'en' ? fl.label : fl.nameAr}}</span>
-      </ng-template>
+  <mat-tab-group mat-align-tabs="center" (selectedTabChange)="yourFn($event)">
+    <mat-tab *ngFor="let fl of firstChild" label="{{lang === 'en' ? fl.label : fl.nameAr}}">
+      <!--      <ng-template mat-tab-label>-->
+      <!--        <span>{{lang === 'en' ? fl.label : fl.nameAr}}</span>-->
+      <!--      </ng-template>-->
 
       <div class="container mt-15">
         <div class="row">

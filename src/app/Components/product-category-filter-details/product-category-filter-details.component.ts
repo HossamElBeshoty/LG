@@ -21,6 +21,8 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
   productIDDetails: [];
   imgApiPath = environment.imageEndPoint;
   preloader: boolean;
+  idCat: number;
+
   constructor(private activatedRoute: ActivatedRoute, public categoryService: CategoryService, private langService: LangService, public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
@@ -44,16 +46,27 @@ export class ProductCategoryFilterDetailsComponent implements OnInit {
       this.productIDDetails = this.firstChild.map(c => c.data) as [];
     }, error => {
     }, () => {
-      for (let x of this.productIDDetails) {
-        this.getAllCategoryDetailsProducts(x);
-      }
+      // for (let x of this.productIDDetails) {
+      //   this.getAllCategoryDetailsProducts(x);
+      // }
+
       this.preloader = false;
     })
+  }
+
+  getId(id: number) {
+    this.idCat = id;
   }
 
   getAllCategoryDetailsProducts(id: number) {
     this.productService.getAllProducts(id).subscribe(res => {
       this.products = res as ICategory;
     });
+  }
+
+  yourFn($event) {
+    this.idCat = this.productIDDetails[$event.index];
+    this.getAllCategoryDetailsProducts(this.idCat);
+    this.getFirstChildData();
   }
 }
