@@ -41,7 +41,8 @@
           class="fa fa-play"></i> Collection Video</a>
       </div>
       <div class="col-md-8 col-12">
-        <img *ngIf="collectionVideoSection" [src]="imgApiPath + collectionVideoSection?.sectionMedia[1].path" class="img-fluid"
+        <img *ngIf="collectionVideoSection" [src]="imgApiPath + collectionVideoSection?.sectionMedia[1].path"
+             class="img-fluid"
              alt="{{collectionVideoSection?.title}}">
       </div>
     </div>
@@ -208,7 +209,8 @@
         </div>
         <h4>{{lang === 'en' ? faceBookSection?.subTitle : faceBookSection?.subTitleAr}}</h4>
         <p>{{lang === 'en' ? faceBookSection?.details : faceBookSection?.detailsAr}}</p>
-        <a class="cs-button mt-30" href="https://www.facebook.com/LotfyGroup/" target="_blank">{{'Our Facebook' | translate}}&nbsp; <i
+        <a class="cs-button mt-30" href="https://www.facebook.com/LotfyGroup/"
+           target="_blank">{{'Our Facebook' | translate}}&nbsp; <i
           class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
@@ -223,12 +225,13 @@
           <h1 class="heading mb-30">{{lang === 'en' ? contactUsSection?.title : contactUsSection?.titleAr}}</h1>
           <p class="mb-20 ">{{lang === 'en' ? contactUsSection?.details : contactUsSection?.detailsAr}}</p>
         </div>
-        <h4 class="py-2"><i class="ti-mobile theme-color"></i>&nbsp; {{'+2 012 - 760 - 61063' | translate}}</h4>
-        <h4 class="py-2"><i class="fa fa-weixin theme-color"></i>&nbsp; {{'+2 0128 - 706 - 0298' | translate}}</h4>
-        <h4 class="py-2"><i class="ti-email theme-color"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</h4>
-        <h4 class="py-2"><i class="ti-email theme-color"></i>&nbsp; {{'lotfygroup@yahoo.com' | translate}}</h4>
-        <h4 class="py-2"><i
-          class="ti-map-alt theme-color"></i>&nbsp; {{'5 Taha Hussein, New Nuzha , Cairo Governorate' | translate}}</h4>
+        <h4 class="py-2" *ngFor="let con of contactList"><i class="{{con.classIcon}}"
+                                                            style="color: #ed1b24"></i>&nbsp; {{con.contacts}}</h4>
+        <!--        <h4 class="py-2"><i class="fa fa-weixin theme-color"></i>&nbsp; {{'+2 0128 - 706 - 0298' | translate}}</h4>-->
+        <!--        <h4 class="py-2"><i class="ti-email theme-color"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</h4>-->
+        <!--        <h4 class="py-2"><i class="ti-email theme-color"></i>&nbsp; {{'lotfygroup@yahoo.com' | translate}}</h4>-->
+        <!--        <h4 class="py-2"><i-->
+        <!--          class="ti-map-alt theme-color"></i>&nbsp; {{'5 Taha Hussein, New Nuzha , Cairo Governorate' | translate}}</h4>-->
         <div class="social-icons color clearfix sm-mb-30">
           <ul>
             <li class="social-facebook"><a href="https://www.facebook.com/LotfyGroup/" target="_blank"><i

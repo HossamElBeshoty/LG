@@ -7,6 +7,8 @@ import {environment} from '../../../environments/environment';
 import {LangService} from '../../Services/lang.service';
 import {ProductService} from '../../Services/product.service';
 import {IProducts} from '../../Models/products';
+import {IContact} from "../../Models/contact";
+import {ContactsService} from "../../Services/contacts.service";
 
 declare function galleryfunction(): any;
 
@@ -34,10 +36,12 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   contactUsSection: ISections;
   trendingItemsSection: ISections;
   lang: string;
+  contactList: IContact[];
 
   constructor(@Inject(DOCUMENT) private document,
               public pageService: PageService,
               private langService: LangService,
+              public contactService: ContactsService,
               public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
       this.lang = res as string;
@@ -51,6 +55,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     this.preloader = true;
     this.getPage();
     this.getContactUs();
+    this.getAllContact();
     this.getTrendProducts();
   }
 
@@ -118,5 +123,11 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     return (match && match[2]?.length === 11)
       ? match[2]
       : null;
+  }
+
+  getAllContact() {
+    this.contactService.getAllContacts().subscribe(res => {
+      this.contactList = res as IContact[];
+    });
   }
 }
