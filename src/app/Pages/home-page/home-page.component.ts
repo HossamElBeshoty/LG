@@ -9,6 +9,8 @@ import {ProductService} from '../../Services/product.service';
 import {IProducts} from '../../Models/products';
 import {IContact} from "../../Models/contact";
 import {ContactsService} from "../../Services/contacts.service";
+import {IContactEmail, IContactEmailFormData} from "../../Models/contact-email";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 declare function galleryfunction(): any;
 
@@ -41,6 +43,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   constructor(@Inject(DOCUMENT) private document,
               public pageService: PageService,
               private langService: LangService,
+              private snackBar: MatSnackBar,
               public contactService: ContactsService,
               public productService: ProductService) {
     this.langService.getLang().subscribe(res => {
@@ -129,5 +132,27 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     this.contactService.getAllContacts().subscribe(res => {
       this.contactList = res as IContact[];
     });
+  }
+
+  onSubmit() {
+    this.contactService.contactEmail.subject = 'Email From Lotfy Group WebSite Contact Us';
+    this.contactService.contactEmail.body = `
+    <h4 style="color: #ed1b24; font-weight: bold;">Message From Client: <span style="color: #17469e">${this.contactService.contactEmailFormData.userName}</span></h4>
+    <h4 style="color: #ed1b24; font-weight: bold;">Email: <span style="color: #17469e">${this.contactService.contactEmailFormData.email}</span></h4>
+    <h4 style="color: #ed1b24; font-weight: bold;">Mobile Phone: <span style="color: #17469e">${this.contactService.contactEmailFormData.phone}</span></h4>
+    <h4 style="color: #ed1b24; font-weight: bold;">Message: <span style="color: #17469e">${this.contactService.contactEmailFormData.comment}</span></h4>
+    `;
+    this.contactService.postEmail().subscribe(res => {
+      console.log(res)
+    }, error => {
+    }, () => {
+      this.contactService.contactEmail = {} as IContactEmail;
+      this.contactService.contactEmailFormData = {} as IContactEmailFormData;
+      this.snackBar.open('Thanks For Contacting Us', 'Contact Us', {
+        duration: 2000,
+        horizontalPosition: 'end',
+        verticalPosition: 'top',
+      });
+    })
   }
 }

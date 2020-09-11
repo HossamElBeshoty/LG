@@ -245,28 +245,30 @@
         </div>
       </div>
       <div class="col-xl-6 col-12">
-        <form action="http://html.multipurposethemes.com/shoppy/send_email.php" id="contactus" name="contactus"
-              method="post">
+        <form id="contactus" #contactUs1Form="ngForm" (submit)="onSubmit()">
           <div class="contact-form form-border clearfix">
             <div class="form-field w-100">
-              <input type="text" placeholder="{{'Name*' | translate}}" class="form-control" name="InputName"
-                     id="InputName" required>
+              <input type="text" placeholder="{{'Name*' | translate}}" class="form-control"
+                     [(ngModel)]="contactService.contactEmailFormData.userName" name="userName" required
+                     id="InputName">
             </div>
             <div class="form-field w-100">
-              <input type="email" placeholder="{{'Email*' | translate}}" class="form-control" name="InputEmail"
-                     id="InputEmail" required>
+              <input type="email" placeholder="{{'Email*' | translate}}" class="form-control"
+                     [(ngModel)]="contactService.contactEmailFormData.email" name="email" required
+                     id="InputEmail">
             </div>
             <div class="form-field w-100">
-              <input type="text" placeholder="{{'Phone*' | translate}}" class="form-control" name="InputPhone"
+              <input type="text" placeholder="{{'Phone*' | translate}}" class="form-control"
+                     [(ngModel)]="contactService.contactEmailFormData.phone" name="phone"
                      id="InputPhone" required>
             </div>
             <div class="form-field textarea">
               <textarea class="form-control input-message" placeholder="{{'Comment*' | translate}}" rows="4"
-                        name="InputMessage"
+                        [(ngModel)]="contactService.contactEmailFormData.comment" name="comment"
                         id="InputMessage"></textarea>
             </div>
             <div class="form-field submit-button w-auto">
-              <button id="submit" name="submit" type="submit" value="Send"
+              <button id="submit" type="submit" [disabled]="!contactUs1Form.valid"
                       class="cs-button"> {{'Send' | translate}}</button>
             </div>
           </div>
