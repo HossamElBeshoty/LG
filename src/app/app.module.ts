@@ -32,6 +32,7 @@ import {ProductCategoryDetailsComponent} from './Components/product-category-det
 import {ProductCategoryFilterDetailsComponent} from './Components/product-category-filter-details/product-category-filter-details.component';
 import {ProductFilterByTagComponent} from './Components/product-filter-by-tag/product-filter-by-tag.component';
 import { SingleProductComponent } from './Components/single-product/single-product.component';
+import {FormsModule} from "@angular/forms";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -64,32 +65,33 @@ export function createTranslateLoader(http: HttpClient) {
     ProductFilterByTagComponent,
     SingleProductComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    AngularMaterialModule,
-    PrimeNgModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient]
-      }
-    }),
-    NgxProgressiveImageLoaderModule.forRoot({
-      // rootMargin must be specified in pixels or percent
-      rootMargin: '30px',
-      threshold: 0.1,
-      // css filter
-      filter: 'blur(3px) drop-shadow(0 0 0.75rem #fff)',
-      // image width / height ratio for image holder
-      imageRatio: 16 / 9,
-      placeholderImageSrc: './assets/images/loader.gif'
-      // loading image in placeholder. Can be URL or base64
-    } as IImageLoaderOptions),
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        AngularMaterialModule,
+        PrimeNgModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTranslateLoader,
+                deps: [HttpClient]
+            }
+        }),
+        NgxProgressiveImageLoaderModule.forRoot({
+            // rootMargin must be specified in pixels or percent
+            rootMargin: '30px',
+            threshold: 0.1,
+            // css filter
+            filter: 'blur(3px) drop-shadow(0 0 0.75rem #fff)',
+            // image width / height ratio for image holder
+            imageRatio: 16 / 9,
+            placeholderImageSrc: './assets/images/loader.gif'
+            // loading image in placeholder. Can be URL or base64
+        } as IImageLoaderOptions),
+        BrowserAnimationsModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

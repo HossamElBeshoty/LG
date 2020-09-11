@@ -24,24 +24,27 @@
     </div>
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <form>
+        <form #contactUsForm="ngForm" (submit)="onSubmit()">
           <div class="contact-form form-border clearfix">
             <div class="form-field">
-              <input id="name" type="text" placeholder="{{'Name*' | translate}}" class="form-control" name="name">
+              <input [(ngModel)]="contactService.contactEmailFormData.userName" name="userName" required id="name"
+                     type="text" placeholder="{{'Name*' | translate}}" class="form-control">
             </div>
             <div class="form-field">
-              <input type="email" placeholder="{{'Email*' | translate}}" class="form-control" name="email">
+              <input type="email" placeholder="{{'Email*' | translate}}" class="form-control"
+                     [(ngModel)]="contactService.contactEmailFormData.email" name="email" required>
             </div>
             <div class="form-field">
-              <input type="text" placeholder="{{'Phone*' | translate}}" class="form-control" name="phone">
+              <input type="text" placeholder="{{'Phone*' | translate}}" class="form-control"
+                     [(ngModel)]="contactService.contactEmailFormData.phone" name="phone" required>
             </div>
             <div class="form-field textarea">
               <textarea class="form-control input-message" placeholder="{{'Comment*' | translate}}" rows="7"
-                        name="message"></textarea>
+                        [(ngModel)]="contactService.contactEmailFormData.comment" name="comment" required></textarea>
             </div>
             <div class="form-field submit-button">
-              <input type="hidden" name="action" value="sendEmail">
-              <button id="submit" name="submit" type="submit" value="Send"
+              <!--              <input type="hidden" name="action" value="sendEmail">-->
+              <button type="submit" [disabled]="!contactUsForm.valid"
                       class="cs-button"> {{'Send your message' | translate}} <i
                 class="ti-comment-alt"></i></button>
             </div>
@@ -68,9 +71,9 @@
           </div>
           <p class="mb-50">{{lang === 'en' ? contactUsSection?.details : contactUsSection?.details}}</p>
           <p *ngFor="let con of contactList"><i class="{{con.classIcon}}"></i>&nbsp; {{con.contacts}}</p>
-<!--          <p><i class="fa fa-weixin"></i>&nbsp; {{'+(002) 012 - 706 - 0298' | translate}}</p>-->
-<!--          <p><i class="ti-email"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</p>-->
-<!--          <p><i class="ti-map-alt"></i>&nbsp;{{'5 Taha Hussein, New Nuzha , Cairo Governorate' | translate}}</p>-->
+          <!--          <p><i class="fa fa-weixin"></i>&nbsp; {{'+(002) 012 - 706 - 0298' | translate}}</p>-->
+          <!--          <p><i class="ti-email"></i>&nbsp; {{'info@lotfygroup.com' | translate}}</p>-->
+          <!--          <p><i class="ti-map-alt"></i>&nbsp;{{'5 Taha Hussein, New Nuzha , Cairo Governorate' | translate}}</p>-->
           <div class="social-icons color clearfix mt-40 text-left">
             <ul class="text-left">
               <li class="social-facebook"><a href="https://www.facebook.com/LotfyGroup/" target="_blank"><i
